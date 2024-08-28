@@ -1,6 +1,5 @@
 "use cient";
 
-import { useBreakpoints } from "../utils/useBreakpoints";
 import { useCurrentLocale } from "@/locales/client";
 
 interface MenuCardProps {
@@ -18,7 +17,6 @@ export default function MenuCard({
   onClick,
   active,
 }: MenuCardProps) {
-  const { desktop } = useBreakpoints();
   return (
     <>
       <button
@@ -35,7 +33,7 @@ export default function MenuCard({
           {text2 && <p className="text-black text-base">{text2}</p>}
           {text3 && (
             <p className="text-black text-base">
-              {desktop ? "" : "\u00A0"}
+              {/* {desktop ? "" : "\u00A0"} */}
               {text3}
             </p>
           )}
