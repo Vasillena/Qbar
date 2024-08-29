@@ -5,7 +5,7 @@ import logo from "@/public/logo-light.svg";
 export default async function Footer(): Promise<JSX.Element> {
   const t = await getI18n();
   return (
-    <div className="max-w-7xl mx-auto flex items-end mb-12">
+    <div className="max-w-7xl mx-auto flex items-end mb-12 px-16">
       <div>
         <Image
           src={logo}

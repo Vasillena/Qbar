@@ -14,8 +14,8 @@ const SixHandsFont = SixHands({ src: "../../public/SixHands.otf" });
 
 export function Hero() {
   return (
-    <div className="max-w-7xl h-screen mx-auto  mt-20 pt-20 px-16">
-      <div className="grid grid-cols-1 lg:grid-cols-2">
+    <div className="h-screen">
+      <div className="max-w-7xl  mx-auto  mt-20 pt-20 px-16 grid grid-cols-1 lg:grid-cols-2">
         <div className="">
           <h1 className={`text-6xl ${FesterFont.className}`}>
             Ритми, коктейли и незабравими нощи в Q
@@ -36,12 +36,12 @@ export function Hero() {
           </button>
         </div>
         <div>
-          {/* <Image
-          src={hero}
-          alt="Qbar logo"
-          style={{ width: "774px", height: "auto" }}
-        /> */}
-          <Video />
+          <Image
+            src={hero}
+            alt="Qbar logo"
+            style={{ width: "774px", height: "auto" }}
+          />
+          {/* <Video /> */}
         </div>
       </div>
       <CountdownTimer expiryTimestamp={eventDate} />
