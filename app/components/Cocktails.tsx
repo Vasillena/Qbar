@@ -8,7 +8,8 @@ const FesterFont = Fester({ src: "../../public/Fester-bold.otf" });
 
 export default function Cocktails() {
   return (
-    <div className="flex gap-12">
+    // <div className="flex gap-12">
+    <div className="max-w-7xl mx-auto flex gap-12 px-16">
       <div>
         <h2 className={`${FesterFont.className} text-6xl`}>Нашите Коктейли</h2>
         <p className="text-xl pt-8">

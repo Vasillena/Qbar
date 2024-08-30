@@ -7,7 +7,8 @@ const FesterFont = Fester({ src: "../../public/Fester-bold.otf" });
 
 export default function About() {
   return (
-    <div className="max-w-7xl mx-auto relative">
+    // <div className="max-w-7xl mx-auto relative">
+    <div className="max-w-screen mx-auto relative">
       <div>
         <Image
           src={decor}
@@ -19,11 +20,13 @@ export default function About() {
         <Image
           src={about}
           alt="Lamps"
-          style={{ width: "1280px", height: "auto" }}
+          style={{ width: "1440px", height: "auto" }}
           className="relative"
         />
-        <div className="absolute top-0 right-0 w-[670px] h-full bg-[#222927] bg-opacity-80 backdrop-blur-sm"></div>
-        <div className="absolute top-0 right-0 w-1/2 h-full flex flex-col  justify-center p-8">
+        {/* <div className="absolute top-0 right-0 w-[670px] h-full bg-[#222927] bg-opacity-80 backdrop-blur-sm"/> */}
+        <div className="absolute top-0 right-0 w-[990px] h-full bg-[#222927] bg-opacity-80 backdrop-blur-sm" />
+        {/* <div className="absolute top-0 right-0 w-1/2 h-full flex flex-col  justify-center p-8"> */}
+        <div className="absolute top-0 right-0 w-[600px] h-full flex flex-col  justify-center p-8 mr-60">
           <h2 className={`${FesterFont.className} text-6xl`}>За нас</h2>
           <p className="text-xl pt-8">
             Q е не просто коктейл бар, а оазис на изкуството и вкусовете.

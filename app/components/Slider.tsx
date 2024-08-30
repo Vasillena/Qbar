@@ -29,12 +29,14 @@ const slides = [
 
 export default function Slider(): JSX.Element {
   return (
-    <div className="max-w-7xl mx-auto">
+    // <div className="max-w-7xl mx-auto">
+    <div className="max-w-screen mx-auto">
       <div>
         <Image
           src={decor}
           alt="Decor"
-          style={{ width: "1280px", height: "auto" }}
+          // style={{ width: "1280px", height: "auto" }}
+          style={{ width: "100%", height: "auto" }}
         />
       </div>
       <div className="relative h-full overflow-hidden py-2 w-full bg-[#394940]">
@@ -60,7 +62,8 @@ export default function Slider(): JSX.Element {
         <Image
           src={decor}
           alt="Decor"
-          style={{ width: "1280px", height: "auto", transform: "scaleX(-1)" }}
+          // style={{ width: "1280px", height: "auto", transform: "scaleX(-1)" }}
+          style={{ width: "100%", height: "auto", transform: "scaleX(-1)" }}
         />
       </div>
     </div>

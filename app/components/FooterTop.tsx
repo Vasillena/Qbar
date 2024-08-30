@@ -12,7 +12,8 @@ const FesterFont = Fester({ src: "../../public/Fester-bold.otf" });
 export default async function FooterTop(): Promise<JSX.Element> {
   const t = await getI18n();
   return (
-    <div className="max-w-7xl mx-auto grid grid-cols-3 my-32 px-16 gap-10">
+    // <div className="max-w-7xl mx-auto grid grid-cols-3 my-32 px-16 gap-10">
+    <div className="max-w-screen mx-auto grid grid-cols-3 my-32 pl-72 gap-10">
       <div className="col-span-1">
         <div>
           <h2 className={`${FesterFont.className} text-6xl`}>Контакти</h2>
