@@ -14,8 +14,10 @@ const SixHandsFont = SixHands({ src: "../../public/SixHands.otf" });
 
 export function Hero() {
   return (
-    <div className="h-screen">
-      <div className="max-w-7xl  mx-auto  mt-20 pt-20 px-16 grid grid-cols-1 lg:grid-cols-2">
+    <div
+    // className="h-screen"
+    >
+      <div className="max-w-7xl mx-auto mt-20 pt-20 px-16 grid grid-cols-1 lg:grid-cols-2">
         <div className="">
           <h1 className={`text-6xl ${FesterFont.className}`}>
             Ритми, коктейли и незабравими нощи в Q

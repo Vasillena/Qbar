@@ -8,9 +8,9 @@ export default function MapIframe() {
     if (existingIframe) return;
 
     const iframe = document.createElement("iframe");
-    iframe.src = "https://snazzymaps.com/embed/632466";
-    iframe.width = "100%";
-    iframe.height = "500px";
+    iframe.src = "https://snazzymaps.com/embed/636408";
+    iframe.width = "700px";
+    iframe.height = "650px";
     iframe.style.border = "none";
     iframe.loading = "lazy";
     iframe.title = "Custom map showing location";
@@ -21,5 +21,5 @@ export default function MapIframe() {
     }
   }, []);
 
-  return <div className="w-screen h-[500px]" id="contact" />;
+  return <div className="w-900px h-[650px]" id="contact" />;
 }
