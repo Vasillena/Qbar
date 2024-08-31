@@ -12,8 +12,8 @@ const FesterFont = Fester({ src: "../../public/Fester-bold.otf" });
 export default async function FooterTop(): Promise<JSX.Element> {
   const t = await getI18n();
   return (
-    // <div className="max-w-7xl mx-auto grid grid-cols-3 my-32 px-16 gap-10">
-    <div className="max-w-screen mx-auto grid grid-cols-3 my-32 pl-72 gap-10">
+    <div className="max-w-7xl mx-auto grid grid-cols-3 my-32 px-16 gap-10">
+      {/* <div className="max-w-screen mx-auto grid grid-cols-3 my-32 pl-72 gap-10"> */}
       <div className="col-span-1">
         <div>
           <h2 className={`${FesterFont.className} text-6xl`}>Контакти</h2>
@@ -28,7 +28,7 @@ export default async function FooterTop(): Promise<JSX.Element> {
             <p>qbarplovdiv@gmail.com</p>
           </div>
         </div>
-        <div className="w-96 h-40 pl-8 border-t border-[#FFC956] flex justify-start items-center gap-12">
+        <div className="w-96 h-40 pl-8 border-t dark:border-[#FFC956] border-[#B96001] flex justify-start items-center gap-12">
           <div>
             <Image src={icon2} alt="Icon" />
           </div>
@@ -38,7 +38,7 @@ export default async function FooterTop(): Promise<JSX.Element> {
             <p>Plovdiv, Bulgaria 4000</p>
           </div>
         </div>
-        <div className="w-96 h-40 pl-8 border-t border-[#FFC956] flex justify-start items-center gap-12">
+        <div className="w-96 h-40 pl-8 border-t dark:border-[#FFC956] border-[#B96001] flex justify-start items-center gap-12">
           <div>
             <Image src={icon3} alt="Icon" />
           </div>
@@ -53,7 +53,7 @@ export default async function FooterTop(): Promise<JSX.Element> {
             </p>
           </div>
         </div>
-        <div className="w-96 h-40 pl-8 border-t border-[#FFC956] flex justify-start items-center gap-12">
+        <div className="w-96 h-40 pl-8 border-t dark:border-[#FFC956] border-[#B96001] flex justify-start items-center gap-12">
           <div>
             <Image src={icon4} alt="Icon" />
           </div>

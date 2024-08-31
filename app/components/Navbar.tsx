@@ -5,14 +5,18 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import MainNav from "./MainNav";
-import { Switch } from "../[locale]/switch";
+import { SwitchLanguage } from "../components/SwitchLanguage";
+import { SwitchTheme } from "./SwitchTheme";
 import image1 from "@/public/menu-bars.svg";
 import image2 from "@/public/close.svg";
-import logo from "@/public/logo-light.svg";
+import logoDark from "@/public/logo-dark.svg";
+import logoLight from "@/public/logo-light.svg";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
+import { useTheme } from "../utils/themeProvider";
 
 export default function Navbar(): JSX.Element {
+  const { theme } = useTheme();
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -60,16 +64,16 @@ export default function Navbar(): JSX.Element {
   }, [pathname]);
 
   return (
-    // <div className="max-w-7xl">
-    <div className="max-w-screen">
-      {/* <div className="max-w-7xl hidden fixed top-0 left-0 right-0 mx-auto sm:block z-50 bg-[#222927]"> */}
-      <div className="max-w-screen hidden fixed top-0 left-0 right-0 mx-auto sm:block z-50 bg-[#222927]">
+    <div className="max-w-7xl">
+      {/* <div className="max-w-screen"> */}
+      <div className="max-w-7xl hidden fixed top-0 left-0 right-0 mx-auto sm:block z-50 bg-[#f2efea] dark:bg-[#222927]">
+        {/* <div className="max-w-screen hidden fixed top-0 left-0 right-0 mx-auto sm:block z-50 bg-[#222927]"> */}
         <div className="px-4 sm:px-16 flex py-3 justify-between items-center border-b">
-          <Switch />
+          <SwitchTheme />
           <MainNav>
             <Link href="/" className="ml-4 flex lg:ml-0 lg:mr-6 px-5">
               <Image
-                src={logo}
+                src={theme === "dark" ? logoDark : logoLight}
                 alt="Logo"
                 priority
                 style={{
@@ -79,19 +83,12 @@ export default function Navbar(): JSX.Element {
               />
             </Link>
           </MainNav>
-          <Switch />
+          <SwitchLanguage />
         </div>
       </div>
       <div
-        // className={`
-        //    max-w-7xl block fixed top-0 left-0 right-0 mx-auto sm:hidden z-50
-        //   ${
-        //     isScrolled
-        //       ? "transition-all duration-500 bg-[#f9f7f4] border-b border-[#f2eee9] rounded-b-2xl"
-        //       : "transition-all duration-500"
-        //   }`}
         className={`
-           max-w-screen block fixed top-0 left-0 right-0 mx-auto sm:hidden z-50
+           max-w-7xl block fixed top-0 left-0 right-0 mx-auto sm:hidden z-50
           ${
             isScrolled
               ? "transition-all duration-500 bg-[#f9f7f4] border-b border-[#f2eee9] rounded-b-2xl"
@@ -102,7 +99,7 @@ export default function Navbar(): JSX.Element {
           <div>
             <Link href="/">
               <Image
-                src={logo}
+                src={theme === "dark" ? logoDark : logoLight}
                 alt="Logo"
                 priority
                 style={{

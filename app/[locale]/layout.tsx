@@ -2,10 +2,9 @@ import "./globals.css";
 
 import Footer from "../components/Footer";
 import { Jura } from "next/font/google";
-import type { Metadata } from "next";
 import Navbar from "../components/Navbar";
 import { Provider } from "./provider";
-import { Switch } from "./switch";
+import { ThemeProvider } from "../utils/themeProvider";
 
 const jura = Jura({
   subsets: ["latin", "cyrillic"],
@@ -116,11 +115,13 @@ export default function RootLayout({
   return (
     <html lang={locale}>
       <body className={jura.className}>
-        <Provider locale={locale}>
-          <Navbar />
-          {children}
-          <Footer />
-        </Provider>
+        <ThemeProvider>
+          <Provider locale={locale}>
+            <Navbar />
+            {children}
+            <Footer />
+          </Provider>
+        </ThemeProvider>
       </body>
     </html>
   );

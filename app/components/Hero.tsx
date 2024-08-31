@@ -15,7 +15,8 @@ const SixHandsFont = SixHands({ src: "../../public/SixHands.otf" });
 export function Hero() {
   return (
     <div
-    // className="h-screen"
+      id="home"
+      // className="h-screen"
     >
       <div className="max-w-7xl mx-auto mt-20 pt-20 px-16 grid grid-cols-1 lg:grid-cols-2">
         <div className="">
@@ -23,7 +24,7 @@ export function Hero() {
             Ритми, коктейли и незабравими нощи в Q
           </h1>
           <h2
-            className={`text-6xl text-[#FFC956] mt-8 ${SixHandsFont.className}`}
+            className={`text-6xl dark:text-[#FFC956] text-[#B96001] mt-8 ${SixHandsFont.className}`}
           >
             Където всяка вечер е шедьовър!
           </h2>
@@ -32,7 +33,7 @@ export function Hero() {
             изкуство. Очаквайте нещо повече от вечер - очаквайте изживяване.
           </p>
           <button
-            className={`py-[18px] px-10 bg-gradient-to-r from-[#FFE259]  to-[#FFA751] text-xl font-semibold text-[#222927] rounded-full mt-[66px] ${FesterFont.className}`}
+            className={`py-[18px] px-10 dark:bg-gradient-to-r dark:from-[#FFE259] dark:to-[#FFA751] bg-[#343434] text-xl font-semibold dark:text-[#222927] text-white rounded-full mt-[66px] ${FesterFont.className}`}
           >
             Запази място за следващото парти
           </button>

@@ -1,15 +1,25 @@
+"use client";
+
 import Image from "next/image";
 import { getI18n } from "@/locales/server";
-import logo from "@/public/logo-light.svg";
+import logoDark from "@/public/logo-dark.svg";
+import logoLight from "@/public/logo-light.svg";
+import { useEffect } from "react";
+import { useI18n } from "@/locales/client";
+import { useTheme } from "../utils/themeProvider";
 
-export default async function Footer(): Promise<JSX.Element> {
-  const t = await getI18n();
+export default function Footer(): JSX.Element {
+  // const t = await getI18n();
+  const t = useI18n();
+
+  const { theme } = useTheme();
+
   return (
-    // <div className="max-w-7xl mx-auto flex items-end mb-12 px-16">
-    <div className="max-w-screen mx-auto flex items-end mb-12 px-16">
+    <div className="max-w-7xl mx-auto flex items-end mb-12 px-16">
+      {/* <div className="max-w-screen mx-auto flex items-end mb-12 px-16"> */}
       <div>
         <Image
-          src={logo}
+          src={theme === "dark" ? logoDark : logoLight}
           alt="Logo"
           priority
           style={{

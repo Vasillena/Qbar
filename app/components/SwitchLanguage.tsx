@@ -4,10 +4,12 @@ import { useChangeLocale, useCurrentLocale } from "../../locales/client";
 
 import Image from "next/image";
 import icon from "@/public/language.svg";
+import { useTheme } from "../utils/themeProvider";
 
-export function Switch() {
+export function SwitchLanguage() {
   const changeLocale = useChangeLocale();
   const locale = useCurrentLocale();
+  const { theme } = useTheme();
 
   return (
     <>
@@ -16,7 +18,9 @@ export function Switch() {
           <Image
             src={icon}
             alt="EN"
-            style={{ filter: "invert(1) brightness(2)" }}
+            style={{
+              filter: theme === "dark" ? "invert(1) brightness(2)" : undefined,
+            }}
           />
         </button>
       )}
@@ -25,7 +29,9 @@ export function Switch() {
           <Image
             src={icon}
             alt="BG"
-            style={{ filter: "invert(1) brightness(2)" }}
+            style={{
+              filter: theme === "dark" ? "invert(1) brightness(2)" : undefined,
+            }}
           />
         </button>
       )}

@@ -24,7 +24,7 @@ export default function EventCard({ image, date, day, name }: EventCardProps) {
           style={{ width: "260px", height: "auto" }}
         />
       </div>
-      <div className="w-56 h-56 border border-[#FFC956] -mt-1 rounded-b-3xl text-3xl -z-10 flex flex-col justify-center items-center">
+      <div className="w-56 h-56 border dark:border-[#FFC956] border-[#B96001] -mt-1 rounded-b-3xl text-3xl -z-10 flex flex-col justify-center items-center">
         <p className={`${FesterFont.className}`}>{date}</p>
         <p className="text-2xl">{day}</p>
         <p className={`${TrailmadeFont.className} text-5xl pt-4`}>{name}</p>

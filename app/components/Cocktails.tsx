@@ -8,8 +8,8 @@ const FesterFont = Fester({ src: "../../public/Fester-bold.otf" });
 
 export default function Cocktails() {
   return (
-    // <div className="flex gap-12">
-    <div className="max-w-7xl mx-auto flex gap-12 px-16">
+    <div className="flex gap-12">
+      {/* <div className="max-w-7xl mx-auto flex gap-12 px-16"> */}
       <div>
         <h2 className={`${FesterFont.className} text-6xl`}>Нашите Коктейли</h2>
         <p className="text-xl pt-8">
@@ -42,11 +42,13 @@ export default function Cocktails() {
                 }}
               />
             </div>
-            <div className="w-48 h-52 flex flex-col justify-center items-center bg-[#394940] rounded-3xl -mt-14 -z-10 text-2xl shadow-2xl">
-              <p className="text-[#FFE259] pt-12 pb-2 border-b-2 border-[#222927]">
+            <div className="w-48 h-52 flex flex-col justify-center items-center dark:bg-[#394940] bg-[#B96001] rounded-3xl -mt-14 -z-10 text-2xl shadow-2xl">
+              <p className="dark:text-[#FFE259] text-white pt-12 pb-2 border-b-2 border-[#222927]">
                 Negroni
               </p>
-              <p className="pt-1 font-bold text-[#FBB428]">13,50 лв.</p>
+              <p className="pt-1 font-bold dark:text-[#FBB428] text-white">
+                13,50 лв.
+              </p>
             </div>
           </div>
           <div className="flex flex-col items-center">
@@ -61,11 +63,13 @@ export default function Cocktails() {
                 }}
               />
             </div>
-            <div className="w-48 h-52 flex flex-col justify-center items-center bg-[#394940] rounded-3xl -mt-14 -z-10 text-2xl shadow-2xl">
-              <p className="text-[#FFE259] pt-12 pb-2 border-b-2 border-[#222927]">
+            <div className="w-48 h-52 flex flex-col justify-center items-center dark:bg-[#394940] bg-[#B96001] rounded-3xl -mt-14 -z-10 text-2xl shadow-2xl">
+              <p className="dark:text-[#FFE259] text-white pt-12 pb-2 border-b-2 border-[#222927]">
                 Mojito
               </p>
-              <p className="pt-1 font-bold text-[#FBB428]">13,50 лв.</p>
+              <p className="pt-1 font-bold dark:text-[#FBB428] text-white">
+                13,50 лв.
+              </p>
             </div>
           </div>
           <div className="flex flex-col items-center">
@@ -80,16 +84,18 @@ export default function Cocktails() {
                 }}
               />
             </div>
-            <div className="w-48 h-52 flex flex-col justify-center items-center bg-[#394940] rounded-3xl -mt-14 -z-10 text-2xl shadow-2xl">
-              <p className="text-[#FFE259] pt-12 pb-2 border-b-2 border-[#222927]">
+            <div className="w-48 h-52 flex flex-col justify-center items-center dark:bg-[#394940] bg-[#B96001] rounded-3xl -mt-14 -z-10 text-2xl shadow-2xl">
+              <p className="dark:text-[#FFE259] text-white pt-12 pb-2 border-b-2 border-[#222927]">
                 Old Fashioned
               </p>
-              <p className="pt-1 font-bold text-[#FBB428]">13,50 лв.</p>
+              <p className="pt-1 font-bold dark:text-[#FBB428] text-white">
+                13,50 лв.
+              </p>
             </div>
           </div>
         </div>
         <button
-          className={`py-[18px] px-44 bg-gradient-to-r from-[#FFE259]  to-[#FFA751] text-xl font-semibold text-[#222927] rounded-full mt-[66px] ${FesterFont.className}`}
+          className={`py-[18px] px-44 bg-gradient-to-r dark:from-[#FFE259] dark:to-[#FFA751] bg-[#343434] text-xl font-semibold dark:text-[#222927] text-white rounded-full mt-[66px] ${FesterFont.className}`}
         >
           Открийте още любими вкусове
         </button>

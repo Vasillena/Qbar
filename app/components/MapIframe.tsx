@@ -9,9 +9,7 @@ export default function MapIframe() {
 
     const iframe = document.createElement("iframe");
     iframe.src = "https://snazzymaps.com/embed/636408";
-    // iframe.width = "700px";
-    iframe.width = "900px";
-
+    iframe.width = "700px";
     iframe.height = "650px";
     iframe.style.border = "none";
     iframe.loading = "lazy";
@@ -23,5 +21,5 @@ export default function MapIframe() {
     }
   }, []);
 
-  return <div className="w-900px h-[650px]" id="contact" />;
+  return <div className="w-[700px] h-[650px]" id="contact" />;
 }

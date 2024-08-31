@@ -36,7 +36,7 @@ const events = [
 
 export default function Events() {
   return (
-    <div className="max-w-7xl mx-auto py-20 px-16">
+    <div id="events" className="max-w-7xl mx-auto py-20 px-16">
       <div>
         <h2 className={`${FesterFont.className} text-6xl`}>
           Предстоящи Събития
