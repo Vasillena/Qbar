@@ -1,48 +1,49 @@
+"use client";
+
 import Fester from "next/font/local";
 import Image from "next/image";
-import about from "@/public/about.png";
-import decor from "@/public/decor-1.png";
+import about1 from "@/public/about-dark.png";
+import about2 from "@/public/about-light1.png";
+import decor1 from "@/public/decor-1-dark.png";
+import decor2 from "@/public/decor-1-light.png";
+import { useTheme } from "../utils/themeProvider";
 
 const FesterFont = Fester({ src: "../../public/Fester-bold.otf" });
 
 export default function About() {
+  const { theme } = useTheme();
   return (
-    <div id="about" className="max-w-7xl mx-auto relative">
-      {/* <div className="max-w-screen mx-auto relative"> */}
-      <div>
-        <Image
-          src={decor}
-          alt="Decor"
-          style={{ width: "1280px", height: "auto" }}
-        />
+    <div id="about" className="max-w-[1440px] mx-auto relative px-1 sm:px-16">
+      <div className=" absolute top-0 right-0 px-2 sm:px-16">
+        <Image src={theme === "dark" ? decor1 : decor2} alt="Decor" />
       </div>
-      <div className="-mt-9 relative -z-10">
+      <div className="relative -z-10">
         <Image
-          src={about}
+          src={theme === "dark" ? about1 : about2}
           alt="Lamps"
-          style={{ width: "1280px", height: "auto" }}
-          //   style={{ width: "100%", height: "auto" }}
-          className="relative"
+          style={{ width: "1440px", height: "auto" }}
+          className="hidden min-[900px]:block"
         />
-        <div className="absolute top-0 right-0 w-[670px] h-full bg-[#222927] bg-opacity-80 backdrop-blur-sm" />
-        {/* <div className="absolute top-0 right-0 w- h-full bg-[#222927] bg-opacity-80 backdrop-blur-sm" /> */}
-        <div className="absolute top-0 right-0 w-1/2 h-full flex flex-col  justify-center p-8">
-          {/* <div className="absolute top-0 right-0 w-[600px] h-full flex flex-col  justify-center p-8 mr-60"> */}
-          <h2 className={`${FesterFont.className} text-6xl`}>За нас</h2>
-          <p className="text-xl pt-8">
+        <div className="min-[900px]:absolute top-0 right-0 xl:w-[53%] h-full flex flex-col justify-center py-8 px-1 sm:px-8 md:px-10 lg:px-32 xl:px-10 dark:bg-[#222927]  dark:bg-opacity-80 bg:backdrop-blur-sm text-center xl:text-left">
+          <h2
+            className={`${FesterFont.className} text-3xl sm:text-5xl xl:text-6xl`}
+          >
+            За нас
+          </h2>
+          <p className="sm:text-lg xl:text-xl pt-8 md:leading-6">
             Q е не просто коктейл бар, а оазис на изкуството и вкусовете.
             Създадохме това уникално място, за да предложим на нашите гости
             изживяване, което комбинира най-доброто от света на коктейлите и
             изкуството.
           </p>
-          <p className="text-xl pt-4">
+          <p className="sm:text-lg xl:text-xl pt-4 md:leading-6">
             Нашият екип от талантливи бармани се вдъхновява от креативността и
             страстта, за да създаде коктейли, които не само утоляват жаждата, но
             и разказват истории. Внимателно подбраните съставки и иновативните
             техники превръщат всяка напитка в истинско произведение на
             изкуството.
           </p>
-          <p className="text-xl pt-4">
+          <p className="sm:text-lg xl:text-xl pt-4 md:leading-6">
             Но в Q не само коктейлите са впечатляващи - нашето пространство е
             проектирано да вдъхновява. Присъединете се към нас и открийте
             магията на Q - мястото, където изкуството и удоволствието се срещат.
@@ -50,13 +51,13 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className="-mt-9">
+      <div className=" absolute bottom-0 right-0 px-2 sm:px-16">
         <Image
-          src={decor}
+          src={theme === "dark" ? decor1 : decor2}
           alt="Decor"
           style={{
-            width: "1280px",
-            height: "auto",
+            // width: "1440px",
+            // height: "auto",
             transform: "scaleY(-1)",
           }}
         />

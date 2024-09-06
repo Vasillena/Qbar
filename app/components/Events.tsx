@@ -10,39 +10,46 @@ const FesterFont = Fester({ src: "../../public/Fester-bold.otf" });
 const events = [
   {
     image: event1,
-    date: "17 May - 21:00",
+    date: "17 May",
     day: "friday",
+    hour: "21:00",
     name: "Milen",
   },
   {
     image: event2,
-    date: "17 May - 21:00",
-    day: "friday",
-    name: "Milen",
+    date: "17 May",
+    day: "saturday",
+    hour: "21:00",
+    name: "Nason",
   },
   {
     image: event3,
-    date: "17 May - 21:00",
-    day: "friday",
-    name: "Milen",
+    date: "17 May",
+    day: "sunday",
+    hour: "21:00",
+    name: "Jaffar",
   },
   {
     image: event4,
-    date: "17 May - 21:00",
-    day: "friday",
-    name: "Milen",
+    date: "17 May",
+    day: "monday",
+    hour: "21:00",
+    name: "Dimitar Petrov",
   },
 ];
 
 export default function Events() {
   return (
-    <div id="events" className="max-w-7xl mx-auto py-20 px-16">
+    <div id="events" className="max-w-[1440px] mx-auto py-20 px-1 sm:px-16">
       <div>
-        <h2 className={`${FesterFont.className} text-6xl`}>
+        <h2
+          className={`${FesterFont.className} text-3xl sm:text-5xl xl:text-6xl text-center px-4`}
+        >
           Предстоящи Събития
         </h2>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-4 pt-12">
+      {/* <div className="flex  justify-center items-center gap-10 pt-12"> */}
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 pt-12">
         <EventCard {...events[0]} />
         <EventCard {...events[1]} />
         <EventCard {...events[2]} />

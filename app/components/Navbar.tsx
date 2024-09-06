@@ -64,9 +64,9 @@ export default function Navbar(): JSX.Element {
   }, [pathname]);
 
   return (
-    <div className="max-w-7xl">
+    <div className="max-w-[1440px]">
       {/* <div className="max-w-screen"> */}
-      <div className="max-w-7xl hidden fixed top-0 left-0 right-0 mx-auto sm:block z-50 bg-[#f2efea] dark:bg-[#222927]">
+      <div className="max-w-[1440px] hidden fixed top-0 left-0 right-0 mx-auto sm:block z-50 bg-[#f2efea] dark:bg-[#222927]">
         {/* <div className="max-w-screen hidden fixed top-0 left-0 right-0 mx-auto sm:block z-50 bg-[#222927]"> */}
         <div className="px-4 sm:px-16 flex py-3 justify-between items-center border-b">
           <SwitchTheme />
@@ -88,7 +88,7 @@ export default function Navbar(): JSX.Element {
       </div>
       <div
         className={`
-           max-w-7xl block fixed top-0 left-0 right-0 mx-auto sm:hidden z-50
+           max-w-[1440px] block fixed top-0 left-0 right-0 mx-auto sm:hidden z-50
           ${
             isScrolled
               ? "transition-all duration-500 bg-[#f9f7f4] border-b border-[#f2eee9] rounded-b-2xl"

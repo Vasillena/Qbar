@@ -2,10 +2,12 @@
 
 import Image from "next/image";
 import Ticker from "framer-motion-ticker";
-import decor from "@/public/decor-2.png";
+import decor1 from "@/public/decor-2-dark.png";
+import decor2 from "@/public/decor-2-light.png";
 import image2 from "@/public/2.png";
 import image3 from "@/public/3.png";
 import image4 from "@/public/4.png";
+import { useTheme } from "../utils/themeProvider";
 
 // import image1 from "@/public/1.png";
 
@@ -28,21 +30,22 @@ const slides = [
 ];
 
 export default function Slider(): JSX.Element {
+  const { theme } = useTheme();
   return (
-    <div id="gallery" className="max-w-7xl mx-auto">
+    <div id="gallery" className="max-w-[1440px] mx-auto px-16">
       {/* <div className="max-w-screen mx-auto"> */}
       <div>
         <Image
-          src={decor}
+          src={theme === "dark" ? decor1 : decor2}
           alt="Decor"
-          style={{ width: "1280px", height: "auto" }}
+          style={{ width: "1440px", height: "auto" }}
           // style={{ width: "100%", height: "auto" }}
         />
       </div>
-      <div className="relative h-full overflow-hidden py-2 w-full bg-[#394940]">
+      <div className="relative h-full overflow-hidden py-2 w-full dark:bg-[#394940]">
         <div className="absolute inset-0 z-20">
-          <div className="absolute left-[-10px] top-0 w-1/4 h-full bg-gradient-to-r from-[#222927] to-transparent blur-sm"></div>
-          <div className="absolute right-[-10px] top-0 w-1/4 h-full bg-gradient-to-l from-[#222927] to-transparent blur-sm"></div>
+          <div className="absolute left-[-10px] top-0 w-1/4 h-full bg-gradient-to-r dark:from-[#222927] from-[#f2efea] to-transparent blur-sm"></div>
+          <div className="absolute right-[-10px] top-0 w-1/4 h-full bg-gradient-to-l dark:from-[#222927] from-[#f2efea]  to-transparent blur-sm"></div>
         </div>
 
         <Ticker duration={100}>
@@ -60,9 +63,9 @@ export default function Slider(): JSX.Element {
       </div>
       <div>
         <Image
-          src={decor}
+          src={theme === "dark" ? decor1 : decor2}
           alt="Decor"
-          style={{ width: "1280px", height: "auto", transform: "scaleX(-1)" }}
+          style={{ width: "1440px", height: "auto", transform: "scaleX(-1)" }}
           // style={{ width: "100%", height: "auto", transform: "scaleX(-1)" }}
         />
       </div>

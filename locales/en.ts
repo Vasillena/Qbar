@@ -58,7 +58,7 @@ export default {
     "title-2": "COCKTAILS FIRST",
     text: "...because no great story ever started with a glass of water.",
     menu: "VIEW MENU",
-    "menu-2": "OUR MENU",
+    "menu-2": "Menu",
     "hotDrinks-1": "HOT",
     "hotDrinks-2": "DRINKS",
     "softDrinks-1": "SOFT",

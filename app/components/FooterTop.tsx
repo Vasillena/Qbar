@@ -1,18 +1,26 @@
+"use client";
+
 import Fester from "next/font/local";
 import Image from "next/image";
 import MapIframe from "./MapIframe";
-import { getI18n } from "@/locales/server";
 import icon1 from "@/public/footer-icon-1-dark.svg";
 import icon2 from "@/public/footer-icon-2-dark.svg";
 import icon3 from "@/public/footer-icon-3-dark.svg";
 import icon4 from "@/public/footer-icon-4-dark.svg";
+import icon5 from "@/public/footer-icon-1-light.svg";
+import icon6 from "@/public/footer-icon-2-light.svg";
+import icon7 from "@/public/footer-icon-3-light.svg";
+import icon8 from "@/public/footer-icon-4-light.svg";
+import { useI18n } from "@/locales/client";
+import { useTheme } from "../utils/themeProvider";
 
 const FesterFont = Fester({ src: "../../public/Fester-bold.otf" });
 
-export default async function FooterTop(): Promise<JSX.Element> {
-  const t = await getI18n();
+export default function FooterTop(): JSX.Element {
+  const t = useI18n();
+  const { theme } = useTheme();
   return (
-    <div className="max-w-7xl mx-auto grid grid-cols-3 my-32 px-16 gap-10">
+    <div className="max-w-[1440px] mx-auto grid grid-cols-3 my-32 px-16 gap-10">
       {/* <div className="max-w-screen mx-auto grid grid-cols-3 my-32 pl-72 gap-10"> */}
       <div className="col-span-1">
         <div>
@@ -20,7 +28,7 @@ export default async function FooterTop(): Promise<JSX.Element> {
         </div>
         <div className="w-96 h-40 px-8 flex justify-start items-center gap-12">
           <div>
-            <Image src={icon1} alt="Icon" />
+            <Image src={theme === "dark" ? icon1 : icon5} alt="Icon" />
           </div>
           <div>
             <p className="text-xl font-bold pb-3">Контакти</p>
@@ -30,7 +38,7 @@ export default async function FooterTop(): Promise<JSX.Element> {
         </div>
         <div className="w-96 h-40 pl-8 border-t dark:border-[#FFC956] border-[#B96001] flex justify-start items-center gap-12">
           <div>
-            <Image src={icon2} alt="Icon" />
+            <Image src={theme === "dark" ? icon2 : icon6} alt="Icon" />
           </div>
           <div>
             <p className="text-xl font-bold pb-3">Адрес</p>
@@ -40,7 +48,7 @@ export default async function FooterTop(): Promise<JSX.Element> {
         </div>
         <div className="w-96 h-40 pl-8 border-t dark:border-[#FFC956] border-[#B96001] flex justify-start items-center gap-12">
           <div>
-            <Image src={icon3} alt="Icon" />
+            <Image src={theme === "dark" ? icon3 : icon7} alt="Icon" />
           </div>
           <div>
             <p className="text-xl font-bold pb-3">Работно време</p>
@@ -55,7 +63,7 @@ export default async function FooterTop(): Promise<JSX.Element> {
         </div>
         <div className="w-96 h-40 pl-8 border-t dark:border-[#FFC956] border-[#B96001] flex justify-start items-center gap-12">
           <div>
-            <Image src={icon4} alt="Icon" />
+            <Image src={theme === "dark" ? icon4 : icon8} alt="Icon" />
           </div>
           <div>
             <p className="text-xl font-bold pb-3">Последвайте ни</p>

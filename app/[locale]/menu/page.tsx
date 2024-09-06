@@ -1,4 +1,7 @@
+import Image from "next/image";
 import Menu from "../../components/Menu";
+import decorDark from "@/public/decor-3-dark.png";
+import decorLight from "@/public/decor-3-light.png";
 
 export async function generateMetadata({
   params: { locale },
@@ -99,6 +102,21 @@ export async function generateMetadata({
 export default async function MenuPage() {
   return (
     <div className="max-w-[1440px] mx-auto min-h-screen">
+      <div
+        className={`hidden sm:block fixed left-0 w-12 lg:w-16 xl:w-20 h-4/6 -z-10 bg-contain bg-repeat-y bg-center
+     dark:bg-[url('/decor-3-dark.png')]
+    bg-[url('/decor-3-light.png')]
+  `}
+      />
+      <div
+        className={`hidden sm:block fixed right-0 w-12 lg:w-16 xl:w-20 h-4/6 -z-10 bg-contain bg-repeat-y bg-center
+     dark:bg-[url('/decor-3-dark.png')]
+    bg-[url('/decor-3-light.png')] 
+  `}
+        style={{
+          transform: "scaleX(-1)",
+        }}
+      />
       <Menu />
     </div>
   );
