@@ -20,18 +20,22 @@ export default function FooterTop(): JSX.Element {
   const t = useI18n();
   const { theme } = useTheme();
   return (
-    <div className="max-w-[1440px] mx-auto grid grid-cols-3 my-32 px-16 gap-10">
+    <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 my-32 sm:px-16 gap-10 ">
       {/* <div className="max-w-screen mx-auto grid grid-cols-3 my-32 pl-72 gap-10"> */}
-      <div className="col-span-1">
+      <div className="xl:col-span-1 justify-self-center lg:justify-self-start">
         <div>
-          <h2 className={`${FesterFont.className} text-6xl`}>Контакти</h2>
+          <h2
+            className={`${FesterFont.className} text-3xl sm:text-5xl xl:text-6xl`}
+          >
+            Контакти
+          </h2>
         </div>
         <div className="w-96 h-40 px-8 flex justify-start items-center gap-12">
           <div>
             <Image src={theme === "dark" ? icon1 : icon5} alt="Icon" />
           </div>
           <div>
-            <p className="text-xl font-bold pb-3">Контакти</p>
+            <p className="sm:text-lg xl:text-xl font-bold pb-3">Контакти</p>
             <p>+359 88 5888097</p>
             <p>qbarplovdiv@gmail.com</p>
           </div>
@@ -41,7 +45,7 @@ export default function FooterTop(): JSX.Element {
             <Image src={theme === "dark" ? icon2 : icon6} alt="Icon" />
           </div>
           <div>
-            <p className="text-xl font-bold pb-3">Адрес</p>
+            <p className="sm:text-lg xl:text-xl font-bold pb-3">Адрес</p>
             <p>Улица Братя Пулеви 1, </p>
             <p>Plovdiv, Bulgaria 4000</p>
           </div>
@@ -51,7 +55,9 @@ export default function FooterTop(): JSX.Element {
             <Image src={theme === "dark" ? icon3 : icon7} alt="Icon" />
           </div>
           <div>
-            <p className="text-xl font-bold pb-3">Работно време</p>
+            <p className="sm:text-lg xl:text-xl font-bold pb-3">
+              Работно време
+            </p>
             <p>
               Неделя - Четвъртък <span className="ml-5"></span>9:00 - 1:00
             </p>
@@ -66,13 +72,15 @@ export default function FooterTop(): JSX.Element {
             <Image src={theme === "dark" ? icon4 : icon8} alt="Icon" />
           </div>
           <div>
-            <p className="text-xl font-bold pb-3">Последвайте ни</p>
+            <p className="sm:text-lg xl:text-xl font-bold pb-3">
+              Последвайте ни
+            </p>
             <p>Facebook&nbsp;&nbsp;| &nbsp;&nbsp;@Qbarplovdiv </p>
             <p>Instagram&nbsp;&nbsp; | &nbsp;&nbsp;@Qbarplovdiv </p>
           </div>
         </div>
       </div>
-      <div className="col-span-2 justify-self-end pt-4">
+      <div className="xl:col-span-2 justify-self-center lg:justify-self-end pt-4">
         <MapIframe />
       </div>
     </div>

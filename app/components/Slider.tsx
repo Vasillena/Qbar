@@ -32,7 +32,7 @@ const slides = [
 export default function Slider(): JSX.Element {
   const { theme } = useTheme();
   return (
-    <div id="gallery" className="max-w-[1440px] mx-auto px-16">
+    <div id="gallery" className="max-w-[1440px] mx-auto sm:px-16">
       {/* <div className="max-w-screen mx-auto"> */}
       <div>
         <Image

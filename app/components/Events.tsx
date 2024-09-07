@@ -40,7 +40,7 @@ const events = [
 
 export default function Events() {
   return (
-    <div id="events" className="max-w-[1440px] mx-auto py-20 px-1 sm:px-16">
+    <div id="events" className="max-w-[1440px] mx-auto py-20 px-2 sm:px-16">
       <div>
         <h2
           className={`${FesterFont.className} text-3xl sm:text-5xl xl:text-6xl text-center px-4`}

@@ -11,21 +11,24 @@ const cocktails = [
     image: cocktail1,
     name: "Negroni",
     price: "13,50 лв.",
-    width: "md:w-[177px] lg:w-[117px] xl:w-[177px]",
+    width:
+      "w-[147px] min-[390px]:w-[117px] md:w-[177px] lg:w-[117px] xl:w-[177px]",
     margin: "mr-5",
   },
   {
     image: cocktail2,
     name: "Mojito",
     price: "13,50 лв.",
-    width: "md:w-[147px] lg:w-[87px] xl:w-[147px]",
+    width:
+      "w-[117px] min-[390px]:w-[87px] md:w-[147px] lg:w-[87px] xl:w-[147px]",
     margin: "ml-[28px] lg:ml-[20px] xl:ml-[28px]",
   },
   {
     image: cocktail3,
     name: "Old Fashioned",
     price: "13,50 лв.",
-    width: "md:w-[188px] lg:w-[128px] xl:w-[188px]",
+    width:
+      "w-[158px] min-[390px]:w-[128px] md:w-[188px] lg:w-[128px] xl:w-[188px]",
     margin: "mr-2",
   },
 ];
@@ -57,7 +60,7 @@ export default function Cocktails() {
         </p>
       </div>
       <div className="xl:col-span-3 w-full flex flex-col items-center">
-        <div className="w-full flex items-end justify-between">
+        <div className="w-full flex items-end justify-center sm:justify-between flex-wrap sm:flex-nowrap gap-10 sm:gap-0">
           {cocktails.map((cocktail, index) => (
             <div key={index} className="flex flex-col items-center">
               <div>
@@ -71,7 +74,7 @@ export default function Cocktails() {
                   // }}
                 />
               </div>
-              <div className="w-[215px] lg:w-[136px] xl:w-[215px] h-56 lg:h-44 xl:h-56 flex flex-col justify-center items-center dark:bg-[#394940] bg-[#B96001] rounded-3xl -mt-14 -z-10 text-2xl lg:text-xl xl:text-2xl text-center shadow-2xl px-2">
+              <div className="w-[215px] min-[390px]:w-40 sm:w-[136px] md:w-[205px] lg:w-[136px] xl:w-[215px] h-56 md:h-52 lg:h-44 xl:h-56 flex flex-col justify-center items-center dark:bg-[#394940] bg-[#B96001] rounded-3xl -mt-14 -z-10 text-2xl lg:text-xl xl:text-2xl text-center shadow-2xl px-2">
                 <p className="dark:text-[#FFE259] text-white pt-12 pb-2 border-b-2 border-[#222927]">
                   {cocktail.name}
                 </p>
