@@ -6,11 +6,15 @@ import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import { useI18n } from "@/locales/client";
 
+interface MainNavProps {
+  children?: React.ReactNode;
+  closeMenu?: () => void;
+}
+
 export default function MainNav({
   children,
-}: {
-  children?: React.ReactNode;
-}): JSX.Element {
+  closeMenu,
+}: MainNavProps): JSX.Element {
   const pathname = usePathname();
   const router = useRouter();
   const t = useI18n();
@@ -57,10 +61,19 @@ export default function MainNav({
   }, [pathname]);
 
   return (
-    <nav className="mx-6 flex flex-col sm:flex-row items-center sm:space-x-4 lg:space-x-6 space-y-4 sm:space-y-0 ml-12 mt-6 sm:ml-6 sm:mt-0">
+    <nav className="mx-6 flex flex-col md:flex-row items-left md:items-center md:space-x-4 lg:space-x-6 space-y-4 md:space-y-0 md:ml-6 md:mt-0">
       {linksLeft.map((link) => {
         return (
           <Link
+            onClick={closeMenu && closeMenu}
+            // onClick={() => {
+            //   if (link.id) {
+            //     handleScroll(link.id, link.href);
+            //   } else {
+            //     router.push(link.href);
+            //     closeMenu && closeMenu();
+            //   }
+            // }}
             key={link.href}
             href={link.href}
             className="flex items-center font-bold hover:text-[##FFC956]"
@@ -73,6 +86,15 @@ export default function MainNav({
       {linksRight.map((link) => {
         return (
           <Link
+            onClick={closeMenu && closeMenu}
+            // onClick={() => {
+            //   if (link.id) {
+            //     handleScroll(link.id, link.href);
+            //   } else {
+            //     router.push(link.href);
+            //     closeMenu && closeMenu();
+            //   }
+            // }}
             key={link.href}
             href={link.href}
             className="flex items-center font-bold hover:text-[#FFC956]"

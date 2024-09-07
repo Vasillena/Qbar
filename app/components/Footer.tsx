@@ -34,7 +34,7 @@ export default function Footer(): JSX.Element {
           />
         </div>
         <div className="w-full flex flex-col">
-          <div className=" mb-6 self-end f lex gap-6">
+          <div className=" mb-6 self-end flex gap-6">
             <Image
               src={theme === "dark" ? socialsDark1 : socialsLight1}
               alt="Socials"
@@ -44,7 +44,7 @@ export default function Footer(): JSX.Element {
               alt="Socials"
             />
           </div>
-          <div className="border-t dark:border-[#FFC956] border-[#B96001] py-6 ml-20 flex justify-between font-light">
+          <div className="border-t dark:border-[#FFC956] border-[#B96001] py-6 ml-20 flex flex-col md:flex-row justify-between font-light text-center md:text-left">
             <p>Copyright © 2024 - All rights reserved</p>
             <p>Design by SA & Build by VY</p>
           </div>

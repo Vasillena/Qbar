@@ -15,11 +15,8 @@ const SixHandsFont = SixHands({ src: "../../public/SixHands.otf" });
 export function Hero() {
   return (
     <>
-      <div
-        id="home"
-        className="h-screen flex flex-col justify-center px-8 lg:px-16"
-      >
-        <div className="max-w-[1440px] mx-auto mt-4 sm:mt-10 md:mt-20 pt-20 grid grid-cols-1 lg:grid-cols-2">
+      <div id="home" className="h-screen flex flex-col justify-center">
+        <div className="max-w-[1440px] mx-auto mt-2  sm:mt-10 md:mt-20 pt-6 sm:pt-20 grid grid-cols-1 lg:grid-cols-2 px-8 lg:px-16">
           <div className="text-center lg:text-left order-2 sm:order-1">
             <h1
               className={`text-3xl sm:text-5xl xl:text-6xl mt-12 sm:mt-0  ${FesterFont.className}`}
@@ -54,11 +51,11 @@ export function Hero() {
             {/* <Video /> */}
           </div>
         </div>
-        <div className="hidden md:block lg:hidden xl:block mt-8 xl:-mt-28 ">
+        <div className="max-w-[1440px] w-full mx-auto hidden md:block lg:hidden xl:block mt-8 xl:-mt-28 px-8 lg:px-16 mb-44">
           <CountdownTimer expiryTimestamp={eventDate} />
         </div>
       </div>
-      <div className="block md:hidden lg:block xl:hidden px-0 sm:px-16">
+      <div className="block md:hidden lg:block xl:hidden px-0 sm:px-16 mb-12">
         <CountdownTimer expiryTimestamp={eventDate} />
       </div>
     </>

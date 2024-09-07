@@ -64,7 +64,7 @@ export default function MenuCard({
           {categoryName}
         </p> */}
         {selectedCategory.map((item) => (
-          <div key={item.id} className="sm:px-12 flex flex-col">
+          <div key={item.id} className="mt-10 sm:px-12 flex flex-col">
             {item["semi-category"] && (
               <p
                 className={`text-center my-4 text-3xl md:text-4xl dark:text-[#FFC956] text-[#B96001] ${SixHandsFont.className}`}

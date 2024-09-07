@@ -9,6 +9,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <Slider />
       <Events />
       <About />
       <MenuHome />

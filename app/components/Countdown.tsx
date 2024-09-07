@@ -40,7 +40,7 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ expiryTimestamp }) => {
   ];
 
   return (
-    <div className="max-w-[1440px] mx-auto h-32 sm:h-40 md:h-48 lg:h-64 sm:rounded-3xl dark:bg-[#2D3935]/80 bg-[#F2EFEA]/80 backdrop-blur-sm px-4 sm:px-8 lg:px-16">
+    <div className="h-32 sm:h-40 md:h-48 lg:h-64 sm:rounded-3xl dark:bg-[#2D3935]/80 bg-[#F2EFEA]/80 backdrop-blur-sm px-4 sm:px-8 lg:px-16">
       <p className="py-3 lg:py-6 text-center sm:text-xl xl:text-2xl font-light">
         До следващото парти остават...
       </p>

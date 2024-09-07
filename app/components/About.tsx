@@ -3,7 +3,8 @@
 import Fester from "next/font/local";
 import Image from "next/image";
 import about1 from "@/public/about-dark.png";
-import about2 from "@/public/about-light1.png";
+import about2 from "@/public/about-light.png";
+import about3 from "@/public/about-light-2.png";
 import decor1 from "@/public/decor-1-dark.png";
 import decor2 from "@/public/decor-1-light.png";
 import { useTheme } from "../utils/themeProvider";
@@ -67,7 +68,7 @@ export default function About() {
 
       <div className="max-w-[1440px] w-full mt-20 mx-auto sm:px-16">
         <Image
-          src={theme === "dark" ? about1 : about2}
+          src={theme === "dark" ? about1 : about3}
           alt="Lamps"
           // style={{ width: "1440px", height: "auto" }}
           className="block lg:hidden"

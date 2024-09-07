@@ -16,71 +16,87 @@ import { useTheme } from "../utils/themeProvider";
 
 const FesterFont = Fester({ src: "../../public/Fester-bold.otf" });
 
+// Reusable component for the contact info items
+const ContactInfoItem = ({
+  iconDark,
+  iconLight,
+  title,
+  lines,
+  noBorder = false,
+}: {
+  iconDark: any;
+  iconLight: any;
+  title: string;
+  lines: string[];
+  noBorder?: boolean;
+}) => {
+  const { theme } = useTheme();
+  const icon = theme === "dark" ? iconDark : iconLight;
+
+  return (
+    <div
+      className={`w-80 sm:w-96 h-40 mx-auto pl-4 sm:pl-8 flex justify-start items-center gap-6 sm:gap-12 ${
+        noBorder ? "" : "border-t dark:border-[#FFC956] border-[#B96001]"
+      }`}
+    >
+      <div>
+        <Image src={icon} alt="Icon" />
+      </div>
+      <div>
+        <p className="sm:text-lg xl:text-xl font-bold pb-3">{title}</p>
+        {lines.map((line, index) => (
+          <p key={index}>{line}</p>
+        ))}
+      </div>
+    </div>
+  );
+};
+
 export default function FooterTop(): JSX.Element {
   const t = useI18n();
-  const { theme } = useTheme();
+
   return (
-    <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 my-32 sm:px-16 gap-10 ">
-      {/* <div className="max-w-screen mx-auto grid grid-cols-3 my-32 pl-72 gap-10"> */}
-      <div className="xl:col-span-1 justify-self-center lg:justify-self-start">
+    <div className="max-w-[1440px] mx-auto grid grid-cols-1 xl:grid-cols-3 my-32 sm:px-16 gap-10">
+      <div className="xl:col-span-1 xl:justify-self-start flex flex-col lg:flex-row xl:flex-col items-center lg:items-end justify-between">
         <div>
           <h2
-            className={`${FesterFont.className} text-3xl sm:text-5xl xl:text-6xl`}
+            className={`${FesterFont.className} text-3xl sm:text-5xl xl:text-6xl text-center lg:text-left`}
           >
             Контакти
           </h2>
+          <ContactInfoItem
+            iconDark={icon1}
+            iconLight={icon5}
+            title="Контакти"
+            lines={["+359 88 5888097", "qbarplovdiv@gmail.com"]}
+            noBorder // Removes border from the first item
+          />
+          <ContactInfoItem
+            iconDark={icon2}
+            iconLight={icon6}
+            title="Адрес"
+            lines={["Улица Братя Пулеви 1,", "Plovdiv, Bulgaria 4000"]}
+          />
         </div>
-        <div className="w-96 h-40 px-8 flex justify-start items-center gap-12">
-          <div>
-            <Image src={theme === "dark" ? icon1 : icon5} alt="Icon" />
-          </div>
-          <div>
-            <p className="sm:text-lg xl:text-xl font-bold pb-3">Контакти</p>
-            <p>+359 88 5888097</p>
-            <p>qbarplovdiv@gmail.com</p>
-          </div>
-        </div>
-        <div className="w-96 h-40 pl-8 border-t dark:border-[#FFC956] border-[#B96001] flex justify-start items-center gap-12">
-          <div>
-            <Image src={theme === "dark" ? icon2 : icon6} alt="Icon" />
-          </div>
-          <div>
-            <p className="sm:text-lg xl:text-xl font-bold pb-3">Адрес</p>
-            <p>Улица Братя Пулеви 1, </p>
-            <p>Plovdiv, Bulgaria 4000</p>
-          </div>
-        </div>
-        <div className="w-96 h-40 pl-8 border-t dark:border-[#FFC956] border-[#B96001] flex justify-start items-center gap-12">
-          <div>
-            <Image src={theme === "dark" ? icon3 : icon7} alt="Icon" />
-          </div>
-          <div>
-            <p className="sm:text-lg xl:text-xl font-bold pb-3">
-              Работно време
-            </p>
-            <p>
-              Неделя - Четвъртък <span className="ml-5"></span>9:00 - 1:00
-            </p>
-            <p>
-              Петък - Събота <span className="ml-14" />
-              9:00 - 3:00
-            </p>
-          </div>
-        </div>
-        <div className="w-96 h-40 pl-8 border-t dark:border-[#FFC956] border-[#B96001] flex justify-start items-center gap-12">
-          <div>
-            <Image src={theme === "dark" ? icon4 : icon8} alt="Icon" />
-          </div>
-          <div>
-            <p className="sm:text-lg xl:text-xl font-bold pb-3">
-              Последвайте ни
-            </p>
-            <p>Facebook&nbsp;&nbsp;| &nbsp;&nbsp;@Qbarplovdiv </p>
-            <p>Instagram&nbsp;&nbsp; | &nbsp;&nbsp;@Qbarplovdiv </p>
-          </div>
+        <div>
+          <ContactInfoItem
+            iconDark={icon3}
+            iconLight={icon7}
+            title="Работно време"
+            lines={[
+              "Неделя - Четвъртък 9:00 - 1:00",
+              "Петък - Събота 9:00 - 3:00",
+            ]}
+          />
+          <ContactInfoItem
+            iconDark={icon4}
+            iconLight={icon8}
+            title="Последвайте ни"
+            lines={["Facebook | @Qbarplovdiv", "Instagram | @Qbarplovdiv"]}
+          />
         </div>
       </div>
-      <div className="xl:col-span-2 justify-self-center lg:justify-self-end pt-4">
+      <div className="xl:col-span-2 w-full xl:w-[700px] h-[400px] xl:h-[650px] justify-self-center xl:justify-self-end pt-4">
         <MapIframe />
       </div>
     </div>
