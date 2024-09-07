@@ -29,11 +29,11 @@ export function Hero() {
               Ритми, коктейли и незабравими нощи в Q
             </h1>
             <h2
-              className={`text-3xl sm:text-5xl xl:text-6xl  dark:text-[#FFC956] text-[#B96001] mt-8 ${SixHandsFont.className}`}
+              className={`text-3xl sm:text-5xl xl:text-6xl  dark:text-[#FFC956] text-[#B96001] mt-4 ${SixHandsFont.className}`}
             >
               Където всяка вечер е шедьовър!
             </h2>
-            <p className="sm:text-xl xl:text-2xl mt-12 px-1 sm:px-20 md:px-28 lg:pl-0 lg:pr-12">
+            <p className="sm:text-xl xl:text-2xl mt-4 px-1 sm:px-20 md:px-28 lg:pl-0 lg:pr-12">
               Потопете се в свят, където електронния клубен ритъм среща
               коктейлното изкуство. Очаквайте нещо повече от вечер - очаквайте
               изживяване.
@@ -45,8 +45,8 @@ export function Hero() {
               Запази място за следващото парти
             </button> */}
             <button
-              className={`relative py-3 lg:py-[18px] px-10 dark:bg-gradient-to-r dark:from-[#FFE259] dark:to-[#FFA751] bg-[#343434] sm:text-lg xl:text-xl font-semibold dark:text-[#222927] text-white rounded-full mt-10 md:mt-[66px] before:content-[''] before:absolute before:inset-0 before:rounded-full dark:before:shadow-[inset_0px_4px_4px_#DABB7E] before:shadow-[inset_0px_4px_4px_#61574A] before:pointer-events-none transition-shadow duration-300 ease-in-out
-   hover:shadow-[0_0_20px_#B9600180] dark:hover:shadow-[0_0_20px_#FFD70080] ${FesterFont.className}`}
+              className={`relative py-3 lg:py-[18px] px-10 dark:bg-gradient-to-r dark:from-[#FFE259] dark:to-[#FFA751] bg-[#343434] sm:text-lg xl:text-xl font-semibold dark:text-[#222927] text-white rounded-full mt-4 md:mt-[66px] before:content-[''] before:absolute before:inset-0 before:rounded-full dark:before:shadow-[inset_0px_4px_4px_#DABB7E] before:shadow-[inset_0px_4px_4px_#61574A] before:pointer-events-none transition-shadow duration-300 ease-in-out
+   hover:shadow-[0_0_20px_#B96001] dark:hover:shadow-[0_0_20px_#FFD70080] ${FesterFont.className}`}
             >
               Запази място за следващото парти
             </button>
@@ -62,7 +62,7 @@ export function Hero() {
             {/* <Video /> */}
           </div>
         </div>
-        <div className="max-w-[1440px] w-full mx-auto hidden md:block lg:hidden xl:block mt-8 xl:-mt-28 px-8 lg:px-16">
+        <div className="max-w-[1440px] w-full mx-auto hidden md:block lg:hidden xl:block mt-8 xl:-mt-52 mb-10 px-8 lg:px-16">
           <CountdownTimer expiryTimestamp={eventDate} />
         </div>
       </div>
