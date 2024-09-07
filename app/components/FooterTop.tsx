@@ -54,6 +54,7 @@ const ContactInfoItem = ({
 
 export default function FooterTop(): JSX.Element {
   const t = useI18n();
+  const { theme } = useTheme();
 
   return (
     <div className="max-w-[1440px] mx-auto grid grid-cols-1 xl:grid-cols-3 my-20 sm:px-16 gap-10">
@@ -96,8 +97,17 @@ export default function FooterTop(): JSX.Element {
           />
         </div>
       </div>
-      <div className="xl:col-span-2 w-full xl:w-[700px] h-[400px] xl:h-[650px] justify-self-center xl:justify-self-end pt-4">
-        <MapIframe />
+      <div
+        key={theme}
+        className="xl:col-span-2 w-full xl:w-[700px] h-[400px] xl:h-[650px] justify-self-center xl:justify-self-end mt-4 border dark:border-[#FFC956] border-[#B96001]"
+      >
+        <MapIframe
+          source={
+            theme === "dark"
+              ? "https://snazzymaps.com/embed/636408"
+              : "https://snazzymaps.com/embed/638475"
+          }
+        />
       </div>
     </div>
   );

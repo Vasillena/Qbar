@@ -17,7 +17,7 @@ interface TimeCardProps {
 
 const TimeCard: React.FC<TimeCardProps> = ({ value, label }) => {
   return (
-    <div className="w-20 sm:w-28 md:w-36 lg:w-48 xl:w-56 min-[1440px]:w-64 h-14 sm:h-20 md:h-28 dark:bg-[#394940] bg-[#B96001] rounded-lg sm:rounded-[30px] flex flex-col justify-center items-center">
+    <div className="w-20 sm:w-28 md:w-40 lg:w-56 min-[1440px]:w-64 h-14 sm:h-20 md:h-28 dark:bg-[#394940] bg-[#B96001] rounded-lg sm:rounded-[30px] flex flex-col justify-center items-center">
       <p className={`text-3xl lg:text-5xl text-white ${FesterFont.className}`}>
         {value}
       </p>
@@ -40,7 +40,7 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ expiryTimestamp }) => {
   ];
 
   return (
-    <div className="h-32 sm:h-40 md:h-48 lg:h-56 sm:rounded-3xl dark:bg-[#222927]/80 bg-[#F2EFEA]/80 backdrop-blur-sm px-4 sm:px-8 lg:px-16">
+    <div className="h-32 sm:h-40 md:h-48 lg:h-56 sm:rounded-3xl dark:bg-[#222927]/80 bg-[#F2EFEA]/80 backdrop-blur-sm px-1">
       <p className="py-3 lg:py-6 text-center sm:text-xl xl:text-2xl font-light">
         До следващото парти остават...
       </p>

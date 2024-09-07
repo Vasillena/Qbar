@@ -83,12 +83,13 @@ export default function Navbar(): JSX.Element {
           <MainNav>
             <Link href="/" className="ml-4 flex lg:ml-0 lg:mr-6 px-5">
               <Image
-                src={theme === "dark" ? logoDark : logoLight}
+                src={logoLight}
                 alt="Logo"
                 priority
+                className="w-10 h-auto"
                 style={{
-                  width: "39px",
-                  height: "auto",
+                  filter:
+                    theme === "dark" ? "invert(1) brightness(2)" : undefined,
                 }}
               />
             </Link>
@@ -116,19 +117,21 @@ export default function Navbar(): JSX.Element {
               <button onClick={() => setOpen(!open)}>
                 <Image
                   src={
-                    open
-                      ? theme === "dark"
-                        ? closeDark
-                        : closeLight
-                      : theme === "dark"
-                      ? menuDark
-                      : menuLight
+                    open ? closeLight : menuLight
+                    // open
+                    //   ? theme === "dark"
+                    //     ? closeDark
+                    //     : closeLight
+                    //   : theme === "dark"
+                    //   ? menuDark
+                    //   : menuLight
                   }
                   alt="Menu image"
                   style={{
                     width: "32px",
                     height: "auto",
-                    fill: "red",
+                    filter:
+                      theme === "dark" ? "invert(1) brightness(2)" : undefined,
                   }}
                 />
               </button>
@@ -137,16 +140,21 @@ export default function Navbar(): JSX.Element {
           <div className="w-20 mt-4 flex justify-center items-center">
             <Link href="/">
               <Image
-                src={theme === "dark" ? logoDark : logoLight}
+                src={logoLight}
                 alt="Logo"
                 priority
                 className="w-full h-auto"
+                style={{
+                  filter:
+                    theme === "dark" ? "invert(1) brightness(2)" : undefined,
+                }}
               />
             </Link>
           </div>
           <div className="w-full border-b border-[#222927] dark:border-white ml-4 flex justify-end item">
             <div className="w-12 h-12 pr-4 flex justify-center items-center">
               <SwitchTheme />
+              <SwitchLanguage />
             </div>
           </div>
         </div>

@@ -14,24 +14,37 @@ export function SwitchLanguage() {
   return (
     <>
       {locale !== "en" && (
-        <button type="button" onClick={() => changeLocale("en")}>
+        <button
+          type="button"
+          onClick={() => changeLocale("en")}
+          className="fixed bottom-0 right-8 w-10 py-2 rounded-t-xl drop-shadow-sm dark:bg-[#FFC956] bg-[#B96001]
+    md:static md:bottom-auto md:right-auto md:w-auto md:py-0 md:rounded-none md:drop-shadow-none md:bg-transparent"
+        >
           <Image
             src={icon}
             alt="EN"
-            style={{
-              filter: theme === "dark" ? "invert(1) brightness(2)" : undefined,
-            }}
+            className={`mx-auto filter ${
+              theme === "dark" ? "invert brightness-200" : ""
+            }`}
           />
         </button>
       )}
       {locale !== "bg" && (
-        <button type="button" onClick={() => changeLocale("bg")}>
+        <button
+          type="button"
+          onClick={() => changeLocale("bg")}
+          className="fixed bottom-0 right-8 w-10 py-2 rounded-t-xl drop-shadow-sm dark:bg-[#FFC956] bg-[#B96001]
+    md:static md:bottom-auto md:right-auto md:w-auto md:py-0 md:rounded-none md:drop-shadow-none md:bg-transparent"
+        >
           <Image
             src={icon}
             alt="BG"
-            style={{
-              filter: theme === "dark" ? "invert(1) brightness(2)" : undefined,
-            }}
+            className={`mx-auto filter ${
+              theme === "dark" ? "invert brightness-200" : ""
+            }`}
+            // style={{
+            //   filter: theme === "dark" ? "invert(1) brightness(2)" : undefined,
+            // }}
           />
         </button>
       )}

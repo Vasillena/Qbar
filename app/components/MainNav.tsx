@@ -33,16 +33,16 @@ export default function MainNav({
     { href: "/#contact", label: t("nav.contact"), id: "contact" },
   ];
 
-  const handleScroll = (id: string, href: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      router.push(href, { scroll: false });
-    } else {
-      scrollTargetRef.current = id;
-      router.push(href);
-    }
-  };
+  // const handleScroll = (id: string, href: string) => {
+  //   const element = document.getElementById(id);
+  //   if (element) {
+  //     element.scrollIntoView({ behavior: "smooth" });
+  //     router.push(href, { scroll: false });
+  //   } else {
+  //     scrollTargetRef.current = id;
+  //     router.push(href);
+  //   }
+  // };
 
   useEffect(() => {
     if (scrollTargetRef.current) {
@@ -76,7 +76,7 @@ export default function MainNav({
             // }}
             key={link.href}
             href={link.href}
-            className="flex items-center font-bold hover:text-[##FFC956]"
+            className="flex items-center font-bold dark:hover:text-[#FFC956] hover:text-[#B96001]"
           >
             {link.label}
           </Link>
@@ -97,7 +97,7 @@ export default function MainNav({
             // }}
             key={link.href}
             href={link.href}
-            className="flex items-center font-bold hover:text-[#FFC956]"
+            className="flex items-center font-bold dark:hover:text-[#FFC956] hover:text-[#B96001]"
           >
             {link.label}
           </Link>

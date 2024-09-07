@@ -1,18 +1,15 @@
 "use client";
 
 import { useEffect } from "react";
-import { useTheme } from "../utils/themeProvider";
 
-export default function MapIframe() {
-  const { theme } = useTheme();
+interface MapIframeProps {
+  source: string;
+}
+
+export default function MapIframe({ source }: MapIframeProps) {
   useEffect(() => {
     const existingIframe = document.querySelector("#contact iframe");
     if (existingIframe) return;
-
-    const source =
-      theme === "dark"
-        ? "https://snazzymaps.com/embed/636408"
-        : "https://snazzymaps.com/embed/638475";
 
     const iframe = document.createElement("iframe");
     iframe.src = source;

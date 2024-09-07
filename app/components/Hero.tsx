@@ -2,6 +2,7 @@
 
 import Fester from "next/font/local";
 import Image from "next/image";
+import Link from "next/link";
 import SixHands from "next/font/local";
 import { Video } from "./Video";
 import dynamic from "next/dynamic";
@@ -44,12 +45,12 @@ export function Hero() {
             >
               Запази място за следващото парти
             </button> */}
-            <button
-              className={`relative py-3 lg:py-[18px] px-10 dark:bg-gradient-to-r dark:from-[#FFE259] dark:to-[#FFA751] bg-[#343434] sm:text-lg xl:text-xl font-semibold dark:text-[#222927] text-white rounded-full mt-4 md:mt-[66px] before:content-[''] before:absolute before:inset-0 before:rounded-full dark:before:shadow-[inset_0px_4px_4px_#DABB7E] before:shadow-[inset_0px_4px_4px_#61574A] before:pointer-events-none transition-shadow duration-300 ease-in-out
-   hover:shadow-[0_0_20px_#B96001] dark:hover:shadow-[0_0_20px_#FFD70080] ${FesterFont.className}`}
+            <Link
+              href="/#contact"
+              className={`inline-block relative py-3 lg:py-[18px] px-10 dark:bg-gradient-to-r dark:from-[#FFE259] dark:to-[#FFA751] bg-[#343434] sm:text-lg xl:text-xl font-semibold dark:text-[#222927] text-white rounded-full mt-4 md:mt-[66px] before:content-[''] before:absolute before:inset-0 before:rounded-full dark:before:shadow-[inset_0px_4px_4px_#DABB7E] before:shadow-[inset_0px_4px_4px_#61574A] before:pointer-events-none transition-shadow duration-300 ease-in-out hover:shadow-[0_0_20px_#B96001] dark:hover:shadow-[0_0_20px_#FFD70080] ${FesterFont.className}`}
             >
               Запази място за следващото парти
-            </button>
+            </Link>
           </div>
           <div className="hidden min-[390px]:block sm:hidden lg:block w-[270px] h-[290px] lg:w-[520px] lg:h-[590px] xl:w-[640px] xl:h-[710px] relative order-1 sm:order-2 mx-auto sm:mx-0">
             <Image
