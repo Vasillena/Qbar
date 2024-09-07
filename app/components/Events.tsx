@@ -1,5 +1,6 @@
 import EventCard from "./EventCard";
 import Fester from "next/font/local";
+import Reveal from "./Animations/Reveal";
 import event1 from "@/public/event-1.png";
 import event2 from "@/public/event-1.png";
 import event3 from "@/public/event-1.png";
@@ -42,11 +43,13 @@ export default function Events() {
   return (
     <div id="events" className="max-w-[1440px] mx-auto py-20 px-2 sm:px-16">
       <div>
-        <h2
-          className={`${FesterFont.className} text-3xl sm:text-5xl xl:text-6xl text-center px-4`}
-        >
-          Предстоящи Събития
-        </h2>
+        <Reveal initial={{ y: "-20%" }} animate={{ y: "0%" }}>
+          <h2
+            className={`${FesterFont.className} text-3xl sm:text-5xl xl:text-6xl text-center px-4`}
+          >
+            Предстоящи Събития
+          </h2>
+        </Reveal>
       </div>
       {/* <div className="flex  justify-center items-center gap-10 pt-12"> */}
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 pt-12">

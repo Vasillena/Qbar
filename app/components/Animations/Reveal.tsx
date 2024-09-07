@@ -6,17 +6,19 @@ import { useRef } from "react";
 
 interface RevealProps {
   children: React.ReactNode;
+  initial: object;
+  animate: object;
 }
 
-export default function Reveal({ children }: RevealProps) {
+export default function Reveal({ children, initial, animate }: RevealProps) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: false });
 
   return (
     <div ref={ref}>
       <motion.div
-        initial={{ opacity: 0, y: "-10%" }}
-        animate={isInView ? { opacity: 1, y: "0" } : {}}
+        initial={{ opacity: 0, ...initial }}
+        animate={isInView ? { opacity: 1, ...animate } : {}}
         transition={{ duration: 1, ease: "easeOut" }}
       >
         {children}

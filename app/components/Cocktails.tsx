@@ -1,5 +1,6 @@
 import Fester from "next/font/local";
 import Image from "next/image";
+import Reveal from "./Animations/Reveal";
 import cocktail1 from "@/public/cocktail-1.png";
 import cocktail2 from "@/public/cocktail-2.png";
 import cocktail3 from "@/public/cocktail-3.png";
@@ -38,27 +39,31 @@ export default function Cocktails() {
     // <div className="flex flex-col xl:flex-row gap-12">
     <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-5 gap-x-12 gap-y-12 lg:gap-y-0 items-center xl:items-end">
       <div className="xl:col-span-2 text-center lg:text-left">
-        <h2
-          className={`${FesterFont.className} text-3xl sm:text-5xl xl:text-6xl`}
-        >
-          Нашите Коктейли
-        </h2>
-        <p className="sm:text-lg xl:text-xl pt-8 md:leading-6 ">
-          В Q вярваме, че всеки коктейл трябва да бъде преживяване. Нашите
-          майсторски приготвени напитки съчетават изкуство, страст и иновативни
-          техники, за да създадат уникални вкусове, които ще ви изненадат и
-          вдъхновят.
-        </p>
-        <p className="sm:text-lg xl:text-xl pt-4 md:leading-6">
-          Насладете се на богатата палитра от вкусове и аромати, които ще
-          събудят сетивата ви. Опитайте нашите авторски коктейли или споделете
-          своите предпочитания с нас, за да създадем нещо специално само за вас.
-        </p>
-        <p className="sm:text-lg xl:text-xl pt-4 md:leading-6">
-          В Q коктейлите не са просто напитки – те са пътешествие в света на
-          вкусовете и изкуството. Елате и открийте вашия нов любим коктейл.
-        </p>
+        <Reveal initial={{ x: "-5%" }} animate={{ x: "0%" }}>
+          <h2
+            className={`${FesterFont.className} text-3xl sm:text-5xl xl:text-6xl`}
+          >
+            Нашите Коктейли
+          </h2>
+          <p className="sm:text-lg xl:text-xl pt-8 md:leading-6 ">
+            В Q вярваме, че всеки коктейл трябва да бъде преживяване. Нашите
+            майсторски приготвени напитки съчетават изкуство, страст и
+            иновативни техники, за да създадат уникални вкусове, които ще ви
+            изненадат и вдъхновят.
+          </p>
+          <p className="sm:text-lg xl:text-xl pt-4 md:leading-6">
+            Насладете се на богатата палитра от вкусове и аромати, които ще
+            събудят сетивата ви. Опитайте нашите авторски коктейли или споделете
+            своите предпочитания с нас, за да създадем нещо специално само за
+            вас.
+          </p>
+          <p className="sm:text-lg xl:text-xl pt-4 md:leading-6">
+            В Q коктейлите не са просто напитки – те са пътешествие в света на
+            вкусовете и изкуството. Елате и открийте вашия нов любим коктейл.
+          </p>
+        </Reveal>
       </div>
+
       <div className="xl:col-span-3 w-full flex flex-col items-center">
         <div className="w-full flex items-end justify-center sm:justify-between flex-wrap sm:flex-nowrap gap-10 sm:gap-0">
           {cocktails.map((cocktail, index) => (
@@ -86,7 +91,7 @@ export default function Cocktails() {
           ))}
         </div>
         <button
-          className={`relative py-3 lg:py-[18px] w-full bg-gradient-to-r dark:from-[#FFE259] dark:to-[#FFA751] bg-[#343434] text-xl font-semibold dark:text-[#222927] text-white rounded-full mt-[66px]  before:content-[''] before:absolute before:inset-0 before:rounded-full dark:before:shadow-[inset_0px_4px_4px_#DABB7E] before:shadow-[inset_0px_4px_4px_#61574A] before:pointer-events-none ${FesterFont.className}`}
+          className={`relative py-3 lg:py-[18px] w-full bg-gradient-to-r dark:from-[#FFE259] dark:to-[#FFA751] bg-[#343434] text-xl font-semibold dark:text-[#222927] text-white rounded-full mt-[66px]  before:content-[''] before:absolute before:inset-0 before:rounded-full dark:before:shadow-[inset_0px_4px_4px_#DABB7E] before:shadow-[inset_0px_4px_4px_#61574A] before:pointer-events-none transition-shadow duration-300 ease-in-out hover:shadow-[0_0_20px_#B9600180] dark:hover:shadow-[0_0_20px_#FFD70080] ${FesterFont.className}`}
         >
           Открийте още любими вкусове
         </button>

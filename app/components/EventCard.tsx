@@ -22,7 +22,7 @@ export default function EventCard({
   name,
 }: EventCardProps) {
   return (
-    <div className="flex flex-row md:flex-col justify-center items-center">
+    <div className="flex flex-row md:flex-col justify-center items-center group">
       <div className="rounded-3xl drop-shadow-xl">
         <Image
           src={image}
@@ -35,7 +35,7 @@ export default function EventCard({
         <p className="text-base sm:text-2xl text-center">{day}</p>
         <p className="text-base sm:text-2xl text-center">{hour}</p>
         <p
-          className={`${TrailmadeFont.className} text-4xl sm:text-6xl pt-4 text-center`}
+          className={`${TrailmadeFont.className} text-4xl sm:text-6xl pt-4 text-center transition-all duration-300 ease-in-out group-hover:bg-gradient-to-r dark:group-hover:from-[#FFC956] group-hover:from-[#B96001] dark:group-hover:via-[#FFD700] group-hover:via-[#C05438] dark:group-hover:to-[#FF6347] group-hover:to-[#711513] group-hover:bg-clip-text group-hover:text-transparent`}
         >
           {name}
         </p>
@@ -43,5 +43,3 @@ export default function EventCard({
     </div>
   );
 }
-
-// px-10 sm:px-20 md:px-12

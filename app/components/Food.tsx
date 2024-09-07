@@ -1,5 +1,6 @@
 import Fester from "next/font/local";
 import Image from "next/image";
+import Reveal from "./Animations/Reveal";
 import dessert from "@/public/cocktail-4.png";
 
 const FesterFont = Fester({ src: "../../public/Fester-bold.otf" });
@@ -23,22 +24,24 @@ export default function Food() {
       </div>
 
       <div className="lg:col-span-2 text-center lg:text-left lg:mt-0 p-10 md:pt-1 lg:p-0">
-        {/* <div className="w-[510px] ml-auto mr-64"> */}
-        <h2
-          className={`${FesterFont.className} text-3xl sm:text-5xl xl:text-6xl`}
-        >
-          Вкусни Изкушения
-        </h2>
-        <p className="sm:text-lg xl:text-xl pt-8 md:leading-6">
-          В Q не само музиката е на високо ниво, но и кухнята предлага изкушения
-          за всеки вкус. Нашите майстор-готвачи поднасят уникални ястия,
-          вдъхновени от най-добрите световни кулинарни традиции.
-        </p>
-        <p className="sm:text-lg xl:text-xl pt-4 md:leading-6">
-          Всеки ден ви очаква специалитет на деня, приготвен с най-свежите
-          продукти и поднесен с внимание към детайла. Насладете се на вкусово
-          приключение, което ще допълни вашето Q изживяване в сърцето на Капана.
-        </p>
+        <Reveal initial={{ x: "5%" }} animate={{ x: "0%" }}>
+          <h2
+            className={`${FesterFont.className} text-3xl sm:text-5xl xl:text-6xl`}
+          >
+            Вкусни Изкушения
+          </h2>
+          <p className="sm:text-lg xl:text-xl pt-8 md:leading-6">
+            В Q не само музиката е на високо ниво, но и кухнята предлага
+            изкушения за всеки вкус. Нашите майстор-готвачи поднасят уникални
+            ястия, вдъхновени от най-добрите световни кулинарни традиции.
+          </p>
+          <p className="sm:text-lg xl:text-xl pt-4 md:leading-6">
+            Всеки ден ви очаква специалитет на деня, приготвен с най-свежите
+            продукти и поднесен с внимание към детайла. Насладете се на вкусово
+            приключение, което ще допълни вашето Q изживяване в сърцето на
+            Капана.
+          </p>
+        </Reveal>
       </div>
     </div>
   );

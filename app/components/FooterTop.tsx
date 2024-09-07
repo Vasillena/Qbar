@@ -56,7 +56,7 @@ export default function FooterTop(): JSX.Element {
   const t = useI18n();
 
   return (
-    <div className="max-w-[1440px] mx-auto grid grid-cols-1 xl:grid-cols-3 my-32 sm:px-16 gap-10">
+    <div className="max-w-[1440px] mx-auto grid grid-cols-1 xl:grid-cols-3 my-20 sm:px-16 gap-10">
       <div className="xl:col-span-1 xl:justify-self-start flex flex-col lg:flex-row xl:flex-col items-center lg:items-end justify-between">
         <div>
           <h2
