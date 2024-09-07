@@ -1,9 +1,13 @@
+"use client";
+
 import Fester from "next/font/local";
 import Image from "next/image";
 import SixHands from "next/font/local";
 import { Video } from "./Video";
 import dynamic from "next/dynamic";
 import hero from "@/public/hero.png";
+import hero2 from "@/public/hero-2.png";
+import { useTheme } from "../utils/themeProvider";
 
 const CountdownTimer = dynamic(() => import("./Countdown"), { ssr: false });
 
@@ -13,6 +17,7 @@ const FesterFont = Fester({ src: "../../public/Fester.woff" });
 const SixHandsFont = SixHands({ src: "../../public/SixHands.otf" });
 
 export function Hero() {
+  const { theme } = useTheme();
   return (
     <>
       <div id="home" className="h-screen flex flex-col justify-center">
@@ -48,7 +53,7 @@ export function Hero() {
           </div>
           <div className="hidden min-[390px]:block sm:hidden lg:block w-[270px] h-[290px] lg:w-[520px] lg:h-[590px] xl:w-[640px] xl:h-[710px] relative order-1 sm:order-2 mx-auto sm:mx-0">
             <Image
-              src={hero}
+              src={theme === "dark" ? hero : hero2}
               alt="Qbar logo"
               fill
               object-fit="contain"
