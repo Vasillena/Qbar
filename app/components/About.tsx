@@ -62,8 +62,6 @@ export default function About() {
             src={theme === "dark" ? decor1 : decor2}
             alt="Decor"
             style={{
-              // width: "1440px",
-              // height: "auto",
               transform: "scaleY(-1)",
             }}
           />
@@ -71,12 +69,7 @@ export default function About() {
       </div>
 
       <div className="block lg:hidden max-w-[1440px] w-full mt-20 mx-auto sm:px-16">
-        <Image
-          src={theme === "dark" ? about1 : about3}
-          alt="Lamps"
-          // style={{ width: "1440px", height: "auto" }}
-          // className="block lg:hidden"
-        />
+        <Image src={theme === "dark" ? about1 : about3} alt="Lamps" />
       </div>
     </>
   );

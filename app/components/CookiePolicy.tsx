@@ -14,8 +14,8 @@ export default async function CookiePolicy(): Promise<JSX.Element> {
 
       <p className="text-base">
         {t("cookie.text-2")}
-        <Link href="https://sipi.bg" target="_blank" className="ml-1">
-          https://sipi.bg
+        <Link href="https://qbar.bg" target="_blank" className="ml-1">
+          https://qbar.bg
         </Link>{" "}
         {t("cookie.text-3")}
       </p>

@@ -76,7 +76,7 @@ export default function Navbar(): JSX.Element {
       {/* <div className="max-w-screen"> */}
       <div className="max-w-[1440px] hidden fixed top-0 left-0 right-0 mx-auto md:block z-50 bg-[#f2efea] dark:bg-[#222927]">
         {/* <div className="max-w-screen hidden fixed top-0 left-0 right-0 mx-auto sm:block z-50 bg-[#222927]"> */}
-        <div className="px-4 sm:px-16 flex py-3 justify-between items-center border-b border-[#222927] dark:border-white">
+        <div className="px-4 sm:px-9 lg:px-16 flex py-3 justify-between items-center border-b border-[#222927] dark:border-white">
           <div className="w-12 h-12 flex justify-center items-center">
             <SwitchTheme />
           </div>

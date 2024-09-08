@@ -21,7 +21,7 @@ export function Hero() {
   const { theme } = useTheme();
   return (
     <>
-      <div id="home" className="h-screen flex flex-col justify-center">
+      <div id="home" className="h-svh sm:h-screen flex flex-col justify-center">
         <div className="max-w-[1440px] mx-auto mt-2  sm:mt-10 md:mt-20 pt-6 sm:pt-20 grid grid-cols-1 lg:grid-cols-2 px-8 lg:px-16">
           <div className="text-center lg:text-left order-2 sm:order-1">
             <h1
@@ -39,12 +39,6 @@ export function Hero() {
               коктейлното изкуство. Очаквайте нещо повече от вечер - очаквайте
               изживяване.
             </p>
-            {/* <button
-              className={`relative py-3 lg:py-[18px] px-10 dark:bg-gradient-to-r dark:from-[#FFE259] dark:to-[#FFA751] bg-[#343434] sm:text-lg xl:text-xl font-semibold dark:text-[#222927] text-white rounded-full mt-10 md:mt-[66px] before:content-[''] before:absolute before:inset-0 before:rounded-full dark:before:shadow-[inset_0px_4px_4px_#DABB7E] before:shadow-[inset_0px_4px_4px_#61574A] before:pointer-events-none
-               ${FesterFont.className}`}
-            >
-              Запази място за следващото парти
-            </button> */}
             <Link
               href="/#contact"
               className={`inline-block relative py-3 lg:py-[18px] px-10 dark:bg-gradient-to-r dark:from-[#FFE259] dark:to-[#FFA751] bg-[#343434] sm:text-lg xl:text-xl font-semibold dark:text-[#222927] text-white rounded-full mt-4 md:mt-[66px] before:content-[''] before:absolute before:inset-0 before:rounded-full dark:before:shadow-[inset_0px_4px_4px_#DABB7E] before:shadow-[inset_0px_4px_4px_#61574A] before:pointer-events-none transition-shadow duration-300 ease-in-out hover:shadow-[0_0_20px_#B96001] dark:hover:shadow-[0_0_20px_#FFD70080] ${FesterFont.className}`}
@@ -52,13 +46,12 @@ export function Hero() {
               Запази място за следващото парти
             </Link>
           </div>
-          <div className="hidden min-[390px]:block sm:hidden lg:block w-[270px] h-[290px] lg:w-[520px] lg:h-[590px] xl:w-[640px] xl:h-[710px] relative order-1 sm:order-2 mx-auto sm:mx-0">
+          <div className="hidden min-[390px]:block sm:hidden lg:block w-[240px] h-[260px] lg:w-[520px] lg:h-[590px] xl:w-[640px] xl:h-[710px] relative order-1 sm:order-2 mx-auto sm:mx-0">
             <Image
               src={theme === "dark" ? hero : hero2}
               alt="Qbar logo"
               fill
               object-fit="contain"
-              // style={{ width: "774px", height: "auto" }}
             />
             {/* <Video /> */}
           </div>

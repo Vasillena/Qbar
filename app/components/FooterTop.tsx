@@ -16,7 +16,6 @@ import { useTheme } from "../utils/themeProvider";
 
 const FesterFont = Fester({ src: "../../public/Fester-bold.otf" });
 
-// Reusable component for the contact info items
 const ContactInfoItem = ({
   iconDark,
   iconLight,
@@ -70,7 +69,7 @@ export default function FooterTop(): JSX.Element {
             iconLight={icon5}
             title="Контакти"
             lines={["+359 88 5888097", "qbarplovdiv@gmail.com"]}
-            noBorder // Removes border from the first item
+            noBorder
           />
           <ContactInfoItem
             iconDark={icon2}

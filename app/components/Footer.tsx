@@ -5,6 +5,7 @@ import Link from "next/link";
 import { getI18n } from "@/locales/server";
 import logoDark from "@/public/logo-dark.svg";
 import logoLight from "@/public/logo-light.svg";
+import logoSavy from "@/public/savy.svg";
 import socialsDark1 from "@/public/socials-1-dark.svg";
 import socialsDark2 from "@/public/socials-2-dark.svg";
 import socialsLight1 from "@/public/socials-1-light.svg";
@@ -22,15 +23,15 @@ export default function Footer(): JSX.Element {
   return (
     <div className="max-w-screen dark:bg-[#222927] bg-[#f2efea]">
       <div className="max-w-[1440px] mx-auto flex items-end mb-12 px-2">
-        {/* <div className="max-w-screen mx-auto flex items-end mb-12 px-16"> */}
         <div>
           <Image
-            src={theme === "dark" ? logoDark : logoLight}
+            src={logoLight}
             alt="Logo"
             priority
             style={{
               width: "126px",
               height: "auto",
+              filter: theme === "dark" ? "invert(1) brightness(2)" : undefined,
             }}
           />
         </div>
@@ -74,8 +75,21 @@ export default function Footer(): JSX.Element {
             </Link>
           </div>
           <div className="border-t dark:border-[#FFC956] border-[#B96001] py-6 ml-20 flex flex-col md:flex-row justify-between font-light text-center md:text-left">
-            <p>Copyright © 2024 - All rights reserved</p>
-            <p>Design by SA & Build by VY</p>
+            <div>
+              <p>Copyright © 2024 - All rights reserved</p>
+            </div>
+            <div className="flex gap-2 justify-center items-end">
+              <p>Design & Build by </p>
+              <Image
+                src={logoSavy}
+                alt="Savy logo"
+                className="w-12 mb-[2px] h-auto"
+                style={{
+                  filter:
+                    theme === "dark" ? "invert(1) brightness(2)" : undefined,
+                }}
+              />
+            </div>
           </div>
         </div>
       </div>

@@ -1,10 +1,10 @@
 export default {
   nav: {
     home: "Начало",
-    about: "За нас",
-    gallery: "Галерия",
     events: "Събития",
+    about: "За нас",
     menu: "Меню",
+    gallery: "Галерия",
     contact: "Контакти",
   },
   hero: {

@@ -51,7 +51,6 @@ export default function Events() {
           </h2>
         </Reveal>
       </div>
-      {/* <div className="flex  justify-center items-center gap-10 pt-12"> */}
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 pt-12">
         <EventCard {...events[0]} />
         <EventCard {...events[1]} />

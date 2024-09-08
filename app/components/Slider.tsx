@@ -1,37 +1,18 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import Image, { StaticImageData } from "next/image";
 
-import Image from "next/image";
 import Ticker from "framer-motion-ticker";
 import decor1 from "@/public/decor-2-dark.png";
 import decor2 from "@/public/decor-2-light.png";
-import image2 from "@/public/2.png";
-import image3 from "@/public/3.png";
-import image4 from "@/public/4.png";
+import { useState } from "react";
 import { useTheme } from "../utils/themeProvider";
 
-// import image1 from "@/public/1.png";
+interface SliderProps {
+  slides: { image: StaticImageData }[];
+}
 
-// import image5 from "@/public/5.png";
-
-const slides = [
-  //   { image: image1 },
-  { image: image2 },
-  { image: image3 },
-  { image: image4 },
-  //   { image: image5 },
-  //   { image: image1 },
-  { image: image2 },
-  { image: image3 },
-  { image: image4 },
-  { image: image2 },
-  { image: image3 },
-  { image: image4 },
-  //   { image: image5 },
-];
-
-export default function Slider(): JSX.Element {
+export default function Slider({ slides }: SliderProps): JSX.Element {
   const { theme } = useTheme();
   const [tickerSpeed, setTickerSpeed] = useState(100);
 

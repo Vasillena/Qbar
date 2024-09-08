@@ -9,17 +9,11 @@ export default function Food() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-5 gap-x-6 items-end mt-20 relative">
       <div className="absolute w-full lg:w-[490px] h-[540px] sm:h-[460px] md:h-[372px] rounded-3xl shadow-2xl dark:bg-[#394940] bg-[#B96001] -z-10" />
-      {/* <div className="absolute w-[700px] h-[420px] rounded-r-[100px] shadow-2xl bg-[#394940] -z-10" /> */}
       <div className="lg:col-span-3 relative z-10">
         <Image
           src={dessert}
           alt="Dessert"
           className="w-[480px] md:w-[580px] xl:w-[620px] h-auto xl:ml-[70px] mx-auto"
-          // style={{
-          //   width: "xl:620px",
-          //   height: "auto",
-          //   marginLeft: "70px",
-          // }}
         />
       </div>
 

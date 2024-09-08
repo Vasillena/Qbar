@@ -1,6 +1,5 @@
-"use client";
-
 import Image, { StaticImageData } from "next/image";
+import { useEffect, useRef } from "react";
 
 import Fester from "next/font/local";
 import SixHands from "next/font/local";
@@ -27,7 +26,6 @@ const categoryTranslations: Record<string, Record<string, string>> = {
     "Mixed Drinks": "Смесени напитки",
     Wine: "Вино",
     Alcohol: "Алкохол",
-    // Beer: "Бира",
   },
   en: {
     "Hot Drinks": "Hot Drinks",
@@ -35,7 +33,6 @@ const categoryTranslations: Record<string, Record<string, string>> = {
     "Mixed Drinks": "Mixed Drinks",
     Wine: "Wine",
     Alcohol: "Alcohol",
-    // Beer: "Beer",
   },
 };
 
@@ -50,19 +47,25 @@ export default function MenuCard({
   const { theme } = useTheme();
   const menuList = locale === "bg" ? menuListBG : menuListEN;
 
+  const accordionRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (isOpen && accordionRef.current) {
+      accordionRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  }, [isOpen]);
+
   const renderMenu = () => {
     const selectedCategory = menuList.menu.filter(
       (item) => item.category === text
     );
-    const categoryName = categoryTranslations[locale][text] || text;
+    // const categoryName = categoryTranslations[locale][text] || text;
 
     return (
       <div className="mb-10">
-        {/* <p
-          className={`text-center my-4 text-3xl dark:text-[#FFC956] text-[#B96001] ${SixHandsFont.className}`}
-        >
-          {categoryName}
-        </p> */}
         {selectedCategory.map((item) => (
           <div key={item.id} className="mt-10 sm:px-12 flex flex-col">
             {item["semi-category"] && (
@@ -89,11 +92,11 @@ export default function MenuCard({
   };
 
   return (
-    <div data-accordion="collapse" className="w-full">
+    <div data-accordion="collapse" className="w-full" ref={accordionRef}>
       <h2 id="accordion-collapse-heading-1">
         <button
           type="button"
-          className={`flex items-center justify-between w-full sm:w-10/12 mx-auto p-5 font-medium rtl:text-right border-b dark:border-[#4A5F54] border-[#B96001]  ${
+          className={`flex items-center justify-between w-full sm:w-10/12 mx-auto p-5 font-medium rtl:text-right border-b dark:border-[#4A5F54] border-[#B96001] ${
             isOpen
               ? "bg-[#30312A] dark:bg-[#FFC956] text-white dark:text-[#222927]"
               : ""
@@ -128,9 +131,9 @@ export default function MenuCard({
         </button>
       </h2>
       <div
-        className={`${
-          isOpen ? "block mb-10" : "hidden"
-        } w-full sm:w-10/12 mx-auto p-5 border border-b-0 border-gray-200 dark:border-gray-700 bg-[#FDF7EF] dark:bg-[#394940]`}
+        className={`overflow-hidden transition-all duration-500 ease-in-out ${
+          isOpen ? "max-h-full" : "max-h-0"
+        } w-full sm:w-10/12 mx-auto px-2 border border-b-0 border-gray-200 dark:border-gray-700 bg-[#FDF7EF] dark:bg-[#394940]`}
         aria-labelledby="accordion-collapse-heading-1"
       >
         {renderMenu()}

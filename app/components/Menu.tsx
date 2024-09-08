@@ -27,7 +27,7 @@ export default function Menu() {
 
   return (
     <>
-      <div className="flex flex-col items-center mt-16 sm:mt-36">
+      <div className="flex flex-col items-center my-36">
         <h1
           className={`mb-12 text-8xl sm:text-9xl bg-gradient-to-t dark:from-[#FFC956] dark:to-[#FFFFFF] from-[#B96001] to-[#EBCDC0] bg-clip-text text-transparent ${TrailmadeFont.className}`}
         >
@@ -42,6 +42,13 @@ export default function Menu() {
             onToggle={() => handleToggle("Hot Drinks")}
           />
           <MenuCard
+            text="Cold Drinks"
+            imageDark={iconDark1}
+            imageLight={iconLight1}
+            isOpen={openAccordion === "Cold Drinks"}
+            onToggle={() => handleToggle("Cold Drinks")}
+          />
+          <MenuCard
             text="Soft Drinks"
             imageDark={iconDark2}
             imageLight={iconLight2}
@@ -50,33 +57,33 @@ export default function Menu() {
           />
           <MenuCard
             text="Mixed Drinks"
-            imageDark={iconDark3}
-            imageLight={iconLight3}
+            imageDark={iconDark5}
+            imageLight={iconLight5}
             isOpen={openAccordion === "Mixed Drinks"}
             onToggle={() => handleToggle("Mixed Drinks")}
           />
           <MenuCard
             text="Wine"
-            imageDark={iconDark4}
-            imageLight={iconLight4}
+            imageDark={iconDark3}
+            imageLight={iconLight3}
             isOpen={openAccordion === "Wine"}
             onToggle={() => handleToggle("Wine")}
           />
           <MenuCard
             text="Alcohol"
-            imageDark={iconDark5}
-            imageLight={iconLight5}
+            imageDark={iconDark4}
+            imageLight={iconLight4}
             isOpen={openAccordion === "Alcohol"}
             onToggle={() => handleToggle("Alcohol")}
           />
-          {/* <MenuCard
+          <MenuCard
             text="Beer"
-                      image={theme === "dark" ? iconDark1 : iconLight1}
+            imageDark={iconDark4}
+            imageLight={iconLight4}
             isOpen={openAccordion === "Beer"}
             onToggle={() => handleToggle("Beer")}
-          /> */}
+          />
         </div>
-        {/* {renderMenu()} */}
       </div>
     </>
   );
