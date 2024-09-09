@@ -10,9 +10,10 @@ import { useTheme } from "../utils/themeProvider";
 
 interface SliderProps {
   slides: { image: StaticImageData }[];
+  reverse?: boolean;
 }
 
-export default function Slider({ slides }: SliderProps): JSX.Element {
+export default function Slider({ slides, reverse }: SliderProps): JSX.Element {
   const { theme } = useTheme();
   const [tickerSpeed, setTickerSpeed] = useState(100);
 
@@ -40,26 +41,28 @@ export default function Slider({ slides }: SliderProps): JSX.Element {
           <div className="absolute right-[-10px] top-0 w-1/4 h-full bg-gradient-to-l dark:from-[#222927] from-[#f2efea] to-transparent blur-sm z-20"></div>
         </div>
 
-        <Ticker key={tickerSpeed} duration={tickerSpeed}>
-          {slides.map((slide, index) => (
-            <div
-              key={index}
-              className="flex-shrink-0 w-[280px] flex items-center justify-center h-[395px] mx-2 group "
-            >
-              <div className="flex items-center justify-center h-full ">
-                <Image
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave}
-                  src={slide.image}
-                  alt="Party"
-                  width={316}
-                  height={395}
-                  className="transition-transform duration-300 hover:scale-150 hover:z-30"
-                />
+        <div style={{ transform: reverse ? "scaleX(-1)" : "none" }}>
+          <Ticker key={tickerSpeed} duration={tickerSpeed}>
+            {slides.map((slide, index) => (
+              <div
+                key={index}
+                className="flex-shrink-0 w-[280px] flex items-center justify-center h-[395px] mx-2 group "
+              >
+                <div className="flex items-center justify-center h-full ">
+                  <Image
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                    src={slide.image}
+                    alt="Party"
+                    width={316}
+                    height={395}
+                    className="transition-transform duration-300 hover:scale-150 hover:z-30"
+                  />
+                </div>
               </div>
-            </div>
-          ))}
-        </Ticker>
+            ))}
+          </Ticker>
+        </div>
       </div>
       <div>
         <Image
