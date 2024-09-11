@@ -15,7 +15,10 @@ interface TimeCardProps {
   label: string;
 }
 
-const TimeCard: React.FC<TimeCardProps> = ({ value, label }) => {
+const TimeCard: React.FC<TimeCardProps> = React.memo(function TimeCard({
+  value,
+  label,
+}) {
   return (
     <div className="w-20 sm:w-28 md:w-40 lg:w-56 min-[1440px]:w-64 h-14 sm:h-20 md:h-28 dark:bg-[#394940] bg-[#B96001] rounded-lg sm:rounded-[30px] flex flex-col justify-center items-center">
       <p className={`text-3xl lg:text-5xl text-white ${FesterFont.className}`}>
@@ -24,7 +27,9 @@ const TimeCard: React.FC<TimeCardProps> = ({ value, label }) => {
       <p className="dark:text-[#FFC956] text-xs text-white">{label}</p>
     </div>
   );
-};
+});
+
+TimeCard.displayName = "TimeCard";
 
 const CountdownTimer: React.FC<CountdownTimerProps> = ({ expiryTimestamp }) => {
   const { seconds, minutes, hours, days } = useTimer({

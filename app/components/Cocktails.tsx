@@ -1,12 +1,10 @@
-import Fester from "next/font/local";
+import { FesterBold } from "../utils/fonts";
 import Image from "next/image";
 import Link from "next/link";
 import Reveal from "./Animations/Reveal";
 import cocktail1 from "@/public/cocktail-1.png";
 import cocktail2 from "@/public/cocktail-2.png";
 import cocktail3 from "@/public/cocktail-3.png";
-
-const FesterFont = Fester({ src: "../../public/Fester-bold.otf" });
 
 const cocktails = [
   {
@@ -41,7 +39,7 @@ export default function Cocktails() {
       <div className="xl:col-span-2 text-center lg:text-left">
         <Reveal initial={{ x: "-5%" }} animate={{ x: "0%" }}>
           <h2
-            className={`${FesterFont.className} text-3xl sm:text-5xl xl:text-6xl`}
+            className={`${FesterBold.className} text-3xl sm:text-5xl xl:text-6xl`}
           >
             Нашите Коктейли
           </h2>
@@ -88,7 +86,7 @@ export default function Cocktails() {
         </div>
         <Link
           href="/menu"
-          className={`inline-block relative py-3 lg:py-[18px] w-full bg-gradient-to-r dark:from-[#FFE259] dark:to-[#FFA751] bg-[#343434] text-xl font-semibold text-center dark:text-[#222927] text-white rounded-full mt-[66px] before:content-[''] before:absolute before:inset-0 before:rounded-full dark:before:shadow-[inset_0px_4px_4px_#DABB7E] before:shadow-[inset_0px_4px_4px_#61574A] before:pointer-events-none transition-shadow duration-300 ease-in-out hover:shadow-[0_0_20px_#B96001] dark:hover:shadow-[0_0_20px_#FFD70080] ${FesterFont.className}`}
+          className={`inline-block relative py-3 lg:py-[18px] w-full bg-gradient-to-r dark:from-[#FFE259] dark:to-[#FFA751] bg-[#343434] text-xl font-semibold text-center dark:text-[#222927] text-white rounded-full mt-[66px] before:content-[''] before:absolute before:inset-0 before:rounded-full dark:before:shadow-[inset_0px_4px_4px_#DABB7E] before:shadow-[inset_0px_4px_4px_#61574A] before:pointer-events-none transition-shadow duration-300 ease-in-out hover:shadow-[0_0_20px_#B96001] dark:hover:shadow-[0_0_20px_#FFD70080] ${FesterBold.className}`}
         >
           Открийте още любими вкусове
         </Link>

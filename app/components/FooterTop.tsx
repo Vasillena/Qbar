@@ -1,6 +1,6 @@
 "use client";
 
-import Fester from "next/font/local";
+import { FesterBold } from "../utils/fonts";
 import Image from "next/image";
 import MapIframe from "./MapIframe";
 import icon1 from "@/public/footer-icon-1-dark.svg";
@@ -13,8 +13,6 @@ import icon7 from "@/public/footer-icon-3-light.svg";
 import icon8 from "@/public/footer-icon-4-light.svg";
 import { useI18n } from "@/locales/client";
 import { useTheme } from "../utils/themeProvider";
-
-const FesterFont = Fester({ src: "../../public/Fester-bold.otf" });
 
 const ContactInfoItem = ({
   iconDark,
@@ -62,7 +60,7 @@ export default function FooterTop(): JSX.Element {
         <div className="xl:col-span-1 xl:justify-self-start flex flex-col lg:flex-row xl:flex-col items-center lg:items-end justify-between">
           <div>
             <h2
-              className={`${FesterFont.className} text-3xl sm:text-5xl xl:text-6xl text-center lg:text-left`}
+              className={`${FesterBold.className} text-3xl sm:text-5xl xl:text-6xl text-center lg:text-left`}
             >
               Контакти
             </h2>

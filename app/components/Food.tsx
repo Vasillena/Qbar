@@ -1,9 +1,7 @@
-import Fester from "next/font/local";
+import { FesterBold } from "../utils/fonts";
 import Image from "next/image";
 import Reveal from "./Animations/Reveal";
 import dessert from "@/public/cocktail-4.png";
-
-const FesterFont = Fester({ src: "../../public/Fester-bold.otf" });
 
 export default function Food() {
   return (
@@ -21,7 +19,7 @@ export default function Food() {
         <div className="lg:col-span-2 text-center lg:text-left lg:mt-0 p-10 md:pt-1 lg:p-0 text-white lg:text-[#30312a] dark:lg:text-white">
           <Reveal initial={{ x: "5%" }} animate={{ x: "0%" }}>
             <h2
-              className={`${FesterFont.className} text-3xl sm:text-5xl xl:text-6xl`}
+              className={`${FesterBold.className} text-3xl sm:text-5xl xl:text-6xl`}
             >
               Вкусни Изкушения
             </h2>

@@ -1,8 +1,7 @@
+import { FesterBold, SixHands } from "../utils/fonts";
 import Image, { StaticImageData } from "next/image";
 import { useEffect, useRef } from "react";
 
-import Fester from "next/font/local";
-import SixHands from "next/font/local";
 import menuListBG from "../menuList/menuListBG.json";
 import menuListEN from "../menuList/menuList.json";
 import { useCurrentLocale } from "@/locales/client";
@@ -16,25 +15,22 @@ interface MenuCardProps {
   onToggle: () => void;
 }
 
-const FesterFont = Fester({ src: "../../public/Fester-bold.otf" });
-const SixHandsFont = SixHands({ src: "../../public/SixHands.otf" });
-
-const categoryTranslations: Record<string, Record<string, string>> = {
-  bg: {
-    "Hot Drinks": "Топли Напитки",
-    "Soft Drinks": "Безалкохолни Напитки",
-    "Mixed Drinks": "Смесени напитки",
-    Wine: "Вино",
-    Alcohol: "Алкохол",
-  },
-  en: {
-    "Hot Drinks": "Hot Drinks",
-    "Soft Drinks": "Soft Drinks",
-    "Mixed Drinks": "Mixed Drinks",
-    Wine: "Wine",
-    Alcohol: "Alcohol",
-  },
-};
+// const categoryTranslations: Record<string, Record<string, string>> = {
+//   bg: {
+//     "Hot Drinks": "Топли Напитки",
+//     "Soft Drinks": "Безалкохолни Напитки",
+//     "Mixed Drinks": "Смесени напитки",
+//     Wine: "Вино",
+//     Alcohol: "Алкохол",
+//   },
+//   en: {
+//     "Hot Drinks": "Hot Drinks",
+//     "Soft Drinks": "Soft Drinks",
+//     "Mixed Drinks": "Mixed Drinks",
+//     Wine: "Wine",
+//     Alcohol: "Alcohol",
+//   },
+// };
 
 export default function MenuCard({
   text,
@@ -70,7 +66,7 @@ export default function MenuCard({
           <div key={item.id} className="mt-10 sm:px-12 flex flex-col">
             {item["semi-category"] && (
               <p
-                className={`text-center my-4 text-3xl md:text-4xl dark:text-[#FFC956] text-[#B96001] ${SixHandsFont.className}`}
+                className={`text-center my-4 text-3xl md:text-4xl dark:text-[#FFC956] text-[#B96001] ${SixHands.className}`}
               >
                 {item["semi-category"]}
               </p>
@@ -122,7 +118,7 @@ export default function MenuCard({
             />
           </div>
 
-          <h2 className={`text-2xl lg:text-3xl ${FesterFont.className}`}>
+          <h2 className={`text-2xl lg:text-3xl ${FesterBold.className}`}>
             {text}
           </h2>
           <div className="w-10 h-10 flex justify-center items-center">

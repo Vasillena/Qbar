@@ -3,14 +3,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { getI18n } from "@/locales/server";
-import logoDark from "@/public/logo-dark.svg";
 import logoLight from "@/public/logo-light.svg";
 import logoSavy from "@/public/savy.svg";
-import socialsDark1 from "@/public/socials-1-dark.svg";
-import socialsDark2 from "@/public/socials-2-dark.svg";
 import socialsLight1 from "@/public/socials-1-light.svg";
 import socialsLight2 from "@/public/socials-2-light.svg";
-import { useEffect } from "react";
 import { useI18n } from "@/locales/client";
 import { useTheme } from "../utils/themeProvider";
 

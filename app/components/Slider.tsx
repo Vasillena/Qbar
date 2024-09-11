@@ -5,8 +5,9 @@ import Image, { StaticImageData } from "next/image";
 import Ticker from "framer-motion-ticker";
 import decor1 from "@/public/decor-2-dark.png";
 import decor2 from "@/public/decor-2-light.png";
-import { useState } from "react";
 import { useTheme } from "../utils/themeProvider";
+
+// import { useState } from "react";
 
 interface SliderProps {
   slides: { image: StaticImageData }[];
@@ -15,15 +16,7 @@ interface SliderProps {
 
 export default function Slider({ slides, reverse }: SliderProps): JSX.Element {
   const { theme } = useTheme();
-  const [tickerSpeed, setTickerSpeed] = useState(100);
-
-  const handleMouseEnter = () => {
-    setTickerSpeed(100);
-  };
-
-  const handleMouseLeave = () => {
-    setTickerSpeed(100);
-  };
+  // const [tickerSpeed, setTickerSpeed] = useState(100);
 
   return (
     <div className="max-w-[1440px] mx-auto sm:px-16">
@@ -42,7 +35,7 @@ export default function Slider({ slides, reverse }: SliderProps): JSX.Element {
         </div>
 
         <div style={{ transform: reverse ? "scaleX(-1)" : "none" }}>
-          <Ticker key={tickerSpeed} duration={tickerSpeed}>
+          <Ticker duration={100}>
             {slides.map((slide, index) => (
               <div
                 key={index}
@@ -50,8 +43,6 @@ export default function Slider({ slides, reverse }: SliderProps): JSX.Element {
               >
                 <div className="flex items-center justify-center h-full ">
                   <Image
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
                     src={slide.image}
                     alt="Party"
                     width={316}

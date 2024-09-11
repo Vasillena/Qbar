@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -37,9 +37,9 @@ export default function Navbar(): JSX.Element {
   //   };
   // }, []);
 
-  const closeMenu = () => {
+  const closeMenu = useCallback(() => {
     setOpen(false);
-  };
+  }, []);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent | TouchEvent) => {
@@ -65,11 +65,11 @@ export default function Navbar(): JSX.Element {
       document.removeEventListener("mousedown", handleClickOutside);
       document.removeEventListener("touchstart", handleClickOutside);
     };
-  }, [open]);
+  }, [closeMenu, open]);
 
   useEffect(() => {
     closeMenu();
-  }, [pathname]);
+  }, [closeMenu, pathname]);
 
   return (
     <div className="max-w-[1440px]">

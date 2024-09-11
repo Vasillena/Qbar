@@ -4,6 +4,7 @@ import { useChangeLocale, useCurrentLocale } from "../../locales/client";
 
 import Image from "next/image";
 import icon from "@/public/language.svg";
+import { useMemo } from "react";
 import { useTheme } from "../utils/themeProvider";
 
 export function SwitchLanguage() {
@@ -11,17 +12,24 @@ export function SwitchLanguage() {
   const locale = useCurrentLocale();
   const { theme } = useTheme();
 
-  const filterClass =
-    theme === "dark"
-      ? "md:invert md:brightness-0"
-      : "invert brightness-0 md:invert-0";
+  const filterClass = useMemo(
+    () =>
+      theme === "dark"
+        ? "md:invert md:brightness-0"
+        : "invert brightness-0 md:invert-0",
+    [theme]
+  );
+
+  const handleChangeToEnglish = () => changeLocale("en");
+
+  const handleChangeToBulgarian = () => changeLocale("bg");
 
   return (
     <>
       {locale !== "en" && (
         <button
           type="button"
-          onClick={() => changeLocale("en")}
+          onClick={handleChangeToEnglish}
           className="fixed bottom-0 right-8 w-10 py-2 rounded-t-xl drop-shadow-sm dark:bg-[#FFC956] bg-[#B96001]
             md:static md:bottom-auto md:right-auto md:w-auto md:py-0 md:rounded-none md:drop-shadow-none md:bg-transparent dark:md:bg-transparent"
         >
@@ -35,7 +43,7 @@ export function SwitchLanguage() {
       {locale !== "bg" && (
         <button
           type="button"
-          onClick={() => changeLocale("bg")}
+          onClick={handleChangeToBulgarian}
           className="fixed bottom-0 right-8 w-10 py-2 rounded-t-xl drop-shadow-sm dark:bg-[#FFC956] bg-[#B96001]
             md:static md:bottom-auto md:right-auto md:w-auto md:py-0 md:rounded-none md:drop-shadow-none md:bg-transparent dark:md:bg-transparent"
         >

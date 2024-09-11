@@ -1,12 +1,10 @@
 import EventCard from "./EventCard";
-import Fester from "next/font/local";
+import { FesterBold } from "../utils/fonts";
 import Reveal from "./Animations/Reveal";
 import event1 from "@/public/event-1.png";
 import event2 from "@/public/event-1.png";
 import event3 from "@/public/event-1.png";
 import event4 from "@/public/event-1.png";
-
-const FesterFont = Fester({ src: "../../public/Fester-bold.otf" });
 
 const events = [
   {
@@ -45,7 +43,7 @@ export default function Events() {
       <div>
         <Reveal initial={{ y: "-20%" }} animate={{ y: "0%" }}>
           <h2
-            className={`${FesterFont.className} text-3xl sm:text-5xl xl:text-6xl text-center px-4`}
+            className={`${FesterBold.className} text-3xl sm:text-5xl xl:text-6xl text-center px-4`}
           >
             Предстоящи Събития
           </h2>

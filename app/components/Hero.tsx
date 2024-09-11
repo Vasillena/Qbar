@@ -1,36 +1,37 @@
 "use client";
 
-import Fester from "next/font/local";
+import { FesterRegular, SixHands } from "../utils/fonts";
+
 import Image from "next/image";
 import Link from "next/link";
-import SixHands from "next/font/local";
 import { Video } from "./Video";
 import dynamic from "next/dynamic";
 import hero from "@/public/hero.png";
 import hero2 from "@/public/hero-2.png";
+import { useMemo } from "react";
 import { useTheme } from "../utils/themeProvider";
 
 const CountdownTimer = dynamic(() => import("./Countdown"), { ssr: false });
 
 const eventDate = new Date("2024-12-31T00:00:00");
 
-const FesterFont = Fester({ src: "../../public/Fester.woff" });
-const SixHandsFont = SixHands({ src: "../../public/SixHands.otf" });
-
 export function Hero() {
   const { theme } = useTheme();
+
+  const imageSrc = useMemo(() => (theme === "dark" ? hero : hero2), [theme]);
+
   return (
     <>
       <div id="home" className="h-svh sm:h-screen flex flex-col justify-center">
         <div className="max-w-[1440px] mx-auto mt-2  sm:mt-10 md:mt-20 pt-6 sm:pt-20 grid grid-cols-1 lg:grid-cols-2 px-8 lg:px-16">
           <div className="text-center lg:text-left order-2 sm:order-1">
             <h1
-              className={`text-3xl sm:text-5xl xl:text-6xl mt-12 sm:mt-0  ${FesterFont.className}`}
+              className={`text-3xl sm:text-5xl xl:text-6xl mt-12 sm:mt-0  ${FesterRegular.className}`}
             >
               Ритми, коктейли и незабравими нощи в Q
             </h1>
             <h2
-              className={`text-3xl sm:text-5xl xl:text-6xl  dark:text-[#FFC956] text-[#B96001] mt-4 ${SixHandsFont.className}`}
+              className={`text-3xl sm:text-5xl xl:text-6xl  dark:text-[#FFC956] text-[#B96001] mt-4 ${SixHands.className}`}
             >
               Където всяка вечер е шедьовър!
             </h2>
@@ -41,17 +42,19 @@ export function Hero() {
             </p>
             <Link
               href="/#contact"
-              className={`inline-block relative py-3 lg:py-[18px] px-4 sm:px-10 dark:bg-gradient-to-r dark:from-[#FFE259] dark:to-[#FFA751] bg-[#343434] sm:text-lg xl:text-xl font-semibold dark:text-[#222927] text-white rounded-full mt-4 md:mt-[66px] before:content-[''] before:absolute before:inset-0 before:rounded-full dark:before:shadow-[inset_0px_4px_4px_#DABB7E] before:shadow-[inset_0px_4px_4px_#61574A] before:pointer-events-none transition-shadow duration-300 ease-in-out hover:shadow-[0_0_20px_#B96001] dark:hover:shadow-[0_0_20px_#FFD70080] ${FesterFont.className}`}
+              className={`inline-block relative py-3 lg:py-[18px] px-4 sm:px-10 dark:bg-gradient-to-r dark:from-[#FFE259] dark:to-[#FFA751] bg-[#343434] sm:text-lg xl:text-xl font-semibold dark:text-[#222927] text-white rounded-full mt-4 md:mt-[66px] before:content-[''] before:absolute before:inset-0 before:rounded-full dark:before:shadow-[inset_0px_4px_4px_#DABB7E] before:shadow-[inset_0px_4px_4px_#61574A] before:pointer-events-none transition-shadow duration-300 ease-in-out hover:shadow-[0_0_20px_#B96001] dark:hover:shadow-[0_0_20px_#FFD70080] ${FesterRegular.className}`}
             >
               Запази място за следващото парти
             </Link>
           </div>
-          <div className="hidden min-[390px]:block sm:hidden lg:block w-[200px] h-[220px] lg:w-[520px] lg:h-[590px] xl:w-[640px] xl:h-[710px] relative order-1 sm:order-2 mx-auto sm:mx-0 -mb-10 sm:mb-0">
+          <div className="hidden min-[390px]:block sm:hidden lg:block w-[200px] h-[216px] lg:w-[520px] lg:h-[590px] xl:w-[640px] xl:h-[694px] relative order-1 sm:order-2 mx-auto sm:mx-0 -mb-10 sm:mb-0">
             <Image
-              src={theme === "dark" ? hero : hero2}
+              src={imageSrc}
               alt="Qbar logo"
+              // sizes="(max-width: 640px) 200px, (max-width: 768px) 300px, 640px"
               fill
               object-fit="contain"
+              priority
             />
             {/* <Video /> */}
           </div>
