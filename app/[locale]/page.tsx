@@ -18,9 +18,9 @@ import image18 from "@/public/18.png";
 import image19 from "@/public/19.png";
 import image2 from "@/public/2.png";
 import image20 from "@/public/20.png";
-import image21 from "@/public/21.png";
-import image22 from "@/public/22.png";
-import image23 from "@/public/23.png";
+// import image21 from "@/public/21.png";
+// import image22 from "@/public/22.png";
+// import image23 from "@/public/23.png";
 import image3 from "@/public/3.png";
 import image4 from "@/public/4.png";
 import image5 from "@/public/5.png";
@@ -40,9 +40,9 @@ const slidesBottom = [
   { image: image8 },
   { image: image9 },
   { image: image10 },
-  { image: image21 },
-  { image: image22 },
-  { image: image23 },
+  // { image: image21 },
+  // { image: image22 },
+  // { image: image23 },
 ];
 
 const slidesTop = [
