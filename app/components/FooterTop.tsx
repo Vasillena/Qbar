@@ -56,58 +56,61 @@ export default function FooterTop(): JSX.Element {
   const { theme } = useTheme();
 
   return (
-    <div className="max-w-[1440px] mx-auto grid grid-cols-1 xl:grid-cols-3 my-20 sm:px-16 gap-10">
-      <div className="xl:col-span-1 xl:justify-self-start flex flex-col lg:flex-row xl:flex-col items-center lg:items-end justify-between">
-        <div>
-          <h2
-            className={`${FesterFont.className} text-3xl sm:text-5xl xl:text-6xl text-center lg:text-left`}
-          >
-            Контакти
-          </h2>
-          <ContactInfoItem
-            iconDark={icon1}
-            iconLight={icon5}
-            title="Контакти"
-            lines={["+359 88 5888097", "qbarplovdiv@gmail.com"]}
-            noBorder
-          />
-          <ContactInfoItem
-            iconDark={icon2}
-            iconLight={icon6}
-            title="Адрес"
-            lines={["Улица Братя Пулеви 1,", "Plovdiv, Bulgaria 4000"]}
-          />
+    <>
+      <div id="contact" />
+      <div className="max-w-[1440px] mx-auto grid grid-cols-1 xl:grid-cols-3 my-20 sm:px-16 gap-10">
+        <div className="xl:col-span-1 xl:justify-self-start flex flex-col lg:flex-row xl:flex-col items-center lg:items-end justify-between">
+          <div>
+            <h2
+              className={`${FesterFont.className} text-3xl sm:text-5xl xl:text-6xl text-center lg:text-left`}
+            >
+              Контакти
+            </h2>
+            <ContactInfoItem
+              iconDark={icon1}
+              iconLight={icon5}
+              title="Контакти"
+              lines={["+359 88 5888097", "qbarplovdiv@gmail.com"]}
+              noBorder
+            />
+            <ContactInfoItem
+              iconDark={icon2}
+              iconLight={icon6}
+              title="Адрес"
+              lines={["Улица Братя Пулеви 1,", "Plovdiv, Bulgaria 4000"]}
+            />
+          </div>
+          <div>
+            <ContactInfoItem
+              iconDark={icon3}
+              iconLight={icon7}
+              title="Работно време"
+              lines={[
+                "Неделя - Четвъртък 9:00 - 1:00",
+                "Петък - Събота 9:00 - 3:00",
+              ]}
+            />
+            <ContactInfoItem
+              iconDark={icon4}
+              iconLight={icon8}
+              title="Последвайте ни"
+              lines={["Facebook | @Qbarplovdiv", "Instagram | @Qbarplovdiv"]}
+            />
+          </div>
         </div>
-        <div>
-          <ContactInfoItem
-            iconDark={icon3}
-            iconLight={icon7}
-            title="Работно време"
-            lines={[
-              "Неделя - Четвъртък 9:00 - 1:00",
-              "Петък - Събота 9:00 - 3:00",
-            ]}
-          />
-          <ContactInfoItem
-            iconDark={icon4}
-            iconLight={icon8}
-            title="Последвайте ни"
-            lines={["Facebook | @Qbarplovdiv", "Instagram | @Qbarplovdiv"]}
+        <div
+          key={theme}
+          className="xl:col-span-2 w-full xl:w-[700px] h-[400px] xl:h-[650px] justify-self-center xl:justify-self-end mt-4 border dark:border-[#FFC956] border-[#B96001]"
+        >
+          <MapIframe
+            source={
+              theme === "dark"
+                ? "https://snazzymaps.com/embed/636408"
+                : "https://snazzymaps.com/embed/638475"
+            }
           />
         </div>
       </div>
-      <div
-        key={theme}
-        className="xl:col-span-2 w-full xl:w-[700px] h-[400px] xl:h-[650px] justify-self-center xl:justify-self-end mt-4 border dark:border-[#FFC956] border-[#B96001]"
-      >
-        <MapIframe
-          source={
-            theme === "dark"
-              ? "https://snazzymaps.com/embed/636408"
-              : "https://snazzymaps.com/embed/638475"
-          }
-        />
-      </div>
-    </div>
+    </>
   );
 }

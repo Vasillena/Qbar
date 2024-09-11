@@ -57,6 +57,7 @@ export default function Events() {
         <EventCard {...events[2]} />
         <EventCard {...events[3]} />
       </div>
+      <div id="about" />
     </div>
   );
 }

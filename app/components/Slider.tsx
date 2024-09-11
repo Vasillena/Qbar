@@ -26,7 +26,7 @@ export default function Slider({ slides, reverse }: SliderProps): JSX.Element {
   };
 
   return (
-    <div id="gallery" className="max-w-[1440px] mx-auto sm:px-16">
+    <div className="max-w-[1440px] mx-auto sm:px-16">
       <div>
         <Image
           src={theme === "dark" ? decor1 : decor2}

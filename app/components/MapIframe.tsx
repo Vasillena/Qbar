@@ -8,7 +8,7 @@ interface MapIframeProps {
 
 export default function MapIframe({ source }: MapIframeProps) {
   useEffect(() => {
-    const existingIframe = document.querySelector("#contact iframe");
+    const existingIframe = document.querySelector("#map iframe");
     if (existingIframe) return;
 
     const iframe = document.createElement("iframe");
@@ -19,11 +19,11 @@ export default function MapIframe({ source }: MapIframeProps) {
     iframe.loading = "lazy";
     iframe.title = "Custom map showing location";
 
-    const container = document.getElementById("contact");
+    const container = document.getElementById("map");
     if (container) {
       container.appendChild(iframe);
     }
-  }, []);
+  }, [source]);
 
-  return <div className="w-full h-full" id="contact" />;
+  return <div className="w-full h-full" id="map" />;
 }

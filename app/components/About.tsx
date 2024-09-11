@@ -6,6 +6,7 @@ import Reveal from "./Animations/Reveal";
 import about1 from "@/public/about-dark.png";
 import about2 from "@/public/about-light.png";
 import about3 from "@/public/about-light-2.png";
+import about4 from "@/public/about-light-3.png";
 import decor1 from "@/public/decor-1-dark.png";
 import decor2 from "@/public/decor-1-light.png";
 import { useTheme } from "../utils/themeProvider";
@@ -16,7 +17,7 @@ export default function About() {
   const { theme } = useTheme();
   return (
     <>
-      <div id="about" className="max-w-[1440px] mx-auto relative sm:px-16">
+      <div className="max-w-[1440px] mx-auto relative sm:px-16">
         <div className="absolute top-0 right-0 sm:px-16">
           <Image src={theme === "dark" ? decor1 : decor2} alt="Decor" />
         </div>
@@ -25,9 +26,15 @@ export default function About() {
             src={theme === "dark" ? about1 : about2}
             alt="Lamps"
             style={{ width: "1440px", height: "auto" }}
-            className="hidden lg:block"
+            className="hidden xl:block"
           />
-          <div className="min-[1024px]:absolute top-0 right-0 dark:xl:w-[53%] xl:w-1/2 h-full flex flex-col justify-center py-8 px-2 sm:px-8 md:px-10 lg:px-32 xl:px-10 dark:bg-[#222927]  dark:bg-opacity-80 dark:backdrop-blur-md backdrop-blur-sm text-center xl:text-left">
+          <Image
+            src={theme === "dark" ? about1 : about4}
+            alt="Lamps"
+            style={{ width: "1440px", height: "auto" }}
+            className="hidden lg:block xl:hidden"
+          />
+          <div className="min-[1024px]:absolute top-0 right-0 dark:xl:w-[53%] xl:w-1/2 h-full flex flex-col justify-center py-8 px-2 sm:px-8 md:px-10 lg:px-32 xl:px-10 dark:bg-[#222927]   dark:bg-opacity-80 dark:backdrop-blur-md backdrop-blur-sm text-center xl:text-left">
             <Reveal initial={{ x: "5%" }} animate={{ x: "0%" }}>
               <h2
                 className={`${FesterFont.className} text-3xl sm:text-5xl xl:text-6xl`}
