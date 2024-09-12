@@ -3,10 +3,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { getI18n } from "@/locales/server";
-import logoLight from "@/public/logo-light.svg";
+import logoLight from "@/public/logo.svg";
 import logoSavy from "@/public/savy.svg";
-import socialsLight1 from "@/public/socials-1-light.svg";
-import socialsLight2 from "@/public/socials-2-light.svg";
+import socialsLight1 from "@/public/socials-1.svg";
+import socialsLight2 from "@/public/socials-2.svg";
 import { useI18n } from "@/locales/client";
 import { useTheme } from "../utils/themeProvider";
 

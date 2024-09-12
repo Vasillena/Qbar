@@ -7,12 +7,9 @@ import Link from "next/link";
 import MainNav from "./MainNav";
 import { SwitchLanguage } from "../components/SwitchLanguage";
 import { SwitchTheme } from "./SwitchTheme";
-import closeDark from "@/public/close-dark.svg";
-import closeLight from "@/public/close-light.svg";
-import logoDark from "@/public/logo-dark.svg";
-import logoLight from "@/public/logo-light.svg";
-import menuDark from "@/public/menu-dark.svg";
-import menuLight from "@/public/menu-light.svg";
+import close from "@/public/close.svg";
+import logo from "@/public/logo.svg";
+import menu from "@/public/menu.svg";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { useTheme } from "../utils/themeProvider";
@@ -21,21 +18,8 @@ export default function Navbar(): JSX.Element {
   const { theme } = useTheme();
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
-  // const [isScrolled, setIsScrolled] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLDivElement>(null);
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     setIsScrolled(window.scrollY > 1);
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
 
   const closeMenu = useCallback(() => {
     setOpen(false);
@@ -73,9 +57,7 @@ export default function Navbar(): JSX.Element {
 
   return (
     <div className="max-w-[1440px]">
-      {/* <div className="max-w-screen"> */}
       <div className="max-w-[1440px] hidden fixed top-0 left-0 right-0 mx-auto md:block z-50 bg-[#f2efea] dark:bg-[#222927]">
-        {/* <div className="max-w-screen hidden fixed top-0 left-0 right-0 mx-auto sm:block z-50 bg-[#222927]"> */}
         <div className="px-4 sm:px-9 lg:px-16 flex py-3 justify-between items-center border-b border-[#222927] dark:border-white">
           <div className="w-12 h-12 flex justify-center items-center">
             <SwitchTheme />
@@ -83,7 +65,7 @@ export default function Navbar(): JSX.Element {
           <MainNav>
             <Link href="/" className="ml-4 flex lg:ml-0 lg:mr-6 px-5">
               <Image
-                src={logoLight}
+                src={logo}
                 alt="Logo"
                 priority
                 className="w-10 h-auto"
@@ -104,11 +86,6 @@ export default function Navbar(): JSX.Element {
            max-w-[1440px] block fixed top-0 left-0 right-0 mx-auto md:hidden z-50 bg-[#f2efea] dark:bg-[#222927]"
       >
         <div className="w-full flex h-16 justify-between items-end">
-          {/* <div className="w-full border-b mr-8">
-            <div className="w-12 h-12 flex justify-center items-center">
-              <SwitchTheme />
-            </div>
-          </div> */}
           <div className="w-full border-b border-[#222927] dark:border-white mr-4">
             <div
               ref={buttonRef}
@@ -116,16 +93,7 @@ export default function Navbar(): JSX.Element {
             >
               <button onClick={() => setOpen(!open)}>
                 <Image
-                  src={
-                    open ? closeLight : menuLight
-                    // open
-                    //   ? theme === "dark"
-                    //     ? closeDark
-                    //     : closeLight
-                    //   : theme === "dark"
-                    //   ? menuDark
-                    //   : menuLight
-                  }
+                  src={open ? close : menu}
                   alt="Menu image"
                   style={{
                     width: "32px",
@@ -140,7 +108,7 @@ export default function Navbar(): JSX.Element {
           <div className="w-20 mt-4 flex justify-center items-center">
             <Link href="/">
               <Image
-                src={logoLight}
+                src={logo}
                 alt="Logo"
                 priority
                 className="w-full h-auto"

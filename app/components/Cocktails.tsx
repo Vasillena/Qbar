@@ -70,7 +70,7 @@ export default function Cocktails() {
                 <Image
                   src={cocktail.image}
                   alt="Cocktail"
-                  className={`${cocktail.width} ${cocktail.margin}`}
+                  className={`${cocktail.width} h-auto ${cocktail.margin}`}
                 />
               </div>
               <div className="w-36 min-[390px]:w-[110px] sm:w-[136px] md:w-[205px] lg:w-[136px] xl:w-[215px] h-36 min-[390px]:h-32 md:h-52 lg:h-44 xl:h-56 flex flex-col justify-center items-center dark:bg-[#394940] bg-[#B96001] rounded-3xl -mt-10 min-[390px]:-mt-6 sm:-mt-14 -z-10 md:text-xl xl:text-2xl text-center shadow-2xl px-2">

@@ -5,15 +5,18 @@ import { FesterRegular, SixHands } from "../utils/fonts";
 import Image from "next/image";
 import Link from "next/link";
 import { Video } from "./Video";
+import decor from "@/public/decor-4.png";
 import dynamic from "next/dynamic";
 import hero from "@/public/hero.png";
 import hero2 from "@/public/hero-2.png";
+import socials1 from "@/public/socials-4.png";
+import socials2 from "@/public/socials-3.png";
 import { useMemo } from "react";
 import { useTheme } from "../utils/themeProvider";
 
 const CountdownTimer = dynamic(() => import("./Countdown"), { ssr: false });
 
-const eventDate = new Date("2024-12-31T00:00:00");
+const eventDate = new Date("2024-09-12T21:00:00");
 
 export function Hero() {
   const { theme } = useTheme();
@@ -56,6 +59,60 @@ export function Hero() {
               object-fit="contain"
               priority
             />
+            <div className="hidden lg:flex w-8 h-auto flex-col  justify-center items-center ml-auto gap-5">
+              <Link
+                href="https://www.facebook.com/Qbarplovdiv"
+                aria-label="Facebook"
+                target="_blank"
+                className="relative inline-block transition-shadow duration-300 ease-in-out"
+              >
+                <Image
+                  src={socials1}
+                  alt="Facebook"
+                  className="w-6 h-auto"
+                  style={{
+                    filter:
+                      theme === "dark" ? "invert(1) brightness(2)" : undefined,
+                  }}
+                />
+              </Link>
+              <Link
+                href="https://www.instagram.com/qbarplovdiv/"
+                aria-label="Instagram"
+                target="_blank"
+                className="relative inline-block transition-shadow duration-300 ease-in-out"
+              >
+                <Image
+                  src={socials2}
+                  alt="Instagram"
+                  className="w-6 h-auto"
+                  style={{
+                    filter:
+                      theme === "dark" ? "invert(1) brightness(2)" : undefined,
+                  }}
+                />
+              </Link>
+
+              <Image
+                src={decor}
+                alt="Arrow"
+                className="w-2 h-auto mb-8 "
+                style={{
+                  filter:
+                    theme === "dark" ? "invert(1) brightness(2)" : undefined,
+                }}
+              />
+              <p
+                className="w-20 text-center"
+                style={{
+                  transform: "rotate(270deg)",
+                  // transformOrigin: "center",
+                }}
+              >
+                Follow us
+              </p>
+            </div>
+
             {/* <Video /> */}
           </div>
         </div>

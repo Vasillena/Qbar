@@ -4,21 +4,18 @@ import { FesterBold } from "../utils/fonts";
 import Image from "next/image";
 import Reveal from "./Animations/Reveal";
 import about1 from "@/public/about-dark.png";
-import about2 from "@/public/about-light.png";
+import about2 from "@/public/about-light-4.png";
 import about3 from "@/public/about-light-2.png";
 import about4 from "@/public/about-light-3.png";
-import decor1 from "@/public/decor-1-dark.png";
+import decor1 from "@/public/decor-1-light2.png";
 import decor2 from "@/public/decor-1-light.png";
 import { useMemo } from "react";
 import { useTheme } from "../utils/themeProvider";
 
+// import decor1 from "@/public/decor-1-dark.png";
+
 export default function About() {
   const { theme } = useTheme();
-
-  //   const FesterFont = useMemo(
-  //   () => Fester({ src: "../../public/Fester-bold.otf" }),
-  //   []
-  // );
 
   const decorImage = useMemo(
     () => (theme === "dark" ? decor1 : decor2),
@@ -40,7 +37,7 @@ export default function About() {
   return (
     <>
       <div className="max-w-[1440px] mx-auto relative sm:px-16">
-        <div className="absolute top-0 right-0 sm:px-16">
+        <div className="absolute -top-5 right-0 sm:px-16">
           <Image src={decorImage} alt="Decor" />
         </div>
 
@@ -88,7 +85,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="absolute bottom-0 right-0 sm:px-16">
+        <div className="absolute -bottom-5 right-0 sm:px-16">
           <Image
             src={decorImage}
             alt="Decor"
