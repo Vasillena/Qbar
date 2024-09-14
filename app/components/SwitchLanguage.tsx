@@ -13,13 +13,13 @@ export function SwitchLanguage() {
   const locale = useCurrentLocale();
   const { theme } = useTheme();
 
-  const filterClass = useMemo(
-    () =>
-      theme === "dark"
-        ? "md:invert md:brightness-0"
-        : "invert brightness-0 md:invert-0",
-    [theme]
-  );
+  // const filterClass = useMemo(
+  //   () =>
+  //     theme === "dark"
+  //       ? "md:invert md:brightness-0"
+  //       : "invert brightness-0 md:invert-0",
+  //   [theme]
+  // );
 
   const handleChangeToEnglish = () => changeLocale("en");
 
