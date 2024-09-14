@@ -13,11 +13,13 @@ export const ThemeProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
   const [theme, setTheme] = useState<string>("light");
+  const [isThemeLoaded, setIsThemeLoaded] = useState<boolean>(false);
 
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme") || "light";
     setTheme(storedTheme);
     document.documentElement.classList.add(storedTheme);
+    setIsThemeLoaded(true);
   }, []);
 
   const toggleTheme = () => {
@@ -27,6 +29,10 @@ export const ThemeProvider: React.FC<{ children: ReactNode }> = ({
     document.documentElement.classList.add(newTheme);
     localStorage.setItem("theme", newTheme);
   };
+
+  if (!isThemeLoaded) {
+    return null;
+  }
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>

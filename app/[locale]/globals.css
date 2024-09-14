@@ -15,13 +15,6 @@ body {
   background-color: #f2efea;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  body {
-    color: white;
-    background-color: #222927;
-  }
-} */
-
 html.dark body {
   color: white;
   background-color: #222927;

@@ -29,7 +29,7 @@ export function Hero() {
         <div className="max-w-[1440px] mx-auto mt-2  sm:mt-10 md:mt-20 pt-6 sm:pt-20 grid grid-cols-1 lg:grid-cols-2 px-8 lg:px-16">
           <div className="text-center lg:text-left order-2 sm:order-1">
             <h1
-              className={`text-3xl sm:text-5xl xl:text-6xl mt-12 sm:mt-0  ${FesterRegular.className}`}
+              className={`text-3xl sm:text-5xl xl:text-6xl mt-12 sm:mt-0  ${FesterRegular.className} hover-target`}
             >
               Ритми, коктейли и незабравими нощи в Q
             </h1>

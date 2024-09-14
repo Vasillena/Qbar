@@ -1,5 +1,6 @@
 import About from "../components/About";
 import Events from "../components/Events";
+import FollowPointer from "../components/Animations/FollowPointer";
 // import FollowPointer from "../components/Animations/FollowPointer";
 import FooterTop from "../components/FooterTop";
 import { Hero } from "../components/Hero";
@@ -72,7 +73,7 @@ export default function Home() {
       <Hero />
       <Slider slides={slidesTop} reverse />
       <Events />
-      {/* <FollowPointer /> */}
+      <FollowPointer />
       <About />
       <MenuHome />
       <Slider slides={slidesBottom} />

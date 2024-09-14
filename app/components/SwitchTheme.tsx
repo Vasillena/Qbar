@@ -1,8 +1,7 @@
 "use client";
 
-import Image from "next/image";
-import themeDark from "@/public/theme-dark.svg";
-import themeLight from "@/public/theme-light.svg";
+import { BsMoonStarsFill } from "react-icons/bs";
+import { HiSun } from "react-icons/hi";
 import { useTheme } from "../utils/themeProvider";
 
 export function SwitchTheme() {
@@ -10,11 +9,11 @@ export function SwitchTheme() {
 
   return (
     <div>
-      <button type="button" onClick={toggleTheme}>
+      <button type="button" onClick={toggleTheme} aria-label="Switch theme">
         {theme === "light" ? (
-          <Image src={themeDark} alt="Switch to dark theme" />
+          <BsMoonStarsFill className="hover:fill-[#B96001]" />
         ) : (
-          <Image src={themeLight} alt="Switch to light theme" />
+          <HiSun className="hover:fill-[#FFC956]" />
         )}
       </button>
     </div>
