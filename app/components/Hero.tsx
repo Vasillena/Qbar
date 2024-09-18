@@ -62,7 +62,7 @@ export function Hero() {
               object-fit="contain"
               priority
             />
-            <div className="hidden lg:flex w-8 h-auto flex-col  justify-center items-center ml-auto gap-5">
+            <div className="hidden lg:flex w-8 h-auto flex-col  justify-center items-center ml-auto gap-5 lg:mr-4 xl:mr-0">
               <Link
                 href="https://www.facebook.com/Qbarplovdiv"
                 aria-label="Facebook"
