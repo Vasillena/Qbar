@@ -2,8 +2,11 @@ import { FesterBold } from "../utils/fonts";
 import Image from "next/image";
 import Reveal from "./Animations/Reveal";
 import dessert from "@/public/cocktail-4.png";
+import { getI18n } from "@/locales/server";
 
-export default function Food() {
+export default async function Food() {
+  const t = await getI18n();
+
   return (
     <>
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-x-6 items-end mt-20 relative">
@@ -19,20 +22,15 @@ export default function Food() {
         <div className="lg:col-span-2 text-center lg:text-left lg:mt-0 p-10 md:pt-1 lg:p-0 text-white lg:text-[#30312a] dark:lg:text-white">
           <Reveal initial={{ x: "5%" }} animate={{ x: "0%" }}>
             <h2
-              className={`${FesterBold.className} text-3xl sm:text-5xl xl:text-6xl`}
+              className={`${FesterBold.className} inline-block text-3xl sm:text-5xl xl:text-6xl hover-target`}
             >
-              Вкусни Изкушения
+              {t("food.title")}
             </h2>
             <p className="sm:text-lg xl:text-xl pt-8 md:leading-6">
-              В Q не само музиката е на високо ниво, но и кухнята предлага
-              изкушения за всеки вкус. Нашите майстор-готвачи поднасят уникални
-              ястия, вдъхновени от най-добрите световни кулинарни традиции.
+              {t("food.text-1")}
             </p>
             <p className="sm:text-lg xl:text-xl pt-4 md:leading-6">
-              Всеки ден ви очаква специалитет на деня, приготвен с най-свежите
-              продукти и поднесен с внимание към детайла. Насладете се на
-              вкусово приключение, което ще допълни вашето Q изживяване в
-              сърцето на Капана.
+              {t("food.text-2")}
             </p>
           </Reveal>
         </div>

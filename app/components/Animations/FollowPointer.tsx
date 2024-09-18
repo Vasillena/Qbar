@@ -4,14 +4,16 @@ import { useEffect, useRef, useState } from "react";
 
 import { motion } from "framer-motion";
 import { useFollowPointer } from "../../utils/useFollowPointer";
+import { useTheme } from "@/app/utils/themeProvider";
 
 export default function FollowPointer() {
+  const { theme } = useTheme();
   const ref = useRef(null);
   const { x, y } = useFollowPointer(ref);
   const [isTouchDevice, setIsTouchDevice] = useState(false);
   const [hoverStyles, setHoverStyles] = useState({
     size: 6,
-    backgroundColor: "#30312a",
+    backgroundColor: theme === "dark" ? "#FFE259" : "#30312a",
     mixBlendMode: "normal",
     boxShadow: "unset",
   });
@@ -40,25 +42,26 @@ export default function FollowPointer() {
     const handleMouseLeave = () => {
       setHoverStyles({
         size: 6,
-        backgroundColor: "#30312a",
+        backgroundColor: theme === "dark" ? "#FFE259" : "#30312a",
         mixBlendMode: "normal",
         boxShadow: "unset",
       });
     };
 
-    const hoverElement = document.querySelector(".hover-target");
-    if (hoverElement) {
+    const hoverElements = document.querySelectorAll(".hover-target");
+
+    hoverElements.forEach((hoverElement) => {
       hoverElement.addEventListener("mouseenter", handleMouseEnter);
       hoverElement.addEventListener("mouseleave", handleMouseLeave);
-    }
+    });
 
     return () => {
-      if (hoverElement) {
+      hoverElements.forEach((hoverElement) => {
         hoverElement.removeEventListener("mouseenter", handleMouseEnter);
         hoverElement.removeEventListener("mouseleave", handleMouseLeave);
-      }
+      });
     };
-  }, []);
+  }, [theme]);
 
   if (isTouchDevice) {
     return null;

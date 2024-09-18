@@ -23,13 +23,13 @@ export default function Menu() {
   }, []);
 
   const menuItems = [
-    { text: "Hot Drinks", image: icon1 },
-    { text: "Cold Drinks", image: icon2 },
-    { text: "Soft Drinks", image: icon3 },
-    { text: "Mixed Drinks", image: icon4 },
-    { text: "Wine", image: icon5 },
-    { text: "Alcohol", image: icon6 },
-    { text: "Beer", image: icon7 },
+    { text: t("menu.text-1"), image: icon1 },
+    { text: t("menu.text-2"), image: icon2 },
+    { text: t("menu.text-3"), image: icon3 },
+    { text: t("menu.text-4"), image: icon4 },
+    { text: t("menu.text-5"), image: icon5 },
+    { text: t("menu.text-6"), image: icon6 },
+    { text: t("menu.text-7"), image: icon7 },
   ];
 
   return (
@@ -39,7 +39,7 @@ export default function Menu() {
           locale === "en" ? Trailmade.className : SixHands.className
         }`}
       >
-        {t("menu.menu-2")}
+        {t("nav.menu")}
       </h1>
       <div className="w-full flex flex-col justify-center items-center">
         {menuItems.map((item) => (

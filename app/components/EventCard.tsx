@@ -7,7 +7,7 @@ interface EventCardProps {
   image: StaticImageData;
   date: string;
   day: string;
-  hour: string;
+  hour?: string;
   name: string;
 }
 
@@ -30,7 +30,7 @@ export default function EventCard({
       <div className="w-52 sm:w-72 md:w-64 h-36 sm:h-52 md:h-64 border dark:border-[#FFC956] border-[#B96001] mt-0 md:-mt-3 -ml-2 md:ml-0 rounded-r-[30px] md:rounded-tr-none md:rounded-b-3xl text-2xl sm:text-4xl -z-10 flex flex-col justify-center items-center ">
         <p className={`${FesterBold.className} text-center`}>{date}</p>
         <p className="text-base sm:text-2xl text-center">{day}</p>
-        <p className="text-base sm:text-2xl text-center">{hour}</p>
+        {hour && <p className="text-base sm:text-2xl text-center">{hour}</p>}
         <p
           className={`${Trailmade.className} text-4xl sm:text-6xl pt-4 text-center transition-all duration-300 ease-in-out group-hover:bg-gradient-to-r dark:group-hover:from-[#FFC956] group-hover:from-[#B96001] dark:group-hover:via-[#FFD700] group-hover:via-[#C05438] dark:group-hover:to-[#FF6347] group-hover:to-[#711513] group-hover:bg-clip-text group-hover:text-transparent`}
         >

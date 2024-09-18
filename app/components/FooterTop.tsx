@@ -60,38 +60,35 @@ export default function FooterTop(): JSX.Element {
         <div className="xl:col-span-1 xl:justify-self-start flex flex-col lg:flex-row xl:flex-col items-center lg:items-end justify-between">
           <div>
             <h2
-              className={`${FesterBold.className} text-3xl sm:text-5xl xl:text-6xl text-center lg:text-left`}
+              className={`${FesterBold.className} inline-block text-3xl sm:text-5xl xl:text-6xl text-center lg:text-left hover-target`}
             >
-              Контакти
+              {t("contacts.text-1")}
             </h2>
             <ContactInfoItem
               iconDark={icon1}
               iconLight={icon5}
-              title="Контакти"
+              title={t("contacts.text-1")}
               lines={["+359 88 5888097", "qbarplovdiv@gmail.com"]}
               noBorder
             />
             <ContactInfoItem
               iconDark={icon2}
               iconLight={icon6}
-              title="Адрес"
-              lines={["Улица Братя Пулеви 1,", "Plovdiv, Bulgaria 4000"]}
+              title={t("contacts.text-2")}
+              lines={[t("contacts.text-2-1"), t("contacts.text-2-2")]}
             />
           </div>
           <div>
             <ContactInfoItem
               iconDark={icon3}
               iconLight={icon7}
-              title="Работно време"
-              lines={[
-                "Неделя - Четвъртък 9:00 - 1:00",
-                "Петък - Събота 9:00 - 3:00",
-              ]}
+              title={t("contacts.text-3")}
+              lines={[t("contacts.text-3-1")]}
             />
             <ContactInfoItem
               iconDark={icon4}
               iconLight={icon8}
-              title="Последвайте ни"
+              title={t("contacts.text-4")}
               lines={["Facebook | @Qbarplovdiv", "Instagram | @Qbarplovdiv"]}
             />
           </div>

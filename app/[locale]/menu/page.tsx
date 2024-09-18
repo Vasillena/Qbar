@@ -1,7 +1,5 @@
-import Image from "next/image";
+import FollowPointer from "@/app/components/Animations/FollowPointer";
 import Menu from "../../components/Menu";
-import decorDark from "@/public/decor-3-dark.png";
-import decorLight from "@/public/decor-3-light.png";
 
 export async function generateMetadata({
   params: { locale },
@@ -11,13 +9,12 @@ export async function generateMetadata({
   let title, description, keywords;
 
   if (locale === "bg") {
-    title = "Меню | sipi.bg";
+    title = "Меню | q-bar.bg";
     description = "Разгледайте нашето меню.";
     keywords = [
-      "S.I.P.I",
-      "СИПИ",
-      "бар СИПИ",
-      "СИПИ Пловдив",
+      "Qbar",
+      "бар Qbar",
+      "Qbar Пловдив",
       "бар Пловдив",
       "бар Капана",
       "Пловдив",
@@ -29,9 +26,8 @@ export async function generateMetadata({
       "атмосфера",
       "нощен живот",
       "меню",
-      "SIPI",
-      "bar SIPI",
-      "Sipi Plovdiv",
+      "bar Qbar",
+      "Qbar Plovdiv",
       "bar Plovdiv",
       "bar Kapana",
       "Plovdiv",
@@ -42,16 +38,14 @@ export async function generateMetadata({
       "cocktails",
       "vibe",
       "nightlife",
-      "menu",
     ];
   } else if (locale === "en") {
-    title = "Menu | sipi.bg";
+    title = "Menu | q-bar.bg";
     description = "Browse our menu.";
     keywords = [
-      "S.I.P.I",
-      "СИПИ",
-      "бар СИПИ",
-      "СИПИ Пловдив",
+      "Qbar",
+      "бар Qbar",
+      "Qbar Пловдив",
       "бар Пловдив",
       "бар Капана",
       "Пловдив",
@@ -63,9 +57,8 @@ export async function generateMetadata({
       "атмосфера",
       "нощен живот",
       "меню",
-      "SIPI",
-      "bar SIPI",
-      "Sipi Plovdiv",
+      "bar Qbar",
+      "Qbar Plovdiv",
       "bar Plovdiv",
       "bar Kapana",
       "Plovdiv",
@@ -76,7 +69,6 @@ export async function generateMetadata({
       "cocktails",
       "vibe",
       "nightlife",
-      "menu",
     ];
   }
 
@@ -88,7 +80,7 @@ export async function generateMetadata({
     },
   };
 
-  const metadataBase = new URL("https://sipi.bg");
+  const metadataBase = new URL("https://q-bar.bg");
 
   return {
     title,
@@ -118,6 +110,7 @@ export default async function MenuPage() {
         }}
       />
       <Menu />
+      <FollowPointer />
     </div>
   );
 }

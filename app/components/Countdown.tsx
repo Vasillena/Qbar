@@ -2,6 +2,7 @@
 
 import Fester from "next/font/local";
 import React from "react";
+import { useI18n } from "@/locales/client";
 import { useTimer } from "react-timer-hook";
 
 const FesterFont = Fester({ src: "../../public/Fester-bold.otf" });
@@ -32,22 +33,24 @@ const TimeCard: React.FC<TimeCardProps> = React.memo(function TimeCard({
 TimeCard.displayName = "TimeCard";
 
 const CountdownTimer: React.FC<CountdownTimerProps> = ({ expiryTimestamp }) => {
+  const t = useI18n();
+
   const { seconds, minutes, hours, days } = useTimer({
     expiryTimestamp,
     onExpire: () => console.warn("Timer expired"),
   });
 
   const timeUnits = [
-    { value: days, label: "DAYS" },
-    { value: hours, label: "HOURS" },
-    { value: minutes, label: "MINUTES" },
-    { value: seconds, label: "SECONDS" },
+    { value: days, label: t("hero.days") },
+    { value: hours, label: t("hero.hours") },
+    { value: minutes, label: t("hero.minutes") },
+    { value: seconds, label: t("hero.seconds") },
   ];
 
   return (
     <div className="h-32 sm:h-40 md:h-48 lg:h-56 sm:rounded-3xl dark:bg-[#222927]/80 bg-[#F2EFEA]/80 backdrop-blur-sm px-1">
       <p className="py-3 lg:py-6 text-center sm:text-xl xl:text-2xl font-light">
-        До следващото парти остават...
+        {t("hero.countdown")}
       </p>
       <div className="w-full flex justify-between items-center">
         {timeUnits.map((unit, index) => (

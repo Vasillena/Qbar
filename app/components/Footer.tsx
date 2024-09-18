@@ -5,8 +5,8 @@ import Link from "next/link";
 import { getI18n } from "@/locales/server";
 import logoLight from "@/public/logo.svg";
 import logoSavy from "@/public/savy.svg";
-import socialsLight1 from "@/public/socials-1.svg";
-import socialsLight2 from "@/public/socials-2.svg";
+import socials1 from "@/public/socials-4.png";
+import socials2 from "@/public/socials-3.png";
 import { useI18n } from "@/locales/client";
 import { useTheme } from "../utils/themeProvider";
 
@@ -34,40 +34,39 @@ export default function Footer(): JSX.Element {
         <div className="w-full flex flex-col">
           <div className=" mb-6 self-end flex gap-6">
             <Link
-              href="https://www.instagram.com/qbarplovdiv/"
-              aria-label="Instagram"
-              target="_blank"
-              className="relative inline-block transition-shadow duration-300 ease-in-out"
-            >
-              <div className="relative w-6 h-6 rounded-full overflow-hidden shadow-none hover:shadow-[0_0_20px_#B96001] dark:hover:shadow-[0_0_20px_#FFD70080]">
-                <Image
-                  src={socialsLight1}
-                  alt="Socials"
-                  className="w-full h-full object-cover"
-                  style={{
-                    filter:
-                      theme === "dark" ? "invert(1) brightness(2)" : undefined,
-                  }}
-                />
-              </div>
-            </Link>
-            <Link
               href="https://www.facebook.com/Qbarplovdiv"
               aria-label="Facebook"
               target="_blank"
               className="relative inline-block transition-shadow duration-300 ease-in-out"
             >
-              <div className="relative w-6 h-6 rounded-full overflow-hidden shadow-none hover:shadow-[0_0_20px_#B96001] dark:hover:shadow-[0_0_20px_#FFD70080]">
-                <Image
-                  src={socialsLight2}
-                  alt="Socials"
-                  className="w-full h-full object-cover"
-                  style={{
-                    filter:
-                      theme === "dark" ? "invert(1) brightness(2)" : undefined,
-                  }}
-                />
-              </div>
+              {/* <div className="relative w-6 h-6 rounded-md overflow-hidden shadow-none hover:shadow-[0_0_20px_#B96001] dark:hover:shadow-[0_0_20px_#FFD70080]"> */}
+              <Image
+                src={socials1}
+                alt="Socials"
+                // className="w-full h-full object-cover"
+                className="w-6 h-auto"
+                style={{
+                  filter:
+                    theme === "dark" ? "invert(1) brightness(2)" : undefined,
+                }}
+              />
+              {/* </div> */}
+            </Link>
+            <Link
+              href="https://www.instagram.com/qbarplovdiv/"
+              aria-label="Instagram"
+              target="_blank"
+              className="relative inline-block transition-shadow duration-300 ease-in-out"
+            >
+              <Image
+                src={socials2}
+                alt="Instagram"
+                className="w-6 h-auto"
+                style={{
+                  filter:
+                    theme === "dark" ? "invert(1) brightness(2)" : undefined,
+                }}
+              />
             </Link>
           </div>
           <div className="border-t dark:border-[#FFC956] border-[#B96001] py-6 ml-20 flex flex-col md:flex-row justify-between font-light text-center md:text-left">
@@ -76,15 +75,22 @@ export default function Footer(): JSX.Element {
             </div>
             <div className="flex gap-2 justify-center items-end">
               <p>Design & Build by </p>
-              <Image
-                src={logoSavy}
-                alt="Savy logo"
-                className="w-12 mb-[2px] h-auto"
-                style={{
-                  filter:
-                    theme === "dark" ? "invert(1) brightness(2)" : undefined,
-                }}
-              />
+              <Link
+                href="https://savy-creations.vercel.app"
+                aria-label="Savy Creations"
+                target="_blank"
+                className="relative inline-block transition-shadow duration-300 ease-in-out"
+              >
+                <Image
+                  src={logoSavy}
+                  alt="Savy logo"
+                  className="w-12 mb-[2px] h-auto"
+                  style={{
+                    filter:
+                      theme === "dark" ? "invert(1) brightness(2)" : undefined,
+                  }}
+                />
+              </Link>
             </div>
           </div>
         </div>

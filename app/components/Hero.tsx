@@ -1,14 +1,15 @@
 "use client";
 
-import { FesterRegular, SixHands } from "../utils/fonts";
+import { FesterRegular, SixHands, Trailmade } from "../utils/fonts";
+import { useCurrentLocale, useI18n } from "@/locales/client";
 
 import Image from "next/image";
 import Link from "next/link";
 import { Video } from "./Video";
 import decor from "@/public/decor-4.png";
 import dynamic from "next/dynamic";
-import hero from "@/public/hero.png";
-import hero2 from "@/public/hero-2.png";
+import hero from "@/public/hero.webp";
+import hero2 from "@/public/hero-2.webp";
 import socials1 from "@/public/socials-4.png";
 import socials2 from "@/public/socials-3.png";
 import { useMemo } from "react";
@@ -16,10 +17,12 @@ import { useTheme } from "../utils/themeProvider";
 
 const CountdownTimer = dynamic(() => import("./Countdown"), { ssr: false });
 
-const eventDate = new Date("2024-09-12T21:00:00");
+const eventDate = new Date("2024-09-20T21:00:00");
 
 export function Hero() {
   const { theme } = useTheme();
+  const t = useI18n();
+  const locale = useCurrentLocale();
 
   const imageSrc = useMemo(() => (theme === "dark" ? hero : hero2), [theme]);
 
@@ -31,23 +34,23 @@ export function Hero() {
             <h1
               className={`text-3xl sm:text-5xl xl:text-6xl mt-12 sm:mt-0  ${FesterRegular.className} hover-target`}
             >
-              Ритми, коктейли и незабравими нощи в Q
+              {t("hero.title")}
             </h1>
             <h2
-              className={`text-3xl sm:text-5xl xl:text-6xl  dark:text-[#FFC956] text-[#B96001] mt-4 ${SixHands.className}`}
+              className={`inline-block text-3xl sm:text-5xl xl:text-6xl  dark:text-[#FFC956] text-[#B96001] mt-4 ${
+                locale === "bg" ? SixHands.className : Trailmade.className
+              }`}
             >
-              Където всяка вечер е шедьовър!
+              {t("hero.title-2")}
             </h2>
             <p className="sm:text-xl xl:text-2xl mt-4 px-1 sm:px-20 md:px-28 lg:pl-0 lg:pr-12">
-              Потопете се в свят, където електронния клубен ритъм среща
-              коктейлното изкуство. Очаквайте нещо повече от вечер - очаквайте
-              изживяване.
+              {t("hero.text")}
             </p>
             <Link
               href="/#contact"
               className={`inline-block relative py-3 lg:py-[18px] px-4 sm:px-10 dark:bg-gradient-to-r dark:from-[#FFE259] dark:to-[#FFA751] bg-[#343434] sm:text-lg xl:text-xl font-semibold dark:text-[#222927] text-white rounded-full mt-4 md:mt-[66px] before:content-[''] before:absolute before:inset-0 before:rounded-full dark:before:shadow-[inset_0px_4px_4px_#DABB7E] before:shadow-[inset_0px_4px_4px_#61574A] before:pointer-events-none transition-shadow duration-300 ease-in-out hover:shadow-[0_0_20px_#B96001] dark:hover:shadow-[0_0_20px_#FFD70080] ${FesterRegular.className}`}
             >
-              Запази място за следващото парти
+              {t("hero.button")}
             </Link>
           </div>
           <div className="hidden min-[390px]:block sm:hidden lg:block w-[200px] h-[216px] lg:w-[520px] lg:h-[590px] xl:w-[640px] xl:h-[694px] relative order-1 sm:order-2 mx-auto sm:mx-0 -mb-10 sm:mb-0">

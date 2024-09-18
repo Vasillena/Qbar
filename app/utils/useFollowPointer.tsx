@@ -1,9 +1,8 @@
 import { RefObject, useEffect } from "react";
 import { frame, useMotionValue, useSpring } from "framer-motion";
 
-// const spring = { damping: 3, stiffness: 50, restDelta: 0.001 };
-// const spring = { damping: 6, stiffness: 40, restDelta: 0.001 };
-const spring = { damping: 50, stiffness: 1500, restDelta: 0.0001 };
+// const spring = { damping: 50, stiffness: 1500, restDelta: 0.0001 };
+const spring = { damping: 50, stiffness: 500, restDelta: 0.0001 };
 
 export function useFollowPointer(ref: RefObject<HTMLElement>) {
   const x = useSpring(useMotionValue(0), spring);
@@ -14,8 +13,8 @@ export function useFollowPointer(ref: RefObject<HTMLElement>) {
 
     const handlePointerMove = ({ clientX, clientY }: MouseEvent) => {
       frame.read(() => {
-        x.set(clientX);
-        y.set(clientY);
+        x.set(clientX - 10);
+        y.set(clientY - 10);
       });
     };
 
