@@ -6,7 +6,6 @@ import cocktail1 from "@/public/cocktail-1.png";
 import cocktail2 from "@/public/cocktail-2.png";
 import cocktail3 from "@/public/cocktail-3.png";
 import { getI18n } from "@/locales/server";
-import { useI18n } from "@/locales/client";
 
 const cocktails = [
   {
@@ -35,7 +34,7 @@ const cocktails = [
   },
 ];
 
-export default async function Cocktails() {
+export default async function Cocktails(): Promise<JSX.Element> {
   const t = await getI18n();
 
   return (

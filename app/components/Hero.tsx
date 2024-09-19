@@ -19,7 +19,7 @@ const CountdownTimer = dynamic(() => import("./Countdown"), { ssr: false });
 
 const eventDate = new Date("2024-09-20T21:00:00");
 
-export function Hero() {
+export function Hero(): JSX.Element {
   const { theme } = useTheme();
   const t = useI18n();
   const locale = useCurrentLocale();

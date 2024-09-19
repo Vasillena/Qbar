@@ -1,4 +1,4 @@
-export function Video() {
+export function Video(): JSX.Element {
   return (
     <div className="relative w-full h-full flex items-start justify-center overflow-hidden">
       <video

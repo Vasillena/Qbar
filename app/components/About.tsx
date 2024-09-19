@@ -13,7 +13,7 @@ import { useI18n } from "@/locales/client";
 import { useMemo } from "react";
 import { useTheme } from "../utils/themeProvider";
 
-export default function About() {
+export default function About(): JSX.Element {
   const { theme } = useTheme();
   const t = useI18n();
 

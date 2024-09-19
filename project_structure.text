@@ -1,0 +1,148 @@
+- .eslintrc.json
+- .gitignore
+- app
+  - components
+    - About.tsx
+    - Animations
+      - FollowPointer.tsx
+      - Reveal.tsx
+    - Cocktails.tsx
+    - Countdown.tsx
+    - EventCard.tsx
+    - Events.tsx
+    - Food.tsx
+    - Footer.tsx
+    - FooterTop.tsx
+    - Hero.tsx
+    - MainNav.tsx
+    - MapIframe.tsx
+    - Menu.tsx
+    - MenuCard.tsx
+    - MenuHome.tsx
+    - Navbar.tsx
+    - Slider.tsx
+    - SwitchLanguage.tsx
+    - SwitchTheme.tsx
+    - Video.tsx
+  - custom.d.ts
+  - favicon.ico
+  - menuList
+    - menuList.json
+    - menuListBG.json
+  - utils
+    - fonts.ts
+    - themeProvider.tsx
+    - useFollowPointer.tsx
+  - [locale]
+    - error.tsx
+    - globals.css
+    - layout.tsx
+    - loading.tsx
+    - menu
+      - page.tsx
+    - not-found.tsx
+    - page.tsx
+    - provider.tsx
+    - [rest]
+      - page.ts
+- LICENSE
+- locales
+  - bg.ts
+  - client.ts
+  - en.ts
+  - server.ts
+- middleware.ts
+- next-env.d.ts
+- next.config.mjs
+- package-lock.json
+- package.json
+- postcss.config.mjs
+- public
+  - 1.webp
+  - 10.webp
+  - 11.webp
+  - 12.webp
+  - 13.webp
+  - 14.webp
+  - 15.webp
+  - 16.webp
+  - 17.webp
+  - 18.webp
+  - 19.webp
+  - 2.webp
+  - 20.webp
+  - 21.webp
+  - 22.webp
+  - 23.webp
+  - 24.webp
+  - 25.webp
+  - 26.webp
+  - 27.webp
+  - 28.webp
+  - 3.webp
+  - 4.webp
+  - 5.webp
+  - 6.webp
+  - 7.webp
+  - 8.webp
+  - 9.webp
+  - about-dark.webp
+  - about-light-2.webp
+  - about-light-3.webp
+  - about-light.webp
+  - close.svg
+  - cocktail-1.png
+  - cocktail-2.png
+  - cocktail-3.png
+  - cocktail-4.png
+  - decor-1-dark.png
+  - decor-1-light.png
+  - decor-1-light2.png
+  - decor-2-dark.png
+  - decor-2-light.png
+  - decor-3-dark.png
+  - decor-3-light.png
+  - decor-4.png
+  - event-1.jpg
+  - event-2.jpg
+  - event-3.jpg
+  - event-4.png
+  - event-5.jpg
+  - Fester-bold.otf
+  - Fester.otf
+  - footer-icon-1-dark.svg
+  - footer-icon-1-light.svg
+  - footer-icon-2-dark.svg
+  - footer-icon-2-light.svg
+  - footer-icon-3-dark.svg
+  - footer-icon-3-light.svg
+  - footer-icon-4-dark.svg
+  - footer-icon-4-light.svg
+  - hero-2.mp4
+  - hero-2.png
+  - hero-2.webp
+  - hero.mp4
+  - hero.png
+  - hero.webm
+  - hero.webp
+  - language.svg
+  - loading.json
+  - logo.svg
+  - menu-icon-1.svg
+  - menu-icon-2.svg
+  - menu-icon-3.svg
+  - menu-icon-4.svg
+  - menu-icon-5.svg
+  - menu-icon-6.svg
+  - menu-icon-7.svg
+  - menu.svg
+  - savy.svg
+  - SixHands.otf
+  - socials-3.png
+  - socials-4.png
+  - theme-dark.svg
+  - theme-light.svg
+  - Trailmade.otf
+- README.md
+- tailwind.config.ts
+- tsconfig.json

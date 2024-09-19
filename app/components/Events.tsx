@@ -8,7 +8,7 @@ import event4 from "@/public/event-4.png";
 import event5 from "@/public/event-5.jpg";
 import { getI18n } from "@/locales/server";
 
-export default async function Events() {
+export default async function Events(): Promise<JSX.Element> {
   const t = await getI18n();
 
   const events = [

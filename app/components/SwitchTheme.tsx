@@ -4,7 +4,7 @@ import { BsMoonStarsFill } from "react-icons/bs";
 import { HiSun } from "react-icons/hi";
 import { useTheme } from "../utils/themeProvider";
 
-export function SwitchTheme() {
+export function SwitchTheme(): JSX.Element {
   const { theme, toggleTheme } = useTheme();
 
   return (

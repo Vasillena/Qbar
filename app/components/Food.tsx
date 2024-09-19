@@ -4,7 +4,7 @@ import Reveal from "./Animations/Reveal";
 import dessert from "@/public/cocktail-4.png";
 import { getI18n } from "@/locales/server";
 
-export default async function Food() {
+export default async function Food(): Promise<JSX.Element> {
   const t = await getI18n();
 
   return (

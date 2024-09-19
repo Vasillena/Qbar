@@ -13,7 +13,7 @@ import icon5 from "@/public/menu-icon-5.svg";
 import icon6 from "@/public/menu-icon-6.svg";
 import icon7 from "@/public/menu-icon-7.svg";
 
-export default function Menu() {
+export default function Menu(): JSX.Element {
   const t = useI18n();
   const locale = useCurrentLocale();
   const [openAccordion, setOpenAccordion] = useState<string | null>(null);

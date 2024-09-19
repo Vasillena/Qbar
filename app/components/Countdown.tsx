@@ -32,7 +32,9 @@ const TimeCard: React.FC<TimeCardProps> = React.memo(function TimeCard({
 
 TimeCard.displayName = "TimeCard";
 
-const CountdownTimer: React.FC<CountdownTimerProps> = ({ expiryTimestamp }) => {
+const CountdownTimer: React.FC<CountdownTimerProps> = ({
+  expiryTimestamp,
+}): JSX.Element => {
   const t = useI18n();
 
   const { seconds, minutes, hours, days } = useTimer({
