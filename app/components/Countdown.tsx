@@ -1,14 +1,15 @@
 "use client";
 
+import React, { useState } from "react";
+
 import Fester from "next/font/local";
-import React from "react";
 import { useI18n } from "@/locales/client";
 import { useTimer } from "react-timer-hook";
 
 const FesterFont = Fester({ src: "../../public/Fester-bold.otf" });
 
 interface CountdownTimerProps {
-  expiryTimestamp: Date;
+  expiryTimestamps: Date[];
 }
 
 interface TimeCardProps {
@@ -33,13 +34,23 @@ const TimeCard: React.FC<TimeCardProps> = React.memo(function TimeCard({
 TimeCard.displayName = "TimeCard";
 
 const CountdownTimer: React.FC<CountdownTimerProps> = ({
-  expiryTimestamp,
+  expiryTimestamps,
 }): JSX.Element => {
   const t = useI18n();
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  const { seconds, minutes, hours, days } = useTimer({
-    expiryTimestamp,
-    onExpire: () => console.warn("Timer expired"),
+  const { seconds, minutes, hours, days, restart } = useTimer({
+    expiryTimestamp: expiryTimestamps[currentIndex],
+    onExpire: () => {
+      if (currentIndex < expiryTimestamps.length - 1) {
+        const nextIndex = currentIndex + 1;
+        setCurrentIndex(nextIndex);
+        restart(expiryTimestamps[nextIndex], true);
+      } else {
+        console.warn("All timers expired");
+      }
+    },
+    autoStart: true,
   });
 
   const timeUnits = [

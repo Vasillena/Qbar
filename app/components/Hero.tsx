@@ -17,7 +17,12 @@ import { useTheme } from "../utils/themeProvider";
 
 const CountdownTimer = dynamic(() => import("./Countdown"), { ssr: false });
 
-const eventDate = new Date("2024-09-20T21:00:00");
+const eventDates = [
+  new Date("2024-09-21T21:00:00"),
+  new Date("2024-09-24T21:00:00"),
+  new Date("2024-09-26T21:00:00"),
+  new Date("2024-09-27T21:00:00"),
+];
 
 export function Hero(): JSX.Element {
   const { theme } = useTheme();
@@ -109,7 +114,6 @@ export function Hero(): JSX.Element {
                 className="w-20 text-center"
                 style={{
                   transform: "rotate(270deg)",
-                  // transformOrigin: "center",
                 }}
               >
                 Follow us
@@ -120,11 +124,11 @@ export function Hero(): JSX.Element {
           </div>
         </div>
         <div className="max-w-[1440px] w-full mx-auto hidden md:block lg:hidden xl:block mt-8 xl:-mt-52 mb-10 px-8 lg:px-16">
-          <CountdownTimer expiryTimestamp={eventDate} />
+          <CountdownTimer expiryTimestamps={eventDates} />
         </div>
       </div>
       <div className="block md:hidden lg:block xl:hidden px-0 sm:px-16 mb-12">
-        <CountdownTimer expiryTimestamp={eventDate} />
+        <CountdownTimer expiryTimestamps={eventDates} />
       </div>
     </>
   );
