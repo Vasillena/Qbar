@@ -19,6 +19,13 @@ export default function FollowPointer() {
   });
 
   useEffect(() => {
+    setHoverStyles((prevStyles) => ({
+      ...prevStyles,
+      backgroundColor: theme === "dark" ? "#FFE259" : "#30312a",
+    }));
+  }, [theme]);
+
+  useEffect(() => {
     const checkIfTouchDevice = () => {
       if (
         "ontouchstart" in window ||

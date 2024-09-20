@@ -46,7 +46,7 @@ export default {
       "Explore our diverse range of signature cocktails designed to awaken your senses and take you on an unforgettable journey. Share your preferences with us, and we'll create something special just for you.",
     "text-3":
       "          At Q, cocktails are not just drinks—they are a manifestation of passion and creativity. Come and discover your new favorite cocktail.",
-    button: "Discover more favorite flavors",
+    button: "Discover more",
   },
   food: {
     title: "Gourmet Delights",
