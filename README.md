@@ -11,7 +11,7 @@ Immerse yourself in a world where great beats meet the art of cocktails. Expect 
    <br/>
 This project is built with Next.js, Tailwind and Framer Motion.
 
-View project at: https://qbar-blue.vercel.app
+View project at: https://q-bar.bg
 
 
 ## 📜 Table of Contents
