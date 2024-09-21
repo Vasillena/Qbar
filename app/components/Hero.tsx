@@ -18,7 +18,7 @@ import { useTheme } from "../utils/themeProvider";
 const CountdownTimer = dynamic(() => import("./Countdown"), { ssr: false });
 
 const eventDates = [
-  new Date("2024-09-21T21:00:00"),
+  new Date("2024-09-21T22:47:00"),
   new Date("2024-09-24T21:00:00"),
   new Date("2024-09-26T21:00:00"),
   new Date("2024-09-27T21:00:00"),

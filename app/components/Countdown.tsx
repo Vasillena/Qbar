@@ -43,15 +43,22 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({
     expiryTimestamp: expiryTimestamps[currentIndex],
     onExpire: () => {
       if (currentIndex < expiryTimestamps.length - 1) {
-        const nextIndex = currentIndex + 1;
-        setCurrentIndex(nextIndex);
-        restart(expiryTimestamps[nextIndex], true);
+        // const nextIndex = currentIndex + 1;
+        // setCurrentIndex(nextIndex);
+        // restart(expiryTimestamps[nextIndex], true);
+        setCurrentIndex((prevIndex) => prevIndex + 1);
       } else {
         console.warn("All timers expired");
       }
     },
     autoStart: true,
   });
+
+  React.useEffect(() => {
+    if (currentIndex < expiryTimestamps.length) {
+      restart(expiryTimestamps[currentIndex], true);
+    }
+  }, [currentIndex, expiryTimestamps, restart]);
 
   const timeUnits = [
     { value: days, label: t("hero.days") },
