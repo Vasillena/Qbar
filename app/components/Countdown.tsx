@@ -43,9 +43,6 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({
     expiryTimestamp: expiryTimestamps[currentIndex],
     onExpire: () => {
       if (currentIndex < expiryTimestamps.length - 1) {
-        // const nextIndex = currentIndex + 1;
-        // setCurrentIndex(nextIndex);
-        // restart(expiryTimestamps[nextIndex], true);
         setCurrentIndex((prevIndex) => prevIndex + 1);
       } else {
         console.warn("All timers expired");
