@@ -15,7 +15,7 @@ export default async function Events(): Promise<JSX.Element> {
     {
       image: event1,
       date: `24 ${t("events.month")}`,
-      day: t("events.day-3"),
+      day: t("events.day-1"),
       hour: "21:00",
       name: "DZHAKOV",
     },
