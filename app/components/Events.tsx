@@ -1,11 +1,11 @@
 import EventCard from "./EventCard";
 import { FesterBold } from "../utils/fonts";
 import Reveal from "./Animations/Reveal";
-import event1 from "@/public/event-1.jpg";
-import event2 from "@/public/event-2.jpg";
-import event3 from "@/public/event-3.jpg";
-import event4 from "@/public/event-4.png";
-import event5 from "@/public/event-5.jpg";
+import event1 from "@/public/event-1.webp";
+import event2 from "@/public/event-2.webp";
+import event3 from "@/public/event-3.webp";
+import event4 from "@/public/event-4.webp";
+import event5 from "@/public/event-5.webp";
 import { getI18n } from "@/locales/server";
 
 export default async function Events(): Promise<JSX.Element> {
@@ -14,25 +14,25 @@ export default async function Events(): Promise<JSX.Element> {
   const events = [
     {
       image: event1,
-      date: `20 ${t("events.month")}`,
-      day: t("events.day-3"),
-      hour: "21:00",
-      name: "DONZ",
-    },
-    {
-      image: event2,
-      date: `20 ${t("events.month")}`,
+      date: `24 ${t("events.month")}`,
       day: t("events.day-3"),
       hour: "21:00",
       name: "DZHAKOV",
     },
-    {
-      image: event3,
-      date: `21 ${t("events.month")}`,
-      day: t("events.day-4"),
-      hour: "21:00",
-      name: "SPRITE",
-    },
+    // {
+    //   image: event2,
+    //   date: `20 ${t("events.month")}`,
+    //   day: t("events.day-3"),
+    //   hour: "21:00",
+    //   name: "DZHAKOV",
+    // },
+    // {
+    //   image: event3,
+    //   date: `21 ${t("events.month")}`,
+    //   day: t("events.day-4"),
+    //   hour: "21:00",
+    //   name: "SPRITE",
+    // },
     // {
     //   image: event4,
     //   date: `17 ${t("events.month")}`,
@@ -40,6 +40,20 @@ export default async function Events(): Promise<JSX.Element> {
     //   hour: "21:00",
     //   name: "Dimitar Petrov",
     // },
+    {
+      image: event5,
+      date: t("events.no-event-1"),
+      day: t("events.no-event-2"),
+      // hour: "21:00",
+      name: t("events.no-event-3"),
+    },
+    {
+      image: event5,
+      date: t("events.no-event-1"),
+      day: t("events.no-event-2"),
+      // hour: "21:00",
+      name: t("events.no-event-3"),
+    },
     {
       image: event5,
       date: t("events.no-event-1"),
