@@ -27,7 +27,11 @@ import image25 from "@/public/25.webp";
 import image26 from "@/public/26.webp";
 import image27 from "@/public/27.webp";
 import image28 from "@/public/28.webp";
+import image29 from "@/public/29.webp";
 import image3 from "@/public/3.webp";
+import image30 from "@/public/30.webp";
+import image31 from "@/public/31.webp";
+import image32 from "@/public/32.webp";
 import image4 from "@/public/4.webp";
 import image5 from "@/public/5.webp";
 import image6 from "@/public/6.webp";
@@ -51,6 +55,9 @@ const slidesTop = [
   { image: image13 },
   { image: image14 },
   { image: image15 },
+  { image: image30 },
+  { image: image31 },
+  { image: image32 },
 ];
 
 const slidesBottom = [
@@ -67,6 +74,7 @@ const slidesBottom = [
   { image: image26 },
   { image: image27 },
   { image: image28 },
+  { image: image29 },
 ];
 
 export default function Home() {
