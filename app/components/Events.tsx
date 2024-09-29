@@ -5,64 +5,69 @@ import event1 from "@/public/event-1.webp";
 import event2 from "@/public/event-2.webp";
 import event3 from "@/public/event-3.webp";
 import event4 from "@/public/event-4.webp";
+import event5 from "@/public/event-5.webp";
 import { getI18n } from "@/locales/server";
-
-// import event5 from "@/public/event-5.webp";
-
 
 export default async function Events(): Promise<JSX.Element> {
   const t = await getI18n();
 
   const events = [
-    {
-      image: event1,
-      date: `24 ${t("events.month")}`,
-      day: t("events.day-1"),
-      hour: "21:00",
-      name: "DZHAKOV",
-    },
-    {
-      image: event2,
-      date: `26 ${t("events.month")}`,
-      day: t("events.day-2"),
-      hour: "21:00",
-      name: "HOT JAM",
-    },
-    {
-      image: event3,
-      date: `27 ${t("events.month")}`,
-      day: t("events.day-3"),
-      hour: "21:00",
-      name: "TOMMY RIVERRA",
-    },
-    {
-      image: event4,
-      date: `28 ${t("events.month")}`,
-      day: t("events.day-4"),
-      hour: "21:00",
-      name: "DANNY SLIM",
-    },
     // {
-    //   image: event5,
-    //   date: t("events.no-event-1"),
-    //   day: t("events.no-event-2"),
-    //   // hour: "21:00",
-    //   name: t("events.no-event-3"),
+    //   image: event1,
+    //   date: `24 ${t("events.month")}`,
+    //   day: t("events.day-1"),
+    //   hour: "21:00",
+    //   name: "DZHAKOV",
     // },
     // {
-    //   image: event5,
-    //   date: t("events.no-event-1"),
-    //   day: t("events.no-event-2"),
-    //   // hour: "21:00",
-    //   name: t("events.no-event-3"),
+    //   image: event2,
+    //   date: `26 ${t("events.month")}`,
+    //   day: t("events.day-2"),
+    //   hour: "21:00",
+    //   name: "HOT JAM",
     // },
     // {
-    //   image: event5,
-    //   date: t("events.no-event-1"),
-    //   day: t("events.no-event-2"),
-    //   // hour: "21:00",
-    //   name: t("events.no-event-3"),
+    //   image: event3,
+    //   date: `27 ${t("events.month")}`,
+    //   day: t("events.day-3"),
+    //   hour: "21:00",
+    //   name: "TOMMY RIVERRA",
     // },
+    // {
+    //   image: event4,
+    //   date: `28 ${t("events.month")}`,
+    //   day: t("events.day-4"),
+    //   hour: "21:00",
+    //   name: "DANNY SLIM",
+    // },
+    {
+      image: event5,
+      date: t("events.no-event-1"),
+      day: t("events.no-event-2"),
+      // hour: "21:00",
+      name: t("events.no-event-3"),
+    },
+    {
+      image: event5,
+      date: t("events.no-event-1"),
+      day: t("events.no-event-2"),
+      // hour: "21:00",
+      name: t("events.no-event-3"),
+    },
+    {
+      image: event5,
+      date: t("events.no-event-1"),
+      day: t("events.no-event-2"),
+      // hour: "21:00",
+      name: t("events.no-event-3"),
+    },
+    {
+      image: event5,
+      date: t("events.no-event-1"),
+      day: t("events.no-event-2"),
+      // hour: "21:00",
+      name: t("events.no-event-3"),
+    },
   ];
 
   return (
