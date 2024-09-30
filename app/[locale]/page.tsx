@@ -29,12 +29,6 @@ import image27 from "@/public/27.webp";
 import image28 from "@/public/28.webp";
 import image29 from "@/public/29.webp";
 import image3 from "@/public/3.webp";
-import image30 from "@/public/30.webp";
-import image31 from "@/public/31.webp";
-import image32 from "@/public/32.webp";
-import image33 from "@/public/33.webp";
-import image34 from "@/public/34.webp";
-import image35 from "@/public/35.webp";
 import image4 from "@/public/4.webp";
 import image5 from "@/public/5.webp";
 import image6 from "@/public/6.webp";
@@ -58,12 +52,6 @@ const slidesTop = [
   { image: image13 },
   { image: image14 },
   { image: image15 },
-  { image: image30 },
-  { image: image31 },
-  { image: image32 },
-  { image: image33 },
-  { image: image34 },
-  { image: image35 },
 ];
 
 const slidesBottom = [
