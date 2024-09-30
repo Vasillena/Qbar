@@ -12,20 +12,20 @@ export default async function Events(): Promise<JSX.Element> {
   const t = await getI18n();
 
   const events = [
-    // {
-    //   image: event1,
-    //   date: `24 ${t("events.month")}`,
-    //   day: t("events.day-1"),
-    //   hour: "21:00",
-    //   name: "DZHAKOV",
-    // },
-    // {
-    //   image: event2,
-    //   date: `26 ${t("events.month")}`,
-    //   day: t("events.day-2"),
-    //   hour: "21:00",
-    //   name: "HOT JAM",
-    // },
+    {
+      image: event1,
+      date: `1 ${t("events.month")}`,
+      day: t("events.day-1"),
+      hour: "21:00",
+      name: "DZHAKOV",
+    },
+    {
+      image: event2,
+      date: `3 ${t("events.month")}`,
+      day: t("events.day-2"),
+      hour: "21:00",
+      name: "HOT JAM",
+    },
     // {
     //   image: event3,
     //   date: `27 ${t("events.month")}`,
@@ -54,20 +54,20 @@ export default async function Events(): Promise<JSX.Element> {
       // hour: "21:00",
       name: t("events.no-event-3"),
     },
-    {
-      image: event5,
-      date: t("events.no-event-1"),
-      day: t("events.no-event-2"),
-      // hour: "21:00",
-      name: t("events.no-event-3"),
-    },
-    {
-      image: event5,
-      date: t("events.no-event-1"),
-      day: t("events.no-event-2"),
-      // hour: "21:00",
-      name: t("events.no-event-3"),
-    },
+    // {
+    //   image: event5,
+    //   date: t("events.no-event-1"),
+    //   day: t("events.no-event-2"),
+    //   // hour: "21:00",
+    //   name: t("events.no-event-3"),
+    // },
+    // {
+    //   image: event5,
+    //   date: t("events.no-event-1"),
+    //   day: t("events.no-event-2"),
+    //   // hour: "21:00",
+    //   name: t("events.no-event-3"),
+    // },
   ];
 
   return (
