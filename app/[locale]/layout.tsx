@@ -110,6 +110,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang={locale}>
+      <head>
+        <link rel="stylesheet" href="https://use.typekit.net/bdo2yzs.css" />
+      </head>
       <body className={jura.className}>
         <ThemeProvider>
           <Provider locale={locale}>

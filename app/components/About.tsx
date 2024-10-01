@@ -1,6 +1,5 @@
 "use client";
 
-import { FesterBold } from "../utils/fonts";
 import Image from "next/image";
 import Reveal from "./Animations/Reveal";
 import about1 from "@/public/about-dark.webp";
@@ -9,6 +8,7 @@ import about3 from "@/public/about-light-2.webp";
 import about4 from "@/public/about-light-3.webp";
 import decor1 from "@/public/decor-1-light2.png";
 import decor2 from "@/public/decor-1-light.png";
+import { oswald } from "../utils/fonts";
 import { useI18n } from "@/locales/client";
 import { useMemo } from "react";
 import { useTheme } from "../utils/themeProvider";
@@ -57,7 +57,7 @@ export default function About(): JSX.Element {
           <div className="min-[1024px]:absolute top-0 right-0 dark:xl:w-[53%] xl:w-1/2 h-full flex flex-col justify-center py-8 px-2 sm:px-8 md:px-10 lg:px-32 xl:px-10 dark:bg-[#222927] dark:bg-opacity-80 dark:backdrop-blur-md backdrop-blur-sm text-center xl:text-left">
             <Reveal initial={{ x: "5%" }} animate={{ x: "0%" }}>
               <h2
-                className={`${FesterBold.className} inline-block text-3xl sm:text-5xl xl:text-6xl hover-target`}
+                className={`${oswald.className} inline-block text-3xl font-bold sm:text-5xl xl:text-6xl hover-target`}
               >
                 {t("about.title")}
               </h2>

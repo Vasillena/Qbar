@@ -2,11 +2,9 @@
 
 import React, { useState } from "react";
 
-import Fester from "next/font/local";
+import { oswald } from "../utils/fonts";
 import { useI18n } from "@/locales/client";
 import { useTimer } from "react-timer-hook";
-
-const FesterFont = Fester({ src: "../../public/Fester-bold.otf" });
 
 interface CountdownTimerProps {
   expiryTimestamps: Date[];
@@ -23,7 +21,9 @@ const TimeCard: React.FC<TimeCardProps> = React.memo(function TimeCard({
 }) {
   return (
     <div className="w-20 sm:w-28 md:w-40 lg:w-56 min-[1440px]:w-64 h-14 sm:h-20 md:h-28 dark:bg-[#394940] bg-[#B96001] rounded-lg sm:rounded-[30px] flex flex-col justify-center items-center">
-      <p className={`text-3xl lg:text-5xl text-white ${FesterFont.className}`}>
+      <p
+        className={`text-3xl lg:text-5xl text-white font-bold ${oswald.className}`}
+      >
         {value}
       </p>
       <p className="dark:text-[#FFC956] text-xs text-white">{label}</p>

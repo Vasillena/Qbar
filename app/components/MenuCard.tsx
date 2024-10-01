@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
-import { FesterBold, SixHands } from "../utils/fonts";
 import Image, { StaticImageData } from "next/image";
+import { SixHands, oswald } from "../utils/fonts";
 import { useMemo, useRef } from "react";
 
 import menuListBG from "../menuList/menuListBG.json";
@@ -131,7 +131,7 @@ export default function MenuCard({
             />
           </div>
 
-          <h2 className={`text-2xl lg:text-3xl ${FesterBold.className}`}>
+          <h2 className={`text-2xl lg:text-3xl font-bold ${oswald.className}`}>
             {text}
           </h2>
           <div className="w-10 h-10 flex justify-center items-center">

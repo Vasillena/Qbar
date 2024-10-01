@@ -1,8 +1,8 @@
-import { FesterBold } from "../utils/fonts";
 import Image from "next/image";
 import Reveal from "./Animations/Reveal";
 import dessert from "@/public/cocktail-4.png";
 import { getI18n } from "@/locales/server";
+import { oswald } from "../utils/fonts";
 
 export default async function Food(): Promise<JSX.Element> {
   const t = await getI18n();
@@ -22,7 +22,7 @@ export default async function Food(): Promise<JSX.Element> {
         <div className="lg:col-span-2 text-center lg:text-left lg:mt-0 p-10 md:pt-1 lg:p-0 text-white lg:text-[#30312a] dark:lg:text-white">
           <Reveal initial={{ x: "5%" }} animate={{ x: "0%" }}>
             <h2
-              className={`${FesterBold.className} inline-block text-3xl sm:text-5xl xl:text-6xl hover-target`}
+              className={`${oswald.className} inline-block text-3xl font-bold sm:text-5xl xl:text-6xl hover-target`}
             >
               {t("food.title")}
             </h2>

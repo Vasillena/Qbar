@@ -1,7 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 
-import { FesterBold } from "../utils/fonts";
 import { Trailmade } from "../utils/fonts";
+import { oswald } from "../utils/fonts";
 
 interface EventCardProps {
   image: StaticImageData;
@@ -28,7 +28,7 @@ export default function EventCard({
         />
       </div>
       <div className="w-52 sm:w-72 md:w-64 h-36 sm:h-52 md:h-64 border dark:border-[#FFC956] border-[#B96001] mt-0 md:-mt-3 -ml-2 md:ml-0 rounded-r-[30px] md:rounded-tr-none md:rounded-b-3xl text-2xl sm:text-4xl -z-10 flex flex-col justify-center items-center ">
-        <p className={`${FesterBold.className} text-center`}>{date}</p>
+        <p className={`${oswald.className} text-center font-bold`}>{date}</p>
         <p className="text-base sm:text-2xl text-center">{day}</p>
         {hour && <p className="text-base sm:text-2xl text-center">{hour}</p>}
         <p

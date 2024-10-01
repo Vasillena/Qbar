@@ -1,6 +1,6 @@
 "use client";
 
-import { FesterRegular, SixHands, Trailmade } from "../utils/fonts";
+import { SixHands, Trailmade, oswald } from "../utils/fonts";
 import { useCurrentLocale, useI18n } from "@/locales/client";
 
 import Image from "next/image";
@@ -37,7 +37,7 @@ export function Hero(): JSX.Element {
         <div className="max-w-[1440px] mx-auto mt-2  sm:mt-10 md:mt-20 pt-6 sm:pt-20 grid grid-cols-1 lg:grid-cols-2 px-8 lg:px-16">
           <div className="text-center lg:text-left order-2 sm:order-1">
             <h1
-              className={`text-3xl sm:text-5xl xl:text-6xl mt-12 sm:mt-0  ${FesterRegular.className} hover-target`}
+              className={`text-3xl sm:text-5xl xl:text-6xl mt-12 sm:mt-0  ${oswald.className} hover-target`}
             >
               {t("hero.title")}
             </h1>
@@ -53,7 +53,7 @@ export function Hero(): JSX.Element {
             </p>
             <Link
               href="/#contact"
-              className={`inline-block relative py-3 lg:py-[18px] px-4 sm:px-10 dark:bg-gradient-to-r dark:from-[#FFE259] dark:to-[#FFA751] bg-[#343434] sm:text-lg xl:text-xl font-semibold dark:text-[#222927] text-white rounded-full mt-4 md:mt-[66px] before:content-[''] before:absolute before:inset-0 before:rounded-full dark:before:shadow-[inset_0px_4px_4px_#DABB7E] before:shadow-[inset_0px_4px_4px_#61574A] before:pointer-events-none transition-shadow duration-300 ease-in-out hover:shadow-[0_0_20px_#B96001] dark:hover:shadow-[0_0_20px_#FFD70080] ${FesterRegular.className}`}
+              className={`inline-block relative py-3 lg:py-[18px] px-4 sm:px-10 dark:bg-gradient-to-r dark:from-[#FFE259] dark:to-[#FFA751] bg-[#343434] sm:text-lg xl:text-xl font-semibold dark:text-[#222927] text-white rounded-full mt-4 md:mt-[66px] before:content-[''] before:absolute before:inset-0 before:rounded-full dark:before:shadow-[inset_0px_4px_4px_#DABB7E] before:shadow-[inset_0px_4px_4px_#61574A] before:pointer-events-none transition-shadow duration-300 ease-in-out hover:shadow-[0_0_20px_#B96001] dark:hover:shadow-[0_0_20px_#FFD70080] ${oswald.className}`}
             >
               {t("hero.button")}
             </Link>
@@ -67,6 +67,10 @@ export function Hero(): JSX.Element {
               object-fit="contain"
               priority
             />
+            {/* <div className="-mt-20" style={{ transform: "scaleX(-1)" }}>
+              <Video />
+            </div> */}
+
             <div className="hidden lg:flex w-8 h-auto flex-col  justify-center items-center ml-auto gap-5 lg:mr-4 xl:mr-0">
               <Link
                 href="https://www.facebook.com/Qbarplovdiv"
@@ -119,8 +123,6 @@ export function Hero(): JSX.Element {
                 Follow us
               </p>
             </div>
-
-            {/* <Video /> */}
           </div>
         </div>
         <div className="max-w-[1440px] w-full mx-auto hidden md:block lg:hidden xl:block mt-8 xl:-mt-52 mb-10 px-8 lg:px-16">

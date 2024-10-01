@@ -1,5 +1,4 @@
 import EventCard from "./EventCard";
-import { FesterBold } from "../utils/fonts";
 import Reveal from "./Animations/Reveal";
 import event1 from "@/public/event-1.webp";
 import event2 from "@/public/event-2.webp";
@@ -7,6 +6,7 @@ import event3 from "@/public/event-3.webp";
 import event4 from "@/public/event-4.webp";
 import event5 from "@/public/event-5.webp";
 import { getI18n } from "@/locales/server";
+import { oswald } from "../utils/fonts";
 
 export default async function Events(): Promise<JSX.Element> {
   const t = await getI18n();
@@ -75,7 +75,7 @@ export default async function Events(): Promise<JSX.Element> {
       <div className="flex flex-col items-center">
         <Reveal initial={{ y: "-20%" }} animate={{ y: "0%" }}>
           <h2
-            className={`${FesterBold.className} inline-block text-3xl sm:text-5xl xl:text-6xl text-center px-4 hover-target`}
+            className={`${oswald.className} inline-block text-3xl font-bold sm:text-5xl xl:text-6xl text-center px-4 hover-target`}
           >
             {t("events.title")}
           </h2>

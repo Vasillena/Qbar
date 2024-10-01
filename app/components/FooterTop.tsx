@@ -1,6 +1,5 @@
 "use client";
 
-import { FesterBold } from "../utils/fonts";
 import Image from "next/image";
 import MapIframe from "./MapIframe";
 import icon1 from "@/public/footer-icon-1-dark.svg";
@@ -11,6 +10,7 @@ import icon5 from "@/public/footer-icon-1-light.svg";
 import icon6 from "@/public/footer-icon-2-light.svg";
 import icon7 from "@/public/footer-icon-3-light.svg";
 import icon8 from "@/public/footer-icon-4-light.svg";
+import { oswald } from "../utils/fonts";
 import { useI18n } from "@/locales/client";
 import { useTheme } from "../utils/themeProvider";
 
@@ -60,7 +60,7 @@ export default function FooterTop(): JSX.Element {
         <div className="xl:col-span-1 xl:justify-self-start flex flex-col lg:flex-row xl:flex-col items-center lg:items-end justify-between">
           <div>
             <h2
-              className={`${FesterBold.className} inline-block text-3xl sm:text-5xl xl:text-6xl text-center lg:text-left hover-target`}
+              className={`${oswald.className} inline-block text-3xl font-bold sm:text-5xl xl:text-6xl text-center lg:text-left hover-target`}
             >
               {t("contacts.text-1")}
             </h2>
