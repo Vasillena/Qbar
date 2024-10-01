@@ -26,13 +26,13 @@ export default async function Events(): Promise<JSX.Element> {
       hour: "21:00",
       name: "HOT JAM",
     },
-    // {
-    //   image: event3,
-    //   date: `27 ${t("events.month")}`,
-    //   day: t("events.day-3"),
-    //   hour: "21:00",
-    //   name: "TOMMY RIVERRA",
-    // },
+    {
+      image: event3,
+      date: `4 ${t("events.month")}`,
+      day: t("events.day-3"),
+      hour: "21:00",
+      name: "CHOIZZ",
+    },
     // {
     //   image: event4,
     //   date: `28 ${t("events.month")}`,
@@ -40,13 +40,13 @@ export default async function Events(): Promise<JSX.Element> {
     //   hour: "21:00",
     //   name: "DANNY SLIM",
     // },
-    {
-      image: event5,
-      date: t("events.no-event-1"),
-      day: t("events.no-event-2"),
-      // hour: "21:00",
-      name: t("events.no-event-3"),
-    },
+    // {
+    //   image: event5,
+    //   date: t("events.no-event-1"),
+    //   day: t("events.no-event-2"),
+    //   // hour: "21:00",
+    //   name: t("events.no-event-3"),
+    // },
     {
       image: event5,
       date: t("events.no-event-1"),
