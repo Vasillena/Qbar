@@ -20,7 +20,7 @@ export function Video(): JSX.Element {
   }, [heroVideo]);
 
   return (
-    <div className="relative w-full h-full flex items-start justify-center bg-[#f1efed] overflow-hidden">
+    <div className="relative w-full h-full flex items-start justify-center overflow-hidden">
       <video
         ref={videoRef}
         width="100%"
@@ -30,7 +30,6 @@ export function Video(): JSX.Element {
         muted
         preload="auto"
         className="object-cover scale-150"
-        style={{ backgroundColor: "#f1efed" }}
       >
         <source src={heroVideo} type="video/webm" />
         {/* Optional: Add a track for captions if you have them */}

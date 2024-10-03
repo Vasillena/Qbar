@@ -59,7 +59,9 @@ export function Hero(): JSX.Element {
             </Link>
           </div>
           <div className="hidden min-[390px]:block sm:hidden lg:block w-[200px] h-[216px] lg:w-[520px] lg:h-[590px] xl:w-[640px] xl:h-[694px] relative order-1 sm:order-2 mx-auto sm:mx-0 -mb-10 sm:mb-0">
-            <div className="lg:hidden">
+            <div
+            // className="lg:hidden"
+            >
               <Image
                 src={imageSrc}
                 alt="Qbar logo"
@@ -70,12 +72,12 @@ export function Hero(): JSX.Element {
               />
             </div>
 
-            <div
+            {/* <div
               className="hidden lg:block -mt-20"
               style={{ transform: "scaleX(-1)" }}
             >
               <Video />
-            </div>
+            </div> */}
 
             <div className="absolute right-0 top-4 hidden lg:flex w-8 h-auto flex-col  justify-center items-center ml-auto gap-5 lg:mr-4 xl:mr-0">
               <Link
