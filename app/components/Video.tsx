@@ -14,7 +14,6 @@ export function Video(): JSX.Element {
   );
 
   useEffect(() => {
-    // Reload the video when the theme changes
     if (videoRef.current) {
       videoRef.current.load();
     }
@@ -32,12 +31,7 @@ export function Video(): JSX.Element {
         preload="auto"
         className="object-cover scale-150"
       >
-        {/* <source src="/hero.webm" type="video/webm" /> */}
-        <source
-          // src={theme === "dark" ? "/hero-dark.webm" : "/hero-light.webm"}
-          src={heroVideo}
-          type="video/webm"
-        />
+        <source src={heroVideo} type="video/webm" />
         {/* Optional: Add a track for captions if you have them */}
         {/* <track
           src="/path/to/captions.vtt"
