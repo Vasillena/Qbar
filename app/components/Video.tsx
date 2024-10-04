@@ -20,7 +20,8 @@ export function Video(): JSX.Element {
   }, [heroVideo]);
 
   return (
-    <div className="relative mx-auto w-4/5 h-auto flex items-start justify-center overflow-hidden">
+    // <div className="relative mx-auto w-4/5 h-auto flex items-start justify-center overflow-hidden">
+    <div className="relative w-full h-full flex items-start justify-center overflow-hidden">
       <video
         ref={videoRef}
         width="100%"
@@ -44,7 +45,11 @@ export function Video(): JSX.Element {
         /> */}
         Your browser does not support the video tag.
       </video>
-      <div className="absolute inset-0 bg-[#222927] opacity-20 pointer-events-none" />
+      {/* <div className="absolute inset-0 bg-[#222927]/80  pointer-events-none" /> */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute inset-0 bg-gradient-to-r dark:from-[#222927]/80 from-[#f2efea]/80 to-transparent w-3/12"></div>
+        <div className="absolute inset-0 bg-gradient-to-l dark:from-[#222927]/80 from-[#f2efea]/80 to-transparent w-3/12 ml-auto"></div>
+      </div>
     </div>
   );
 }
