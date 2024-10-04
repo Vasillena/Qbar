@@ -45,6 +45,7 @@ export function Video(): JSX.Element {
         <div className="absolute inset-0 bg-gradient-to-r dark:from-[#222927] from-[#f2efea] to-transparent w-3/12" />
         <div className="absolute inset-0 bg-gradient-to-l dark:from-[#222927] from-[#f2efea] to-transparent w-3/12 ml-auto" />
         <div className="absolute inset-0 bg-gradient-to-b dark:from-[#222927] from-[#f2efea] to-transparent mb-auto h-20" />
+        <div className="absolute inset-0 bg-gradient-to-t dark:from-[#222927] from-[#f2efea] to-transparent mt-auto h-32" />
       </div>
     </div>
   );
