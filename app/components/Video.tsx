@@ -9,7 +9,7 @@ export function Video(): JSX.Element {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   const heroVideo = useMemo(
-    () => (theme === "dark" ? "/hero-dark.mp4" : "/hero-light.webm"),
+    () => (theme === "dark" ? "/hero-dark.webm" : "/hero-light.webm"),
     [theme]
   );
 
@@ -32,10 +32,7 @@ export function Video(): JSX.Element {
         preload="auto"
         className="object-cover scale-150"
       >
-        <source
-          src={heroVideo}
-          type={theme === "dark" ? "video/mp4" : "video/webm"}
-        />
+        <source src={heroVideo} type="video/webm" />
         {/* Optional: Add a track for captions if you have them */}
         {/* <track
           src="/path/to/captions.vtt"
@@ -46,8 +43,8 @@ export function Video(): JSX.Element {
         Your browser does not support the video tag.
       </video>
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute inset-0 bg-gradient-to-r dark:from-[#222927]/80 from-[#f2efea]/80 to-transparent w-3/12"></div>
-        <div className="absolute inset-0 bg-gradient-to-l dark:from-[#222927]/80 from-[#f2efea]/80 to-transparent w-3/12 ml-auto"></div>
+        <div className="absolute inset-0 bg-gradient-to-r dark:from-[#222927] from-[#f2efea] to-transparent w-3/12"></div>
+        <div className="absolute inset-0 bg-gradient-to-l dark:from-[#222927] from-[#f2efea] to-transparent w-3/12 ml-auto"></div>
       </div>
     </div>
   );
