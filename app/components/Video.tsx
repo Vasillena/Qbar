@@ -45,7 +45,6 @@ export function Video(): JSX.Element {
         /> */}
         Your browser does not support the video tag.
       </video>
-      {/* <div className="absolute inset-0 bg-[#222927]/80  pointer-events-none" /> */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0 bg-gradient-to-r dark:from-[#222927]/80 from-[#f2efea]/80 to-transparent w-3/12"></div>
         <div className="absolute inset-0 bg-gradient-to-l dark:from-[#222927]/80 from-[#f2efea]/80 to-transparent w-3/12 ml-auto"></div>
