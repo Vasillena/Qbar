@@ -9,7 +9,7 @@ export function Video(): JSX.Element {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   const heroVideo = useMemo(
-    () => (theme === "dark" ? "/hero-dark.webm" : "/hero-light.webm"),
+    () => (theme === "dark" ? "/hero-dark.mp4" : "/hero-light.webm"),
     [theme]
   );
 
@@ -31,7 +31,10 @@ export function Video(): JSX.Element {
         preload="auto"
         className="object-cover scale-150"
       >
-        <source src={heroVideo} type="video/webm" />
+        <source
+          src={heroVideo}
+          type={theme === "dark" ? "video/mp4" : "video/webm"}
+        />
         {/* Optional: Add a track for captions if you have them */}
         {/* <track
           src="/path/to/captions.vtt"
