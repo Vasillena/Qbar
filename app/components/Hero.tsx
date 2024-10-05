@@ -8,8 +8,8 @@ import Link from "next/link";
 import { Video } from "./Video";
 import decor from "@/public/decor-4.png";
 import dynamic from "next/dynamic";
-import hero from "@/public/hero.webp";
-import hero2 from "@/public/hero-2.webp";
+import hero from "@/public/hero-dark.webp";
+import hero2 from "@/public/hero-light.webp";
 import socials1 from "@/public/socials-4.png";
 import socials2 from "@/public/socials-3.png";
 import { useMemo } from "react";
@@ -58,10 +58,8 @@ export function Hero(): JSX.Element {
               {t("hero.button")}
             </Link>
           </div>
-          <div className="hidden min-[390px]:block sm:hidden lg:block w-[200px] h-[216px] lg:w-[520px] lg:h-[590px] xl:w-[640px] xl:h-[694px] relative order-1 sm:order-2 mx-auto sm:mx-0 -mb-10 sm:mb-0">
-            <div
-            className="lg:hidden"
-            >
+          <div className="hidden min-[390px]:block sm:hidden lg:block w-[274px] h-[228px] lg:w-[520px] lg:h-[590px] xl:w-[640px] xl:h-[694px] relative order-1 sm:order-2 mx-auto sm:mx-0 -mb-10 sm:mb-0">
+            <div className="lg:hidden">
               <Image
                 src={imageSrc}
                 alt="Qbar logo"
@@ -69,6 +67,7 @@ export function Hero(): JSX.Element {
                 fill
                 object-fit="contain"
                 priority
+                // className="w-[548px] h-[200px]"
               />
             </div>
 
