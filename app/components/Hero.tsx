@@ -18,10 +18,10 @@ import { useTheme } from "../utils/themeProvider";
 const CountdownTimer = dynamic(() => import("./Countdown"), { ssr: false });
 
 const eventDates = [
-  new Date("2024-10-01T21:00:00"),
-  new Date("2024-10-03T21:00:00"),
-  new Date("2024-10-04T21:00:00"),
-  new Date("2024-10-05T21:00:00"),
+  new Date("2024-10-08T21:00:00"),
+  new Date("2024-10-10T21:00:00"),
+  new Date("2024-10-11T21:00:00"),
+  new Date("2024-10-12T21:00:00"),
 ];
 
 export function Hero(): JSX.Element {
@@ -34,10 +34,10 @@ export function Hero(): JSX.Element {
   return (
     <>
       <div id="home" className="h-svh sm:h-screen flex flex-col justify-center">
-        <div className="max-w-[1440px] mx-auto mt-2  sm:mt-10 md:mt-20 pt-6 sm:pt-20 grid grid-cols-1 lg:grid-cols-2 px-8 lg:px-16">
+        <div className="max-w-[1440px] mx-auto mt-2 sm:mt-10 md:mt-20 pt-6 sm:pt-20 grid grid-cols-1 lg:grid-cols-2 px-8 lg:px-16 ">
           <div className="text-center lg:text-left order-2 sm:order-1">
             <h1
-              className={`text-3xl font-bold sm:text-5xl xl:text-6xl mt-12 sm:mt-0  ${oswald.className} hover-target`}
+              className={`text-3xl font-bold sm:text-5xl lg:text-[46px] xl:text-6xl mt-12 sm:mt-0  ${oswald.className} hover-target`}
             >
               {t("hero.title")}
             </h1>
@@ -53,12 +53,12 @@ export function Hero(): JSX.Element {
             </p>
             <Link
               href="/#contact"
-              className={`inline-block relative py-3 lg:py-[18px] px-4 sm:px-10 dark:bg-gradient-to-r dark:from-[#FFE259] dark:to-[#FFA751] bg-[#343434] sm:text-lg xl:text-xl font-semibold dark:text-[#222927] text-white rounded-full mt-4 md:mt-[66px] before:content-[''] before:absolute before:inset-0 before:rounded-full dark:before:shadow-[inset_0px_4px_4px_#DABB7E] before:shadow-[inset_0px_4px_4px_#61574A] before:pointer-events-none transition-shadow duration-300 ease-in-out hover:shadow-[0_0_20px_#B96001] dark:hover:shadow-[0_0_20px_#FFD70080] ${oswald.className}`}
+              className={`inline-block relative py-3 lg:py-[18px] px-4 sm:px-10 dark:bg-gradient-to-r dark:from-[#FFE259] dark:to-[#FFA751] bg-[#343434] sm:text-lg xl:text-xl font-semibold dark:text-[#222927] text-white rounded-full min-[390px]:mt-10  mt-4 md:mt-[66px] before:content-[''] before:absolute before:inset-0 before:rounded-full dark:before:shadow-[inset_0px_4px_4px_#DABB7E] before:shadow-[inset_0px_4px_4px_#61574A] before:pointer-events-none transition-shadow duration-300 ease-in-out hover:shadow-[0_0_20px_#B96001] dark:hover:shadow-[0_0_20px_#FFD70080] ${oswald.className}`}
             >
               {t("hero.button")}
             </Link>
           </div>
-          <div className="hidden min-[390px]:block sm:hidden lg:block w-[274px] h-[228px] lg:w-[520px] lg:h-[590px] xl:w-[640px] xl:h-[694px] relative order-1 sm:order-2 mx-auto sm:mx-0 -mb-10 sm:mb-0">
+          <div className="hidden min-[390px]:block sm:hidden lg:block h-[228px] lg:h-[590px] xl:h-[694px] relative order-1 sm:order-2 mx-auto sm:mx-0 -mb-10 min-[390px]:mb-0 pr-1">
             <div className="lg:hidden">
               <Image
                 src={imageSrc}
@@ -72,13 +72,13 @@ export function Hero(): JSX.Element {
             </div>
 
             <div
-              className="hidden lg:block -mt-20"
+              className="hidden lg:block h-full -mt-12 xl:-mt-20"
               style={{ transform: "scaleX(-1)" }}
             >
               <Video />
             </div>
 
-            <div className="absolute right-0 top-4 hidden lg:flex w-8 h-auto flex-col  justify-center items-center ml-auto gap-5 lg:mr-4 xl:mr-0">
+            <div className="absolute right-0 top-4 hidden lg:flex w-8 h-auto flex-col justify-center items-center ml-auto gap-5 lg:mr-4 xl:mr-0">
               <Link
                 href="https://www.facebook.com/Qbarplovdiv"
                 aria-label="Facebook"
