@@ -41,11 +41,17 @@ export function Video(): JSX.Element {
         /> */}
         Your browser does not support the video tag.
       </video>
-      <div className="absolute inset-0 pointer-events-none">
+      {/* <div className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0 bg-gradient-to-r dark:from-[#222927] from-[#f2efea] to-transparent w-3/12 -webkit-bg-gradient-to-r" />
         <div className="absolute inset-0 bg-gradient-to-l dark:from-[#222927] from-[#f2efea] to-transparent w-3/12 ml-auto -webkit-bg-gradient-to-l" />
         <div className="absolute inset-0 bg-gradient-to-b dark:from-[#222927] from-[#f2efea] to-transparent mb-auto h-20 -webkit-bg-gradient-to-b" />
         <div className="absolute inset-0 bg-gradient-to-t dark:from-[#222927] from-[#f2efea] to-transparent mt-auto h-32 -webkit-bg-gradient-to-t" />
+      </div> */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute inset-0 bg-gradient-to-r dark:from-[#222927] from-[#f2efea] to-transparent w-3/12 will-change-transform" />
+        <div className="absolute inset-0 bg-gradient-to-l dark:from-[#222927] from-[#f2efea] to-transparent w-3/12 ml-auto will-change-transform" />
+        <div className="absolute inset-0 bg-gradient-to-b dark:from-[#222927] from-[#f2efea] to-transparent mb-auto h-20 will-change-transform" />
+        <div className="absolute inset-0 bg-gradient-to-t dark:from-[#222927] from-[#f2efea] to-transparent mt-auto h-32 will-change-transform" />
       </div>
     </div>
   );
