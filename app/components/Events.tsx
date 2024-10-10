@@ -33,12 +33,19 @@ export default async function Events(): Promise<JSX.Element> {
       hour: "21:00",
       name: "DANNY SLIM",
     },
+    {
+      image: event4,
+      date: `12 ${t("events.month")}`,
+      day: t("events.day-4"),
+      hour: "21:00",
+      name: "DIMITAR PETROV",
+    },
     // {
-    //   image: event4,
-    //   date: `5 ${t("events.month")}`,
-    //   day: t("events.day-4"),
-    //   hour: "21:00",
-    //   name: "MATIZZE",
+    //   image: event5,
+    //   date: t("events.no-event-1"),
+    //   day: t("events.no-event-2"),
+    //   // hour: "21:00",
+    //   name: t("events.no-event-3"),
     // },
     // {
     //   image: event5,
@@ -47,13 +54,6 @@ export default async function Events(): Promise<JSX.Element> {
     //   // hour: "21:00",
     //   name: t("events.no-event-3"),
     // },
-    {
-      image: event5,
-      date: t("events.no-event-1"),
-      day: t("events.no-event-2"),
-      // hour: "21:00",
-      name: t("events.no-event-3"),
-    },
     // {
     //   image: event5,
     //   date: t("events.no-event-1"),
