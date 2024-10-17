@@ -35,7 +35,7 @@ export function Hero(): JSX.Element {
     <>
       <div id="home" className="h-svh sm:h-screen flex flex-col justify-center">
         <div className="max-w-[1440px] mx-auto mt-2 sm:mt-10 lg:mt-20 pt-6 sm:pt-20 grid grid-cols-1 lg:grid-cols-2 px-8 lg:px-16 ">
-          <div className="text-center lg:text-left order-2 md:order-1">
+          <div className="text-center lg:text-left order-2 lg:order-1">
             <h1
               className={`text-3xl font-bold sm:text-5xl lg:text-[46px] xl:text-6xl mt-12 sm:mt-0  ${oswald.className} hover-target`}
             >
@@ -58,7 +58,7 @@ export function Hero(): JSX.Element {
               {t("hero.button")}
             </Link>
           </div>
-          <div className="hidden min-[390px]:block md:hidden lg:block w-[273px] h-[228px] sm:w-[385px] sm:h-[320px] lg:w-auto lg:h-[590px] xl:h-[694px] relative order-1 md:order-2 mx-auto md:mx-0 -mb-10 min-[390px]:mb-4 pr-1">
+          <div className="hidden min-[390px]:block w-[273px] h-[228px] sm:w-[385px] sm:h-[320px] lg:w-auto lg:h-[590px] xl:h-[694px] relative order-1 lg:order-2 mx-auto lg:mx-0 -mb-10 min-[390px]:mb-4 pr-1">
             <div className="lg:hidden">
               <Image
                 src={imageSrc}
@@ -132,11 +132,11 @@ export function Hero(): JSX.Element {
             </div>
           </div>
         </div>
-        <div className="max-w-[1440px] w-full mx-auto hidden md:block lg:hidden xl:block mt-8 xl:-mt-52 mb-10 px-8 lg:px-16">
+        <div className="max-w-[1440px] w-full mx-auto hidden xl:block mt-8 xl:-mt-52 mb-10 px-8 lg:px-16">
           <CountdownTimer expiryTimestamps={eventDates} />
         </div>
       </div>
-      <div className="block md:hidden lg:block xl:hidden px-0 sm:px-16 mb-12">
+      <div className="block xl:hidden px-0 sm:px-16 mb-12">
         <CountdownTimer expiryTimestamps={eventDates} />
       </div>
     </>
