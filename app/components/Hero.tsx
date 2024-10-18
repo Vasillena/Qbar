@@ -58,7 +58,7 @@ export function Hero(): JSX.Element {
               {t("hero.button")}
             </Link>
           </div>
-          <div className="hidden min-[390px]:block w-[273px] h-[228px] sm:w-[385px] sm:h-[320px] lg:w-auto lg:h-[590px] xl:h-[694px] relative order-1 lg:order-2 mx-auto lg:mx-0 -mb-10 min-[390px]:mb-4 pr-1">
+          <div className="hidden min-[390px]:block w-[273px] h-[228px] sm:w-[385px] sm:h-[320px] lg:w-auto lg:h-[590px] xl:h-[694px] relative order-1 lg:order-2 mx-auto lg:mx-0 -mb-10 min-[390px]:mb-4 md:mb-16 lg:mb-4 pr-1">
             <div className="lg:hidden">
               <Image
                 src={imageSrc}
