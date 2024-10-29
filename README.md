@@ -10,6 +10,10 @@ Rhythms, cocktails and unforgettable nights
 Immerse yourself in a world where great beats meet the art of cocktails. Expect more than just a night out – expect an experience. Welcome to Q – where cocktails and art come together. Q is not just a cocktail bar – it’s a destination of flavors and creativity. We created this unique space to offer our guests an experience that blends the sophistication of cocktails with the magic of music.
    <br/>
 This project is built with Next.js, Tailwind and Framer Motion.
+   <br/>
+Design by: Snezhana Aleksieva 
+   <br/>
+https://www.behance.net/snezhana-aleksieva
 
 View project at: https://q-bar.bg
 
