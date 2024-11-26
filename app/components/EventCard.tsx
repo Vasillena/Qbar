@@ -32,7 +32,7 @@ export default function EventCard({
         <p className="text-base sm:text-2xl text-center">{day}</p>
         {hour && <p className="text-base sm:text-2xl text-center">{hour}</p>}
         <p
-          className={`${Trailmade.className} text-4xl sm:text-5xl pt-4 pb-2 px-2 text-center transition-all duration-300 ease-in-out group-hover:bg-gradient-to-r dark:group-hover:from-[#FFC956] group-hover:from-[#B96001] dark:group-hover:via-[#FFD700] group-hover:via-[#C05438] dark:group-hover:to-[#FF6347] group-hover:to-[#711513] group-hover:bg-clip-text group-hover:text-transparent`}
+          className={`${Trailmade.className} text-4xl sm:text-4xl pt-4 pb-2 px-2 text-center transition-all duration-300 ease-in-out group-hover:bg-gradient-to-r dark:group-hover:from-[#FFC956] group-hover:from-[#B96001] dark:group-hover:via-[#FFD700] group-hover:via-[#C05438] dark:group-hover:to-[#FF6347] group-hover:to-[#711513] group-hover:bg-clip-text group-hover:text-transparent`}
         >
           {name}
         </p>
