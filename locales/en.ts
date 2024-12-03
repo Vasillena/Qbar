@@ -20,7 +20,7 @@ export default {
   },
   events: {
     title: "Upcoming Events",
-    month: "October",
+    month: "December",
     "month-2": "November",
     "day-1": "tuesday",
     "day-2": "thursday",
