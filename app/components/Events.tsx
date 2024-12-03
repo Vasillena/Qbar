@@ -14,21 +14,21 @@ export default async function Events(): Promise<JSX.Element> {
   const events = [
     {
       image: event1,
-      date: `03 ${t("events.month-2")}`,
+      date: `03 ${t("events.month")}`,
       day: t("events.day-1"),
       hour: "21:00",
       name: "DZHAKOV",
     },
     {
       image: event2,
-      date: `05 ${t("events.month-2")}`,
+      date: `05 ${t("events.month")}`,
       day: t("events.day-2"),
       hour: "21:00",
       name: "HOT JAM",
     },
     {
       image: event3,
-      date: `06 ${t("events.month-2")}`,
+      date: `06 ${t("events.month")}`,
       day: t("events.day-3"),
       hour: "21:00",
       name: "5PRITE",
