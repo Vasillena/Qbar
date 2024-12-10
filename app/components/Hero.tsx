@@ -18,11 +18,11 @@ import { useTheme } from "../utils/themeProvider";
 const CountdownTimer = dynamic(() => import("./Countdown"), { ssr: false });
 
 const eventDates = [
-  new Date("2024-12-03T21:00:00"),
-  new Date("2024-12-05T21:00:00"),
-  new Date("2024-12-06T21:00:00"),
-  new Date("2024-12-07T21:00:00"),
   new Date("2024-12-10T21:00:00"),
+  new Date("2024-12-12T21:00:00"),
+  new Date("2024-12-13T21:00:00"),
+  new Date("2024-12-14T21:00:00"),
+  new Date("2024-12-17T21:00:00"),
 ];
 
 export function Hero(): JSX.Element {
