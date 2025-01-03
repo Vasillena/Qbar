@@ -76,7 +76,7 @@ export default function Home() {
     <>
       <Hero />
       <Slider slides={slidesTop} reverse />
-      <Events />
+      {/* <Events /> */}
       <FollowPointer />
       <About />
       <MenuHome />
