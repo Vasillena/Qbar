@@ -36,7 +36,7 @@ export default function About(): JSX.Element {
 
   return (
     <>
-      <div className="max-w-[1440px] mx-auto relative sm:px-16">
+      <div className="max-w-[1440px] mx-auto relative sm:px-16 mt-20">
         <div className="absolute -top-5 right-0 sm:px-16 z-10">
           <Image src={decorImage} alt="Decor" />
         </div>

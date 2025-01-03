@@ -87,7 +87,7 @@ export default async function Events(): Promise<JSX.Element> {
         <EventCard {...events[2]} />
         <EventCard {...events[3]} />
       </div>
-      <div id="about" />
+      {/* <div id="about" /> */}
     </div>
   );
 }

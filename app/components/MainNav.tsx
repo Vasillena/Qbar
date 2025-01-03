@@ -24,7 +24,7 @@ export default function MainNav({
   const linksLeft = useMemo(
     () => [
       { href: "/", label: t("nav.home"), id: "home" },
-      { href: "/#events", label: t("nav.events"), id: "events" },
+      // { href: "/#events", label: t("nav.events"), id: "events" },
       { href: "/#about", label: t("nav.about"), id: "about" },
     ],
     [t]
@@ -33,7 +33,7 @@ export default function MainNav({
   const linksRight = useMemo(
     () => [
       { href: "/menu", label: t("nav.menu") },
-      { href: "/#gallery", label: t("nav.gallery"), id: "gallery" },
+      // { href: "/#gallery", label: t("nav.gallery"), id: "gallery" },
       { href: "/#contact", label: t("nav.contact"), id: "contact" },
     ],
     [t]

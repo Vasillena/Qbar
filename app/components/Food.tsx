@@ -35,7 +35,7 @@ export default async function Food(): Promise<JSX.Element> {
           </Reveal>
         </div>
       </div>
-      <div id="gallery" />
+      {/* <div id="gallery" /> */}
     </>
   );
 }
