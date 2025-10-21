@@ -54,7 +54,7 @@ export default function IntroOverlay({
               </div>
               <button
                 onClick={() => setShowIntro(false)}
-                className={`inline-block relative py-3 px-32 bg-[#151515] text-xl text-center text-white rounded-full before:content-[''] before:absolute before:inset-0 before:rounded-full before:shadow-[inset_0px_4px_4px_#DABB7E before:pointer-events-none transition-shadow duration-300 ease-in-out hover:shadow-[0_0_20px_#FFD70080] ${oswald.className}`}
+                className={`hidden md:inline-block relative py-3 px-32 bg-[#151515] text-xl text-center text-white rounded-full before:content-[''] before:absolute before:inset-0 before:rounded-full before:shadow-[inset_0px_4px_4px_#DABB7E before:pointer-events-none transition-shadow duration-300 ease-in-out hover:shadow-[0_0_20px_#FFD70080] ${oswald.className}`}
               >
                 {t("hero.continue")}
               </button>
@@ -88,6 +88,12 @@ export default function IntroOverlay({
                   Instagram | @Qbarplovdiv
                 </Link>
               </div>
+              <button
+                onClick={() => setShowIntro(false)}
+                className={`inline-block md:hidden relative py-3 px-32 bg-[#151515] text-xl text-center text-white rounded-full before:content-[''] before:absolute before:inset-0 before:rounded-full before:shadow-[inset_0px_4px_4px_#DABB7E before:pointer-events-none transition-shadow duration-300 ease-in-out hover:shadow-[0_0_20px_#FFD70080] ${oswald.className}`}
+              >
+                {t("hero.continue")}
+              </button>
             </div>
             <SwitchLanguageForIntrо />
           </div>
