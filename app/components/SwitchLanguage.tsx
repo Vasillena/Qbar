@@ -19,7 +19,7 @@ export function SwitchLanguage(): JSX.Element {
           type="button"
           onClick={handleChangeToEnglish}
           className="fixed bottom-0 right-8 w-10 py-2 rounded-t-xl drop-shadow-sm dark:bg-[#FFC956] bg-[#B96001]
-            md:static md:bottom-auto md:right-auto md:w-auto md:py-0 md:rounded-none md:drop-shadow-none md:bg-transparent dark:md:bg-transparent"
+            md:static md:bottom-auto md:right-auto md:w-auto md:py-0 md:rounded-none md:drop-shadow-none md:bg-transparent dark:md:bg-transparent z-[9999]"
           aria-label="Switch to English"
         >
           <GrLanguage

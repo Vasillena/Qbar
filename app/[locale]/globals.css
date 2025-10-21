@@ -32,3 +32,33 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+@keyframes role-change {
+  0%,
+  10% {
+    transform: translateY(0%);
+  }
+  16.67%,
+  26.67% {
+    transform: translateY(-100%);
+  }
+  33.34%,
+  43.34% {
+    transform: translateY(-200%);
+  }
+  50.01%,
+  60.01% {
+    transform: translateY(-300%);
+  }
+  66.68%,
+  76.68% {
+    transform: translateY(-400%);
+  }
+  83.35%,
+  93.35% {
+    transform: translateY(-500%);
+  }
+  100% {
+    transform: translateY(-500%);
+  }
+}

@@ -17,6 +17,7 @@ export default {
     hours: "HOURS",
     minutes: "MINUTES",
     seconds: "SECONDS",
+    continue: "Continue",
   },
   events: {
     title: "Upcoming Events",
@@ -61,8 +62,10 @@ export default {
     "text-2": "Address",
     "text-2-1": "Bratq Pulievi 1,",
     "text-2-2": "Plovdiv, Bulgaria 4000",
+    "text-2-3": "Plovdiv, Bulgaria",
     "text-3": "Working hours",
     "text-3-1": "Monday - Sunday 9:00 - 3:00",
+    "text-3-2": "Monday - Sunday",
     "text-4": "Follow us",
   },
   menu: {

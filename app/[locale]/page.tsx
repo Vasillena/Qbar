@@ -4,6 +4,7 @@ import FollowPointer from "../components/Animations/FollowPointer";
 // import FollowPointer from "../components/Animations/FollowPointer";
 import FooterTop from "../components/FooterTop";
 import { Hero } from "../components/Hero";
+import IntroOverlay from "../components/IntroOverlay";
 import MenuHome from "../components/MenuHome";
 import Slider from "../components/Slider";
 import image1 from "@/public/1.webp";
@@ -73,7 +74,7 @@ const slidesBottom = [
 
 export default function Home() {
   return (
-    <>
+    <IntroOverlay>
       <Hero />
       <Slider slides={slidesTop} reverse />
       <div id="about" />
@@ -83,6 +84,6 @@ export default function Home() {
       <MenuHome />
       <Slider slides={slidesBottom} />
       <FooterTop />
-    </>
+    </IntroOverlay>
   );
 }
