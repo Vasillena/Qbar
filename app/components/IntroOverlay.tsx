@@ -73,8 +73,20 @@ export default function IntroOverlay({
                 <p>{[t("contacts.text-2-3")]}</p>
               </div>
               <div className="flex flex-col items-center md:items-start">
-                <p>Facebook | @Qbarplovdiv</p>
-                <p>Instagram | @Qbarplovdiv</p>
+                <Link
+                  href="https://www.facebook.com/Qbarplovdiv"
+                  aria-label="Facebook"
+                  target="_blank"
+                >
+                  Facebook | @Qbarplovdiv
+                </Link>
+                <Link
+                  href="https://www.instagram.com/qbarplovdiv/"
+                  aria-label="Instagram"
+                  target="_blank"
+                >
+                  Instagram | @Qbarplovdiv
+                </Link>
               </div>
             </div>
             <SwitchLanguageForIntrо />
