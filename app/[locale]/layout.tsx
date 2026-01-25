@@ -4,7 +4,9 @@ import Footer from "../components/Footer";
 import { Jura } from "next/font/google";
 import Navbar from "../components/Navbar";
 import { Provider } from "./provider";
+import { ReactNode } from "react";
 import { ThemeProvider } from "../utils/themeProvider";
+import { setStaticParamsLocale } from "next-international/server";
 
 const jura = Jura({
   subsets: ["latin", "cyrillic"],
@@ -12,10 +14,13 @@ const jura = Jura({
 });
 
 export async function generateMetadata({
-  params: { locale },
+  params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
+
+  setStaticParamsLocale(locale);
   let title, description, keywords;
 
   if (locale === "bg") {
@@ -101,13 +106,16 @@ export async function generateMetadata({
   };
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
-  params: { locale },
-}: Readonly<{
-  children: React.ReactNode;
-  params: { locale: string };
-}>) {
+  params,
+}: {
+  children: ReactNode;
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+
+  setStaticParamsLocale(locale);
   return (
     <html lang={locale}>
       <head>
