@@ -11,10 +11,7 @@ interface MainNavProps {
   closeMenu?: () => void;
 }
 
-export default function MainNav({
-  children,
-  closeMenu,
-}: MainNavProps): JSX.Element {
+export default function MainNav({ children, closeMenu }: MainNavProps) {
   const pathname = usePathname();
   const router = useRouter();
   const t = useI18n();

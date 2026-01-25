@@ -14,7 +14,7 @@ interface SliderProps {
   reverse?: boolean;
 }
 
-export default function Slider({ slides, reverse }: SliderProps): JSX.Element {
+export default function Slider({ slides, reverse }: SliderProps) {
   const { theme } = useTheme();
   // const [tickerSpeed, setTickerSpeed] = useState(100);
 

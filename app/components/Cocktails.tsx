@@ -34,7 +34,7 @@ const cocktails = [
   },
 ];
 
-export default async function Cocktails(): Promise<JSX.Element> {
+export default async function Cocktails() {
   const t = await getI18n();
 
   return (

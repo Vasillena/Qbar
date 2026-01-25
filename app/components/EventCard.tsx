@@ -17,7 +17,7 @@ export default function EventCard({
   day,
   hour,
   name,
-}: EventCardProps): JSX.Element {
+}: EventCardProps) {
   return (
     <div className="flex flex-row md:flex-col justify-center items-center group">
       <div className="rounded-3xl drop-shadow-xl">

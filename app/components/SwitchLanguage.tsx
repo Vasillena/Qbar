@@ -4,7 +4,7 @@ import { useChangeLocale, useCurrentLocale } from "../../locales/client";
 
 import { GrLanguage } from "react-icons/gr";
 
-export function SwitchLanguage(): JSX.Element {
+export function SwitchLanguage() {
   const changeLocale = useChangeLocale();
   const locale = useCurrentLocale();
 

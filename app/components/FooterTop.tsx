@@ -49,7 +49,7 @@ const ContactInfoItem = ({
   );
 };
 
-export default function FooterTop(): JSX.Element {
+export default function FooterTop() {
   const t = useI18n();
   const { theme } = useTheme();
 

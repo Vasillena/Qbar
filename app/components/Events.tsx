@@ -8,7 +8,7 @@ import event5 from "@/public/event-5.webp";
 import { getI18n } from "@/locales/server";
 import { oswald } from "../utils/fonts";
 
-export default async function Events(): Promise<JSX.Element> {
+export default async function Events() {
   const t = await getI18n();
 
   const events = [

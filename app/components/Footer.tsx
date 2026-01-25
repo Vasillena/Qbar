@@ -8,7 +8,7 @@ import socials1 from "@/public/socials-4.png";
 import socials2 from "@/public/socials-3.png";
 import { useTheme } from "../utils/themeProvider";
 
-export default function Footer(): JSX.Element {
+export default function Footer() {
   const { theme } = useTheme();
 
   return (

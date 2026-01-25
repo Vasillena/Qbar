@@ -14,7 +14,7 @@ import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { useTheme } from "../utils/themeProvider";
 
-export default function Navbar(): JSX.Element {
+export default function Navbar() {
   const { theme } = useTheme();
   const pathname = usePathname();
   const [open, setOpen] = useState(false);

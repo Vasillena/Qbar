@@ -25,7 +25,7 @@ const eventDates = [
   new Date("2025-01-30T21:00:00"),
 ];
 
-export function Hero(): JSX.Element {
+export function Hero() {
   const { theme } = useTheme();
   const t = useI18n();
   const locale = useCurrentLocale();

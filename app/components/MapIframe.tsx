@@ -6,7 +6,7 @@ interface MapIframeProps {
   source: string;
 }
 
-export default function MapIframe({ source }: MapIframeProps): JSX.Element {
+export default function MapIframe({ source }: MapIframeProps) {
   useEffect(() => {
     const existingIframe = document.querySelector("#map iframe");
     if (existingIframe) return;

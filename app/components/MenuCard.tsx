@@ -30,7 +30,7 @@ export default function MenuCard({
   image,
   isOpen,
   onToggle,
-}: MenuCardProps): JSX.Element {
+}: MenuCardProps) {
   const locale = useCurrentLocale();
   const { theme } = useTheme();
   const menuList = useMemo(

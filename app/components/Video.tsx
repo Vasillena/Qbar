@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef } from "react";
 
 import { useTheme } from "../utils/themeProvider";
 
-export function Video(): JSX.Element {
+export function Video() {
   const { theme } = useTheme();
   const videoRef = useRef<HTMLVideoElement>(null);
 

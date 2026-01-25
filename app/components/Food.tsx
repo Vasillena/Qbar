@@ -4,7 +4,7 @@ import dessert from "@/public/cocktail-4.png";
 import { getI18n } from "@/locales/server";
 import { oswald } from "../utils/fonts";
 
-export default async function Food(): Promise<JSX.Element> {
+export default async function Food() {
   const t = await getI18n();
 
   return (
