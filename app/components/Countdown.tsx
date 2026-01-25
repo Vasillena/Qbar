@@ -35,7 +35,7 @@ TimeCard.displayName = "TimeCard";
 
 const CountdownTimer: React.FC<CountdownTimerProps> = ({
   expiryTimestamps,
-}): JSX.Element => {
+}) => {
   const t = useI18n();
   const [currentIndex, setCurrentIndex] = useState(0);
 
