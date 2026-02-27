@@ -5,119 +5,119 @@
       "category": "Hot Drinks",
       "semi-category": "Топли напитки с кафе",
       "name": "Еспресо Memento",
-      "price": "3.50 BGN",
+      "price": "2.05 €/4.01 BGN",
       "quantity": "30 ml"
     },
     {
       "id": 2,
       "category": "Hot Drinks",
       "name": "Американо",
-      "price": "3.50 BGN",
+      "price": "2.05 €/4.01 BGN",
       "quantity": "80 ml"
     },
     {
       "id": 3,
       "category": "Hot Drinks",
       "name": "Еспресо Макиато",
-      "price": "3.90 BGN",
+      "price": "2.25 €/4.40 BGN",
       "quantity": "60 ml"
     },
     {
       "id": 4,
       "category": "Hot Drinks",
       "name": "Безкофеиново Капучино",
-      "price": "5.10 BGN",
+      "price": "2.86 €/5.59 BGN",
       "quantity": "170 ml"
     },
     {
       "id": 5,
       "category": "Hot Drinks",
       "name": "Безкофеиново Капучино Гранде",
-      "price": "5.50 BGN",
+      "price": "3.07 €/6.00 BGN",
       "quantity": "250 ml"
     },
     {
       "id": 6,
       "category": "Hot Drinks",
       "name": "Капучино със соево мляко",
-      "price": "5.90 BGN",
+      "price": "3.27 €/6.40 BGN",
       "quantity": "170 ml"
     },
     {
       "id": 7,
       "category": "Hot Drinks",
       "name": "Лате макиато",
-      "price": "5.50 BGN",
+      "price": "3.07 €/6.00 BGN",
       "quantity": "300 ml"
     },
     {
       "id": 8,
       "category": "Hot Drinks",
       "name": "Разтворимо кафе",
-      "price": "4.50 BGN",
+      "price": "2.56 €/5.01 BGN",
       "quantity": "200 ml"
     },
     {
       "id": 9,
       "category": "Hot Drinks",
       "name": "Двойно еспресо",
-      "price": "5.90 BGN",
+      "price": "3.27 €/6.40 BGN",
       "quantity": "60 ml"
     },
     {
       "id": 10,
       "category": "Hot Drinks",
       "name": "Безкофеиново кафе",
-      "price": "3.50 BGN",
+      "price": "2.05 €/4.01 BGN",
       "quantity": "30 ml"
     },
     {
       "id": 11,
       "category": "Hot Drinks",
       "name": "Капучино класико",
-      "price": "5.10 BGN",
+      "price": "2.86 €/5.59 BGN",
       "quantity": "170 ml"
     },
     {
       "id": 12,
       "category": "Hot Drinks",
       "name": "Капучино Гранде",
-      "price": "5.50 BGN",
+      "price": "3.07 €/6.00 BGN",
       "quantity": "250 ml"
     },
     {
       "id": 13,
       "category": "Hot Drinks",
       "name": "Двойно капучино",
-      "price": "6.50 BGN",
+      "price": "3.58 €/7.00 BGN",
       "quantity": "250 ml"
     },
     {
       "id": 14,
       "category": "Hot Drinks",
       "name": "Нискомаслено капучино",
-      "price": "5.10 BGN",
+      "price": "2.86 €/5.59 BGN",
       "quantity": "170 ml"
     },
     {
       "id": 15,
       "category": "Hot Drinks",
       "name": "Мокачинo",
-      "price": "5.90 BGN",
+      "price": "3.27 €/6.40 BGN",
       "quantity": "250 ml"
     },
     {
       "id": 16,
       "category": "Hot Drinks",
       "name": "Разтворимо кафе с мляко",
-      "price": "4.90 BGN",
+      "price": "2.76 €/5.40 BGN",
       "quantity": "250 ml"
     },
     {
       "id": 17,
       "category": "Hot Drinks",
       "name": "Допълнителни аромати",
-      "price": "0.50 BGN",
+      "price": "0.36 €/0.70 BGN",
       "quantity": "-",
       "description": "Ванилия, шоколад, карамел, кокос, лешник"
     },
@@ -126,35 +126,35 @@
       "category": "Cold Drinks",
       "semi-category": "Студени напитки с кафе",
       "name": "Еспресо Фредо",
-      "price": "5.70 BGN",
+      "price": "3.50 €/6.85 BGN",
       "quantity": "250 ml"
     },
     {
       "id": 19,
       "category": "Cold Drinks",
       "name": "Двойно капучино Фредо",
-      "price": "6.90 BGN",
+      "price": "4.00 €/7.82 BGN",
       "quantity": "300 ml"
     },
     {
       "id": 20,
       "category": "Cold Drinks",
       "name": "Капучино Фредо",
-      "price": "6.10 BGN",
+      "price": "3.50 €/6.85 BGN",
       "quantity": "250 ml"
     },
     {
       "id": 21,
       "category": "Cold Drinks",
       "name": "Фрапе с мляко",
-      "price": "5.70 BGN",
+      "price": "3.50 €/6.85 BGN",
       "quantity": "350 ml"
     },
     {
       "id": 22,
       "category": "Cold Drinks",
       "name": "Фрапе",
-      "price": "5.10 BGN",
+      "price": "3.00 €/5.87 BGN",
       "quantity": "350 ml"
     },
     {
@@ -162,7 +162,7 @@
       "category": "Hot Drinks",
       "semi-category": "Напитки с шоколад",
       "name": "Горещ шоколад",
-      "price": "6.50 BGN",
+      "price": "4.00 €/7.82 BGN",
       "quantity": "250 ml"
     },
     {
@@ -170,7 +170,7 @@
       "category": "Cold Drinks",
       "semi-category": "Напитки с шоколад",
       "name": "Айс шоколад",
-      "price": "6.50 BGN",
+      "price": "4.00 €/7.82 BGN",
       "quantity": "350 ml"
     },
     {
@@ -178,7 +178,7 @@
       "category": "Cold Drinks",
       "semi-category": "Фроузън напитки, шейк",
       "name": "Плодов шейк",
-      "price": "6.50 BGN",
+      "price": "4.00 €/7.82 BGN",
       "quantity": "350 ml",
       "description": "Ягода, Шоколад, Ванилия, Кокос, Карамел, Лешник"
     },
@@ -187,7 +187,7 @@
       "category": "Hot Drinks",
       "semi-category": "Чай",
       "name": "Черен чай",
-      "price": "5.70 BGN",
+      "price": "4.00 €/7.82 BGN",
       "quantity": "200 ml",
       "description": "Сив Жасмин, Първа реколта Даржилинг"
     },
@@ -195,7 +195,7 @@
       "id": 27,
       "category": "Hot Drinks",
       "name": "Бял чай",
-      "price": "5.70 BGN",
+      "price": "4.00 €/7.82 BGN",
       "quantity": "200 ml",
       "description": "Бял букет"
     },
@@ -203,7 +203,7 @@
       "id": 28,
       "category": "Hot Drinks",
       "name": "Зелен чай",
-      "price": "5.70 BGN",
+      "price": "4.00 €/7.82 BGN",
       "quantity": "200 ml",
       "description": "Градински емоции, Японски Банча, Зелен Жасмин, Млечен Оолонг"
     },
@@ -211,7 +211,7 @@
       "id": 29,
       "category": "Hot Drinks",
       "name": "Ройбос",
-      "price": "5.70 BGN",
+      "price": "4.00 €/7.82 BGN",
       "quantity": "200 ml",
       "description": "Карамел, Портокал - Бодлива Круша"
     },
@@ -219,7 +219,7 @@
       "id": 30,
       "category": "Hot Drinks",
       "name": "Хънибуш",
-      "price": "5.70 BGN",
+      "price": "4.00 €/7.82 BGN",
       "quantity": "200 ml",
       "description": "Кококанела"
     },
@@ -227,7 +227,7 @@
       "id": 31,
       "category": "Hot Drinks",
       "name": "Плодов чай",
-      "price": "5.70 BGN",
+      "price": "4.00 €/7.82 BGN",
       "quantity": "200 ml",
       "description": "Горски плодове, Папая пуканки, Тропическа мента"
     },
@@ -235,7 +235,7 @@
       "id": 32,
       "category": "Hot Drinks",
       "name": "Билков чай",
-      "price": "5.70 BGN",
+      "price": "4.00 €/7.82 BGN",
       "quantity": "200 ml",
       "description": "Фит и свеж, Горска фантазия, Имунен стимулант, Чиста мента, Чист лайка"
     },
@@ -244,269 +244,260 @@
       "category": "Soft Drinks",
       "semi-category": "Безалкохолни напитки",
       "name": "Минерална вода",
-      "price": "3.50 BGN",
+      "price": "2.00 €/3.91 BGN",
       "quantity": "330 ml"
     },
     {
       "id": 34,
       "category": "Soft Drinks",
       "name": "Газирана вода",
-      "price": "3.90 BGN",
+      "price": "2.50 €/4.89 BGN",
       "quantity": "330 ml"
     },
     {
       "id": 35,
       "category": "Soft Drinks",
-      "name": "Кока-Кола",
-      "price": "3.90 BGN",
-      "quantity": "250 ml"
+      "name": "Кокосова вода",
+      "price": "4.00 €/7.82 BGN",
+      "quantity": "330 ml"
     },
     {
       "id": 36,
       "category": "Soft Drinks",
-      "name": "Натурален сок “Greno”",
-      "price": "5.50 BGN",
+      "name": "Кока-Кола",
+      "price": "2.50 €/4.89 BGN",
       "quantity": "250 ml"
     },
     {
       "id": 37,
       "category": "Soft Drinks",
-      "name": "Фреш Портокал / Грейпфрут / Лимон / Микс",
-      "price": "6.50 BGN",
-      "quantity": "200 ml"
+      "name": "Натурален сок “Greno”",
+      "price": "3.50 €/6.85 BGN",
+      "quantity": "250 ml"
     },
     {
       "id": 38,
       "category": "Soft Drinks",
-      "name": "“Perrier” газирана вода",
-      "price": "6.90 BGN",
-      "quantity": "330 ml"
+      "name": "Фреш Портокал / Грейпфрут / Лимон / Микс",
+      "price": "4.00 €/7.82 BGN",
+      "quantity": "200 ml"
     },
     {
       "id": 39,
       "category": "Soft Drinks",
-      "name": "Ред Бул",
-      "price": "6.90 BGN",
-      "quantity": "250 ml"
+      "name": "“Perrier” газирана вода",
+      "price": "4.00 €/7.82 BGN",
+      "quantity": "330 ml"
     },
     {
       "id": 40,
       "category": "Soft Drinks",
-      "semi-category": "Домашно приготвени напитки",
-      "name": "Лимонада с мента",
-      "price": "6.90 BGN",
-      "quantity": "300 ml"
+      "name": "Ред Бул",
+      "price": "4.00 €/7.82 BGN",
+      "quantity": "250 ml"
     },
     {
       "id": 41,
       "category": "Soft Drinks",
-      "name": "Лимонада с ягода и ананас",
-      "price": "6.90 BGN",
+      "semi-category": "Домашно приготвени напитки",
+      "name": "Лимонада с мента",
+      "price": "4.00 €/7.82 BGN",
       "quantity": "300 ml"
     },
     {
       "id": 42,
       "category": "Soft Drinks",
-      "name": "Лимонада с манго и босилек",
-      "price": "6.90 BGN",
+      "name": "Лимонада с ягода и ананас",
+      "price": "4.00 €/7.82 BGN",
       "quantity": "300 ml"
     },
     {
       "id": 43,
       "category": "Soft Drinks",
-      "name": "Студен чай",
-      "price": "6.50 BGN",
-      "quantity": "330 ml"
+      "name": "Лимонада с манго и босилек",
+      "price": "4.00 €/7.82 BGN",
+      "quantity": "300 ml"
     },
     {
       "id": 44,
       "category": "Soft Drinks",
-      "name": "Оранжада",
-      "price": "6.90 BGN",
-      "quantity": "300 ml"
+      "name": "Студен чай",
+      "price": "4.00 €/7.82 BGN",
+      "quantity": "330 ml"
     },
     {
       "id": 45,
       "category": "Soft Drinks",
-      "name": "Цитронада",
-      "price": "6.90 BGN",
+      "name": "Оранжада",
+      "price": "4.00 €/7.82 BGN",
       "quantity": "300 ml"
     },
     {
       "id": 46,
       "category": "Soft Drinks",
-      "semi-category": "Премиум безалкохолни",
-      "name": "3 Cent",
-      "price": "6.50 BGN",
-      "quantity": "200 ml",
-      "description": "Tonic / Ginger Beer / Pink Soda"
+      "name": "Цитронада",
+      "price": "4.00 €/7.82 BGN",
+      "quantity": "300 ml"
     },
     {
       "id": 47,
       "category": "Soft Drinks",
-      "name": "London Essence Soda ",
-      "price": "8.50 BGN",
+      "semi-category": "Премиум безалкохолни",
+      "name": "3 Cent",
+      "price": "4.00 €/7.82 BGN",
       "quantity": "200 ml",
-      "description": "White Peach & Jasmine"
+      "description": "Tonic / Ginger Beer / Pink Soda"
     },
     {
       "id": 48,
       "category": "Wine",
       "semi-category": "Бели вина",
-      "name": "Шато Пеские",
-      "price": "9.20 BGN",
-      "quantity": "150 ml",
-      "description": "Ле Параду, Рол /Италия/"
+      "name": "Шато Пеские, Ле Параду, Рол /Италия/",
+      "price": "5.50 €/10.76 BGN",
+      "quantity": "150 ml"
     },
     {
       "id": 49,
       "category": "Wine",
       "name": "Кормонс Кантина",
-      "price": "59.00 BGN",
+      "price": "33.50 €/65.52 BGN",
       "quantity": "750 ml"
     },
     {
       "id": 50,
       "category": "Wine",
-      "name": "Паскал Жуливе",
-      "price": "99.00 BGN",
-      "quantity": "750 ml",
-      "description": "Сансер, Совиньон Блан /Франция/"
+      "name": "Паскал Жуливе, Сансер, Совиньон Блан /Франция/",
+      "price": "56.50 €/110.50 BGN",
+      "quantity": "750 ml"
     },
     {
       "id": 51,
       "category": "Wine",
       "semi-category": "Вино розе",
-      "name": "Шато Пеские",
-      "price": "9.20 BGN",
-      "quantity": "150 ml",
-      "description": "Ле Параду Розе/Франция/"
+      "name": "Шато Пеские, Ле Параду Розе /Франция/",
+      "price": "5.50 €/10.76 BGN",
+      "quantity": "150 ml"
     },
     {
       "id": 52,
       "category": "Wine",
-      "name": "Домейн де Триен",
-      "price": "59.00 BGN",
-      "quantity": "750 ml",
-      "description": "Прованс Розе /Франция/"
+      "name": "Домейн де Триен, Прованс Розе /Франция/",
+      "price": "33.50 €/65.52 BGN",
+      "quantity": "750 ml"
     },
     {
       "id": 53,
       "category": "Wine",
       "name": "Миравал",
-      "price": "99.00 BGN",
+      "price": "56.50 €/110.50 BGN",
       "quantity": "750 ml"
     },
     {
       "id": 54,
       "category": "Wine",
       "semi-category": "Червени вина",
-      "name": "Шато Пеские",
-      "price": "9.20 BGN",
-      "quantity": "150 ml",
-      "description": "Ле Параду, Гренаш /Франция/"
+      "name": "Шато Пеские, Ле Параду, Гренаш /Франция/",
+      "price": "5.50 €/10.76 BGN",
+      "quantity": "150 ml"
     },
     {
       "id": 55,
       "category": "Wine",
-      "name": "Сем Ком",
-      "price": "59.00 BGN",
-      "quantity": "750 ml",
-      "description": "Литъл Джеймс Баскет Купаж/Франция"
+      "name": "Сем Ком Литъл Джеймс Баскет Купаж /Франция/",
+      "price": "33.50 €/65.52 BGN",
+      "quantity": "750 ml"
     },
     {
       "id": 56,
       "category": "Wine",
-      "name": "Еърлум",
-      "price": "99.00 BGN",
-      "quantity": "750 ml",
-      "description": "Пино Ноар"
+      "name": "Еърлум - Пино Ноар",
+      "price": "56.50 €/110.50 BGN",
+      "quantity": "750 ml"
     },
     {
       "id": 57,
       "category": "Wine",
       "semi-category": "Просеко",
-      "name": "Кантина Кормонс",
-      "price": "65.00 BGN",
-      "quantity": "750 ml",
-      "description": "Просеко Фриули /Италия/"
+      "name": "Ботега Просеко",
+      "price": "10.00 €/19.56 BGN",
+      "quantity": "200 ml"
     },
     {
       "id": 58,
       "category": "Wine",
-      "name": "Luc Belaire",
-      "price": "90.00 BGN",
+      "name": "Ботега Просеко",
+      "price": "33.50 €/65.52 BGN",
       "quantity": "750 ml"
     },
     {
       "id": 59,
       "category": "Wine",
-      "name": "Ботега Просеко",
-      "price": "17.50 BGN",
-      "quantity": "200 ml"
+      "name": "Bottega Gold",
+      "price": "56.50 €/110.50 BGN",
+      "quantity": "750 ml"
     },
     {
       "id": 60,
       "category": "Wine",
-      "name": "Ботега Просеко",
-      "price": "50.00 BGN",
+      "name": "Кантина Кормонс, Просеко Фриули /Италия/",
+      "price": "38.50 €/75.30 BGN",
       "quantity": "750 ml"
     },
     {
       "id": 61,
       "category": "Wine",
-      "name": "Mum Brut",
-      "price": "160.00 BGN",
+      "name": "Piper-Heidsieck Brut",
+      "price": "97.50 €/190.69 BGN",
       "quantity": "750 ml"
     },
     {
       "id": 62,
-      "category": "Wine",
-      "name": "Mum Rosé ",
-      "price": "180.00 BGN",
-      "quantity": "750 ml"
+      "category": "Beer",
+      "semi-category": "Бира",
+      "name": "Хайникен",
+      "price": "4.50 €/8.80 BGN",
+      "quantity": "330 ml"
     },
     {
       "id": 63,
       "category": "Beer",
-      "semi-category": "Бира",
-      "name": "Хайникен",
-      "price": "6.50 BGN",
+      "name": "Морети",
+      "price": "4.50 €/8.80 BGN",
       "quantity": "330 ml"
     },
     {
       "id": 64,
       "category": "Beer",
-      "name": "Морети",
-      "price": "6.50 BGN",
+      "name": "Корона",
+      "price": "4.50 €/8.80 BGN",
       "quantity": "330 ml"
     },
     {
       "id": 65,
       "category": "Beer",
-      "name": "Корона",
-      "price": "6.90 BGN",
+      "name": "Хайникен 0.0",
+      "price": "4.50 €/8.80 BGN",
       "quantity": "330 ml"
     },
     {
       "id": 66,
       "category": "Beer",
-      "name": "Хайникен 0.0",
-      "price": "6.00 BGN",
+      "name": "Столично",
+      "price": "4.50 €/8.80 BGN",
       "quantity": "330 ml"
     },
     {
       "id": 67,
       "category": "Beer",
-      "name": "Столично",
-      "price": "6.50 BGN",
+      "name": "Сайдер",
+      "price": "4.50 €/8.80 BGN",
       "quantity": "330 ml"
     },
     {
       "id": 68,
       "category": "Beer",
-      "name": "Сайдер",
-      "price": "6.00 BGN",
+      "name": "Гинес",
+      "price": "7.00 €/13.69 BGN",
       "quantity": "330 ml"
     },
     {
@@ -514,576 +505,508 @@
       "category": "Alcohol",
       "semi-category": "Аперитиви и диджестиви",
       "name": "Martini",
-      "price": "10.50 BGN",
+      "price": "6.50 €/12.71 BGN",
       "quantity": "100 ml"
     },
     {
-      "id": 71,
+      "id": 70,
       "category": "Alcohol",
       "name": "Aftershok",
-      "price": "4.60 BGN",
+      "price": "3.00 €/5.87 BGN",
       "quantity": "25 ml",
       "description": "/black/"
     },
     {
-      "id": 72,
+      "id": 71,
       "category": "Alcohol",
       "name": "Jägermeister",
-      "price": "4.60 BGN",
+      "price": "3.00 €/5.87 BGN",
+      "quantity": "25 ml"
+    },
+    {
+      "id": 72,
+      "category": "Alcohol",
+      "name": "Skinos/Skinos Dark",
+      "price": "3.00 €/5.87 BGN",
       "quantity": "25 ml"
     },
     {
       "id": 73,
       "category": "Alcohol",
-      "name": "Skinos",
-      "price": "4.60 BGN",
+      "name": "Branca menta",
+      "price": "3.00 €/5.87 BGN",
       "quantity": "25 ml"
     },
     {
       "id": 74,
       "category": "Alcohol",
-      "name": "Ramazzoti Amaro",
-      "price": "4.60 BGN",
+      "name": "Pernod Absinthe",
+      "price": "3.50 €/6.85 BGN",
       "quantity": "25 ml"
     },
     {
       "id": 75,
       "category": "Alcohol",
-      "name": "Fernet-Branca",
-      "price": "4.60 BGN",
-      "quantity": "25 ml"
+      "name": "Campari",
+      "price": "4.50 €/8.80 BGN",
+      "quantity": "50 ml"
     },
     {
       "id": 76,
       "category": "Alcohol",
-      "name": "Branca menta",
-      "price": "4.60 BGN",
-      "quantity": "25 ml"
+      "semi-category": "Шотландско уиски",
+      "name": "Monkey Shoulder",
+      "price": "7.50 €/14.67 BGN",
+      "quantity": "50 ml"
     },
     {
       "id": 77,
       "category": "Alcohol",
-      "name": " Pernod Absinthe",
-      "price": "5.60 BGN",
-      "quantity": "25 ml"
+      "name": "Grant’s Triple Wood 8y.o.",
+      "price": "5.00 €/9.78 BGN",
+      "quantity": "50 ml"
     },
     {
       "id": 78,
       "category": "Alcohol",
-      "name": "Campari",
-      "price": "7.90 BGN",
+      "name": "Grant’s Triple Wood 12y.o.",
+      "price": "6.50 €/12.71 BGN",
       "quantity": "50 ml"
     },
     {
       "id": 79,
       "category": "Alcohol",
-      "name": "Italicus",
-      "price": "12.50 BGN",
+      "semi-category": "Ирландско уиски",
+      "name": "Tullamore Dew",
+      "price": "5.00 €/9.78 BGN",
       "quantity": "50 ml"
     },
     {
       "id": 80,
       "category": "Alcohol",
-      "name": "Plymouth Sloe Gin",
-      "price": "7.90 BGN",
+      "name": "Tullamore Dew XO",
+      "price": "5.00 €/9.78 BGN",
       "quantity": "50 ml"
     },
     {
       "id": 81,
       "category": "Alcohol",
-      "semi-category": "Шотландско уиски",
-      "name": "Ballantine’s 7 y.o.",
-      "price": "7.90 BGN",
+      "name": "Jameson",
+      "price": "5.00 €/9.78 BGN",
       "quantity": "50 ml"
     },
     {
       "id": 82,
       "category": "Alcohol",
-      "name": "Dewar’s",
-      "price": "7.90 BGN",
+      "name": "Proper Twelve",
+      "price": "5.00 €/9.78 BGN",
       "quantity": "50 ml"
     },
     {
       "id": 83,
       "category": "Alcohol",
-      "name": "The Deacon",
-      "price": "12.50 BGN",
+      "semi-category": "Бърбън и Тенеси",
+      "name": "Wild Turkey",
+      "price": "5.00 €/9.78 BGN",
       "quantity": "50 ml"
     },
     {
       "id": 84,
       "category": "Alcohol",
-      "semi-category": "Ирландско уиски",
-      "name": "Jameson",
-      "price": "7.90 BGN",
+      "name": "Woodford",
+      "price": "7.50 €/14.67 BGN",
       "quantity": "50 ml"
     },
     {
       "id": 85,
       "category": "Alcohol",
-      "name": "Jameson Black Barrel",
-      "price": "9.50 BGN",
+      "name": "Jack Daniel’s",
+      "price": "6.00 €/11.73 BGN",
       "quantity": "50 ml"
     },
     {
       "id": 86,
       "category": "Alcohol",
-      "name": "Proper Twelve",
-      "price": "7.90 BGN",
+      "name": "Gentleman Jack",
+      "price": "7.50 €/14.67 BGN",
       "quantity": "50 ml"
     },
     {
       "id": 87,
       "category": "Alcohol",
-      "name": "Paddy",
-      "price": "7.90 BGN",
+      "name": "Maker's Mark",
+      "price": "7.50 €/14.67 BGN",
       "quantity": "50 ml"
     },
     {
       "id": 88,
       "category": "Alcohol",
-      "name": "Redbreast 12y.o.",
-      "price": "16.90 BGN",
+      "semi-category": "Малцово уиски",
+      "name": "Glenlivet 12 y.o.",
+      "price": "9.50 €/18.58 BGN",
       "quantity": "50 ml"
     },
     {
       "id": 89,
       "category": "Alcohol",
-      "semi-category": "Бърбън и Тенеси",
-      "name": "Four Roses",
-      "price": "7.90 BGN",
+      "name": "Glenlivet 15 y.o.",
+      "price": "12.50 €/24.45 BGN",
       "quantity": "50 ml"
     },
     {
       "id": 90,
       "category": "Alcohol",
-      "name": "Four Roses Small Batch",
-      "price": "12.90 BGN",
+      "name": "Glenlivet 18 y.o.",
+      "price": "16.00 €/31.29 BGN",
       "quantity": "50 ml"
     },
     {
       "id": 91,
       "category": "Alcohol",
-      "name": "Woodford",
-      "price": "12.90 BGN",
+      "name": "The Balvenie 12y.o.",
+      "price": "16.00 €/31.29 BGN",
       "quantity": "50 ml"
     },
     {
       "id": 92,
       "category": "Alcohol",
-      "name": "Jack Daniel’s",
-      "price": "10.50 BGN",
+      "name": "The Macallan 12 y.o.",
+      "price": "14.00 €/27.38 BGN",
       "quantity": "50 ml"
     },
     {
       "id": 93,
       "category": "Alcohol",
-      "name": "Gentleman Jack",
-      "price": "12.90 BGN",
+      "name": "Highland Park 12 y.o.",
+      "price": "10.00 €/19.56 BGN",
       "quantity": "50 ml"
     },
     {
       "id": 94,
       "category": "Alcohol",
-      "name": "Maker's Mark",
-      "price": "12.90 BGN",
+      "name": "Glen Grant 10 y.o.",
+      "price": "8.00 €/15.65 BGN",
       "quantity": "50 ml"
     },
     {
       "id": 95,
       "category": "Alcohol",
-      "semi-category": "Малцово уиски",
-      "name": "Glenlivet  12 y.o.",
-      "price": "15.90 BGN",
+      "semi-category": "Водка",
+      "name": "Reyka",
+      "price": "6.00 €/11.73 BGN",
       "quantity": "50 ml"
     },
     {
       "id": 96,
       "category": "Alcohol",
-      "name": "Glenlivet 15 y.o.",
-      "price": "21.50 BGN",
+      "name": "JJ Whitley",
+      "price": "5.00 €/9.78 BGN",
       "quantity": "50 ml"
     },
     {
       "id": 97,
       "category": "Alcohol",
-      "name": "Glenlivet 18 y.o.",
-      "price": "29.90 BGN",
+      "name": "Finlandia",
+      "price": "5.00 €/9.78 BGN",
       "quantity": "50 ml"
     },
     {
       "id": 98,
       "category": "Alcohol",
-      "name": "The Macallan 12 y.o.",
-      "price": "25.50 BGN",
+      "name": "Grey Goose",
+      "price": "9.50 €/18.58 BGN",
       "quantity": "50 ml"
     },
     {
       "id": 99,
       "category": "Alcohol",
-      "name": "Chivas 12 y.o.",
-      "price": "12.90 BGN",
+      "name": "Beluga Noble",
+      "price": "9.50 €/18.58 BGN",
       "quantity": "50 ml"
     },
     {
       "id": 100,
       "category": "Alcohol",
-      "name": "Chivas 18 y.o.",
-      "price": "26.50 BGN",
-      "quantity": "50 ml"
+      "semi-category": "Джин",
+      "name": "JJ Whitley",
+      "price": "5.00 €/9.78 BGN",
+      "quantity": "50 ml",
+      "description": "London dry / Pink"
     },
     {
       "id": 101,
       "category": "Alcohol",
-      "name": "Aberlour 12 y.o.",
-      "price": "17.90 BGN",
+      "name": "Hendrick’s",
+      "price": "8.00 €/15.65 BGN",
       "quantity": "50 ml"
     },
     {
       "id": 102,
       "category": "Alcohol",
-      "name": "Naked Malt.",
-      "price": "12.90 BGN",
+      "name": "Gin Mare",
+      "price": "8.00 €/15.65 BGN",
       "quantity": "50 ml"
     },
     {
       "id": 103,
       "category": "Alcohol",
-      "name": "Royal Salute 21y.o.",
-      "price": "45.50 BGN",
+      "name": "Bombay Sapphire",
+      "price": "5.50 €/10.76 BGN",
       "quantity": "50 ml"
     },
     {
       "id": 104,
       "category": "Alcohol",
-      "name": "Highland Park 12 y.o.",
-      "price": "18.50 BGN",
+      "name": "Roku Gin",
+      "price": "7.00 €/13.69 BGN",
       "quantity": "50 ml"
     },
     {
       "id": 105,
       "category": "Alcohol",
-      "semi-category": "Водка",
-      "name": "Absolut",
-      "price": "7.90 BGN",
-      "quantity": "50 ml"
+      "semi-category": "Ром",
+      "name": "Bacardi",
+      "price": "5.00 €/9.78 BGN",
+      "quantity": "50 ml",
+      "description": "Carta Blanca / Carta Negra"
     },
     {
       "id": 106,
       "category": "Alcohol",
-      "name": "Finland",
-      "price": "7.90 BGN",
+      "name": "Sailor Jerry Spiced",
+      "price": "5.00 €/9.78 BGN",
       "quantity": "50 ml"
     },
     {
       "id": 107,
       "category": "Alcohol",
-      "name": "Ostoya",
-      "price": "10.50 BGN",
+      "name": "Diplomatico Reserva Exclusiva",
+      "price": "11.00 €/21.51 BGN",
       "quantity": "50 ml"
     },
     {
       "id": 108,
       "category": "Alcohol",
-      "name": "Absolut Elyx",
-      "price": "16.90 BGN",
-      "quantity": "50 ml"
+      "semi-category": "Текила",
+      "name": "Millagro",
+      "price": "3.50 €/6.85 BGN",
+      "quantity": "25 ml",
+      "description": "Silver / Reposado"
     },
     {
       "id": 109,
       "category": "Alcohol",
-      "name": "Grey Goose",
-      "price": "16.90 BGN",
-      "quantity": "50 ml"
+      "name": "Patrón Coffee",
+      "price": "3.00 €/5.87 BGN",
+      "quantity": "25 ml"
     },
     {
       "id": 110,
       "category": "Alcohol",
-      "name": "Beluga Noble",
-      "price": "16.90 BGN",
-      "quantity": "50 ml"
+      "name": "Clase Azul",
+      "price": "435.50 €/851.76 BGN",
+      "quantity": "700 ml"
     },
     {
       "id": 111,
       "category": "Alcohol",
-      "semi-category": "Джин",
-      "name": "Beefeater",
-      "price": "7.90 BGN",
-      "quantity": "50 ml",
-      "description": "London dry / Pink"
+      "semi-category": "Коняк и бренди",
+      "name": "Hennesey",
+      "price": "8.00 €/15.65 BGN",
+      "quantity": "50 ml"
     },
     {
       "id": 112,
       "category": "Alcohol",
-      "name": "Malfy Gin",
-      "price": "12.90 BGN",
-      "quantity": "50 ml",
-      "description": ""
+      "name": "Metaxa 7*",
+      "price": "5.00 €/9.78 BGN",
+      "quantity": "50 ml"
     },
     {
       "id": 113,
       "category": "Alcohol",
-      "name": "Gin Mare",
-      "price": "13.90 BGN",
+      "name": "Martell XO",
+      "price": "26.00 €/50.85 BGN",
       "quantity": "50 ml"
     },
     {
       "id": 114,
       "category": "Alcohol",
-      "name": "Bombay Sapphire",
-      "price": "8.90 BGN",
+      "name": "Табиет Дюлева",
+      "price": "6.00 €/11.73 BGN",
       "quantity": "50 ml"
     },
     {
       "id": 115,
-      "category": "Alcohol",
-      "name": "Monkey 47",
-      "price": "19.50 BGN",
-      "quantity": "50 ml"
-    },
-    {
-      "id": 116,
-      "category": "Alcohol",
-      "semi-category": "Ром",
-      "name": "Havana 3 y.o./Spiced",
-      "price": "7.90 BGN",
-      "quantity": "50 ml"
-    },
-    {
-      "id": 117,
-      "category": "Alcohol",
-      "name": "Havana 7y.o.",
-      "price": "10.50 BGN",
-      "quantity": "50 ml"
-    },
-    {
-      "id": 118,
-      "category": "Alcohol",
-      "name": "Bumbu Original",
-      "price": "12.50 BGN",
-      "quantity": "50 ml"
-    },
-    {
-      "id": 119,
-      "category": "Alcohol",
-      "name": "Bumbu XO",
-      "price": "14.50 BGN",
-      "quantity": "50 ml"
-    },
-    {
-      "id": 120,
-      "category": "Alcohol",
-      "name": "Barcelo 10 y.o.",
-      "price": "13.50 BGN",
-      "quantity": "50 ml"
-    },
-    {
-      "id": 121,
-      "category": "Alcohol",
-      "semi-category": "Текила",
-      "name": "Olmeca Altos",
-      "price": "4.90 BGN",
-      "quantity": "25 ml"
-    },
-    {
-      "id": 122,
-      "category": "Alcohol",
-      "name": "Avion",
-      "price": "9.50 BGN",
-      "quantity": "25 ml"
-    },
-    {
-      "id": 123,
-      "category": "Alcohol",
-      "name": "PatrÓn Coffee",
-      "price": "4.90 BGN",
-      "quantity": "25 ml"
-    },
-    {
-      "id": 124,
-      "category": "Alcohol",
-      "name": "Clase Azul",
-      "price": "850.00 BGN",
-      "quantity": "700 ml"
-    },
-    {
-      "id": 125,
-      "category": "Alcohol",
-      "semi-category": "Коняк и бренди",
-      "name": "Martel VS",
-      "price": "12.50 BGN",
-      "quantity": "50 ml"
-    },
-    {
-      "id": 126,
-      "category": "Alcohol",
-      "name": "Ararat 5y.o.",
-      "price": "7.90 BGN",
-      "quantity": "50 ml"
-    },
-    {
-      "id": 127,
       "category": "Mixed Drinks",
       "semi-category": "Аперитивни коктейли",
-      "name": "Aperol Spritz Aperol",
-      "price": "12.50 BGN",
+      "name": "Aperol Spritz",
+      "price": "7.50 €/14.67 BGN",
       "quantity": "250 ml",
       "description": "Aperol, Sparkling Wine, портокал и лимон"
     },
     {
-      "id": 128,
+      "id": 116,
       "category": "Mixed Drinks",
-      "name": "Aperamento Platinum",
-      "price": "12.50 BGN",
+      "name": "Hugo Spritz",
+      "price": "8.00 €/15.65 BGN",
       "quantity": "250 ml",
-      "description": "Canto Platinum, Canto Sparkling, листа мента"
+      "description": "Ликьор бъз, просеко, листа мента"
     },
     {
-      "id": 129,
+      "id": 117,
+      "category": "Mixed Drinks",
+      "name": "Lillet Pink Spritz",
+      "price": "7.50 €/14.67 BGN",
+      "quantity": "250 ml",
+      "description": "Lillet Rose, грейпфрут, сода"
+    },
+    {
+      "id": 118,
       "category": "Mixed Drinks",
       "semi-category": "Алкохолни коктейли",
       "name": "Bloody Mary",
-      "price": "13.50 BGN",
-      "quantity": "250 ml",
-      "description": "Absolut водка, доматен сок,фреш лимон, подправки"
+      "price": "8.50 €/16.62 BGN",
+      "quantity": "300 ml",
+      "description": "JJ Whitley водка, доматен сок, фреш лимон, подправки"
     },
     {
-      "id": 130,
+      "id": 119,
       "category": "Mixed Drinks",
       "name": "Mojito",
-      "price": "13.50 BGN",
+      "price": "8.50 €/16.62 BGN",
       "quantity": "250 ml",
-      "description": "Havana 3  ром, лайм, кафява захар, листа мента, сода"
+      "description": "Bacardi ром, лайм, кафява захар, листа мента, сода"
     },
     {
-      "id": 131,
+      "id": 120,
       "category": "Mixed Drinks",
       "name": "Espresso Martini",
-      "price": "13.50 BGN",
-      "quantity": "250 ml",
-      "description": "Absolut водка,кафе ликьор, кафе Мементо"
+      "price": "8.50 €/16.62 BGN",
+      "quantity": "180 ml",
+      "description": "JJ Whitley водка, кафе ликьор, кафе Мементо"
     },
     {
-      "id": 132,
+      "id": 121,
       "category": "Mixed Drinks",
       "name": "Daiquiri",
-      "price": "13.50 BGN",
+      "price": "8.50 €/16.62 BGN",
       "quantity": "180 ml",
-      "description": "Havana 3 ром, фреш лайм, захарен сироп"
+      "description": "Bacardi ром, фреш лайм, захарен сироп"
     },
     {
-      "id": 133,
+      "id": 122,
       "category": "Mixed Drinks",
       "name": "Margarita",
-      "price": "14.50 BGN",
+      "price": "9.00 €/17.60 BGN",
       "quantity": "180 ml",
-      "description": "Olmeca Altos текила, Cointreau, фреш лайм"
+      "description": "El Jimador текила, Cointreau, фреш лайм"
     },
     {
-      "id": 134,
+      "id": 123,
       "category": "Mixed Drinks",
       "name": "Mai Tai",
-      "price": "14.50 BGN",
+      "price": "9.00 €/17.60 BGN",
       "quantity": "200 ml",
-      "description": "Havana 7, Havana 3, Cointreau, лайм, бадемов сироп"
+      "description": "Bacardi Black, Sailor Jerry, Cointreau, лайм, бадемов сироп"
     },
     {
-      "id": 135,
+      "id": 124,
       "category": "Mixed Drinks",
       "name": "Whiskey Sour",
-      "price": "14.50 BGN",
+      "price": "9.00 €/17.60 BGN",
       "quantity": "200 ml",
-      "description": "Jack daniels, фреш лимон, захарен сироп,пяна,битер"
+      "description": "Wild Turkey бърбън, фреш лимон, захарен сироп, пяна, битер"
     },
     {
-      "id": 136,
+      "id": 125,
       "category": "Mixed Drinks",
       "name": "Disaronno Sour",
-      "price": "13.50 BGN",
+      "price": "8.50 €/16.62 BGN",
       "quantity": "200 ml",
       "description": "Disaronno, фреш лимон, захарарен сироп, пяна"
     },
     {
-      "id": 137,
+      "id": 126,
       "category": "Mixed Drinks",
       "name": "Skinos Sour",
-      "price": "13.50 BGN",
+      "price": "8.50 €/16.62 BGN",
       "quantity": "200 ml",
       "description": "Скинос, фреш лимон, захарарен сироп, ликьор зелена ябълка"
     },
     {
-      "id": 138,
+      "id": 127,
       "category": "Mixed Drinks",
       "name": "Negroni",
-      "price": "13.50 BGN",
+      "price": "8.50 €/16.62 BGN",
       "quantity": "150 ml",
-      "description": "Beefeater джин, Сладък Вермут, Битер"
+      "description": "JJ Whitley London джин, сладък вермут, битер"
     },
     {
-      "id": 139,
+      "id": 128,
+      "category": "Mixed Drinks",
+      "name": "Negroni Italicus",
+      "price": "8.50 €/16.62 BGN",
+      "quantity": "150 ml",
+      "description": "Italicus, джин, сух вермут"
+    },
+    {
+      "id": 129,
       "category": "Mixed Drinks",
       "name": "Old Fashion",
-      "price": "14.50 BGN",
+      "price": "9.00 €/17.60 BGN",
       "quantity": "150 ml",
-      "description": "Jack daniels, кленов сироп, ангостура битер"
+      "description": "Jack Daniels бърбън, кленов сироп, ангостура битер"
     },
     {
-      "id": 140,
+      "id": 130,
       "category": "Mixed Drinks",
       "name": "Moscow Mule",
-      "price": "13.50 BGN",
+      "price": "8.50 €/16.62 BGN",
       "quantity": "250 ml",
-      "description": "Finlandia, джинджифилова бира, лайм"
+      "description": "Finlandia водка, джинджифилова бира, лайм"
     },
     {
-      "id": 141,
+      "id": 131,
+      "category": "Mixed Drinks",
+      "name": "Rakiya Sour",
+      "price": "9.00 €/17.60 BGN",
+      "quantity": "150 ml",
+      "description": "Ракия Tabiet Djuleva, ликьор маракуя, сироп маракуя, лайм, веган белтък"
+    },
+    {
+      "id": 132,
       "category": "Mixed Drinks",
       "semi-category": "Премиум джин тоник",
       "name": "Citrus Gin & Tonic",
-      "price": "13.50 BGN",
+      "price": "8.50 €/16.62 BGN",
       "quantity": "250 ml",
-      "description": "Beefeater джин, премиум тоник, лимон , портокал"
+      "description": "JJ Whitley джин, премиум тоник, лимон, портокал"
     },
     {
-      "id": 142,
+      "id": 133,
       "category": "Mixed Drinks",
       "name": "Berry Gin & Tonic",
-      "price": "13.50 BGN",
+      "price": "8.50 €/16.62 BGN",
       "quantity": "250 ml",
       "description": "Bombay Gin, премиум тоник, сушени горски плодове"
     },
     {
-      "id": 143,
+      "id": 134,
       "category": "Mixed Drinks",
-      "name": "Mare G & T",
-      "price": "16.90 BGN",
+      "name": "Hendrick’s Garden",
+      "price": "9.00 €/17.60 BGN",
       "quantity": "250 ml",
-      "description": "Gin Mare , премиум тоник, розмарин , кора портокал"
+      "description": "Hendrick’s, премиум тоник, краставица, роза"
     },
     {
-      "id": 144,
-      "category": "Mixed Drinks",
-      "name": "Malfy Garden",
-      "price": "16.90 BGN",
-      "quantity": "250 ml",
-      "description": "Malfy джин, премиум тоник, краставица, роза"
-    },
-    {
-      "id": 145,
+      "id": 135,
       "category": "Mixed Drinks",
       "semi-category": "Топли коктейли",
       "name": "Ирландско кафе",
-      "price": "13.50 BGN",
+      "price": "8.50 €/16.62 BGN",
       "quantity": "200 ml",
-      "description": "Jameson, еспресо, мляко"
-    },
-    {
-      "id": 146,
-      "category": "Mixed Drinks",
-      "name": "Грог",
-      "price": "13.50 BGN",
-      "quantity": "200 ml",
-      "description": "Черен чай, Havana 3 ром, фреш лимон"
+      "description": "Tullamore Dew, еспресо, мляко"
     }
   ]
 }
