@@ -11,7 +11,7 @@ const cocktails = [
   {
     image: cocktail1,
     name: "Negroni",
-    price: "13,50 лв.",
+    price: "8.50 €",
     width:
       "w-[107px] min-[390px]:w-[87px] md:w-[177px] lg:w-[117px] xl:w-[177px]",
     margin: "mr-5",
@@ -19,7 +19,7 @@ const cocktails = [
   {
     image: cocktail2,
     name: "Mojito",
-    price: "13,50 лв.",
+    price: "8.50 €",
     width:
       "w-[77px] min-[390px]:w-[77px] md:w-[147px] lg:w-[87px] xl:w-[147px]",
     margin: "ml-[14px] md:ml-[30px] lg:ml-[20px] xl:ml-[28px]",
@@ -27,7 +27,7 @@ const cocktails = [
   {
     image: cocktail3,
     name: "Old Fashioned",
-    price: "13,50 лв.",
+    price: "9.00 €",
     width:
       "w-[118px] min-[390px]:w-[98px] md:w-[188px] lg:w-[128px] xl:w-[188px]",
     margin: "mr-2",
